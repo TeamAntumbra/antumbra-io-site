@@ -58,7 +58,7 @@ a:focus {
 }
 
 .light {
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .navbar-custom {
@@ -104,10 +104,13 @@ a:focus {
 }
 
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
     background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li a:focus {
+    background-color: rgba(0,0,0,0);
 }
 
 @media(min-width:767px) {
@@ -123,7 +126,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: rgba(0,0,0,.3);
     }
 
     .navbar-custom.top-nav-collapse {
@@ -174,7 +177,6 @@ a:focus {
 
     .intro .intro-body .brand-heading {
         font-size: 100px;
-        font-weight: 200;
         color: #000;
         text-shadow: 0 0 .11em #FFF;
     }
@@ -264,7 +266,7 @@ a:focus {
 
 .download-section {
     width: 100%;
-    padding: 50px 0;
+    /*padding: 50px 0;*/
     color: #fff;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #000;
@@ -370,4 +372,14 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+#about {
+    background: #38A3A8;
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    font-weight:200;
 }

@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color: #4FC472;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: #71D073;
 }
 
 .light {
@@ -137,7 +137,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: argb(0,0,0,.001);
@@ -177,6 +177,7 @@ a:focus {
 
     .intro .intro-body .brand-heading {
         font-size: 100px;
+        font-weight: lighter;
         color: #000;
         text-shadow: 0 0 .11em #FFF;
     }
@@ -264,16 +265,10 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.intrested-section {
     width: 100%;
     /*padding: 50px 0;*/
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 #map {
@@ -287,7 +282,7 @@ a:focus {
         padding-top: 250px;
     }
 
-    .download-section {
+    .intrested-section {
         padding: 100px 0;
     }
 
@@ -307,17 +302,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #219ab3;
-    color: #219ab3;
+    border: 1px solid #4FC472;
+    color: #4FC472;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #219ab3;
+    border: 1px solid #4FC472;
     outline: 0;
     color: #000;
-    background-color: #219ab3;
+    background-color: #71D073;
 }
 
 ul.banner-social-buttons {
@@ -344,6 +339,12 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+    color: #94BADB;
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,.74) 0%, rgba(193,84,68,1) 22%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(255,255,255,.74) 0%, rgba(193,84,68,1) 22%); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(255,255,255,.74) 0%, rgba(193,84,68,1) 22%); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(255,255,255,.74) 0%, rgba(193,84,68,1) 22%); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(255,255,255,.74) 0%, rgba(193,84,68,1) 22%); /* W3C */
 }
 
 footer p {
@@ -374,12 +375,52 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-#about {
-    background: #38A3A8;
+#about-transition {
+    background: -webkit-linear-gradient(0deg, rgba(61,24,88, 1), rgba(0,0,0,1)); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(61,24,88, 1), rgba(0,0,0,1)); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(61,24,88, 1), rgba(0,0,0,1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(61,24,88, 1), rgba(0,0,0,1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(61,24,88, 1), rgba(0,0,0,1)); /* W3C */
+    height: 500px;
     width: 100%;
-    height: 100%;
 }
 
-#title {
-    font-weight:200;
+#about {
+    background: rgba(61,24,88,1);
+    width: 100%;
+    height: 120%;
+    color: #F0F0F0;
+}
+
+#intrested {
+    background: rgba(47,33,120,1);
+    width: 100%;
+    height: 120%;
+    padding-top: 150px;
+}
+
+#intrested-transition {
+    background: -webkit-linear-gradient(0deg, rgba(47,33,120, 1), rgba(61,24,88, 1)); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(47,33,120, 1), rgba(61,24,88, 1)); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(47,33,120, 1), rgba(61,24,88, 1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(47,33,120, 1), rgba(61,24,88, 1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(47,33,120, 1), rgba(61,24,88, 1)); /* W3C */
+    width: 100%;
+    height: 500px;
+}
+
+#contact {
+    background: rgba(193,84,68,1);
+    height: 120%;
+    width: 100%;
+}
+
+#contact-transition {
+    background: -webkit-linear-gradient(0deg, rgba(193,84,68, 1) 0%, rgba(47,33,120,1) 100%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(193,84,68, 1) 0%, rgba(47,33,120,1) 100%); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(193,84,68, 1), rgba(47,33,120,1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(193,84,68, 1), rgba(47,33,120,1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(193,84,68, 1), rgba(47,33,120,1)); /* W3C */
+    height: 500px;
+    width: 100%;
 }

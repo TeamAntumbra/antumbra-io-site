@@ -86,6 +86,8 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
+    color: #000;
+    text-shadow: 0 0 .11em #FFF;
 }
 
 .navbar-custom a {
@@ -140,7 +142,7 @@ a:focus {
     height: 100%;
     padding: 100px 0;
     text-align: center;
-    color: argb(0,0,0,.001);
+    color: argb(0,0,0,0);
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -269,12 +271,6 @@ a:focus {
     width: 100%;
     /*padding: 50px 0;*/
     color: #fff;
-}
-
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
 }
 
 @media(min-width:767px) {
@@ -421,4 +417,29 @@ body {
     background:         linear-gradient(0deg, rgba(193,84,68, 1), rgba(6,114,211,1)); /* W3C */
     height: 500px;
     width: 100%;
+}
+
+#instagram:hover,
+#instagram:focus{
+    color: rgba(85,53,27,1);
+}
+
+#pinterest:hover,
+#pinterest:focus {
+    color: rgba(145,1,1,1);
+}
+
+#twitter:hover,
+#twitter:focus {
+    color: rgba(0,160,209,1);
+}
+
+#youtube:hover,
+#youtube:focus {
+    color: rgba(196,48,43,1);
+}
+
+#gplus:hover,
+#gplus:focus {
+    color: rgba(0,153,57,1);
 }

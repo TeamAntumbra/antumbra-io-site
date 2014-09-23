@@ -318,6 +318,7 @@ ul.banner-social-buttons {
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         margin-top: 15px;
+        margin-left: 0px;
     }
 }
 
@@ -337,7 +338,7 @@ footer {
     font-size: 11px;
     padding: 25px 0;
     color: #94BADB;
-    background: rgba(173,84,255,1);
+    background: rgba(176,59,154,1);
 }
 
 footer p {
@@ -404,17 +405,17 @@ body {
 }
 
 #contact {
-    background: rgba(173,84,255,1);
+    background: rgba(176,59,154,1);
     height: 120%;
     width: 100%;
 }
 
 #contact-transition {
-    background: -webkit-linear-gradient(0deg, rgba(173,84,255, 1) 0%, rgba(36,198,220,1) 100%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(0deg, rgba(173,84,255, 1) 0%, rgba(36,198,220,1) 100%); /* FF3.6+ */
-    background:     -ms-linear-gradient(0deg, rgba(173,84,255, 1), rgba(36,198,220,1)); /* IE10 */
-    background:      -o-linear-gradient(0deg, rgba(173,84,255, 1), rgba(36,198,220,1)); /* Opera 11.10+ */
-    background:         linear-gradient(0deg, rgba(173,84,255, 1), rgba(36,198,220,1)); /* W3C */
+    background: -webkit-linear-gradient(0deg, rgba(176,59,154, 1) 0%, rgba(36,198,220,1) 100%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(176,59,154, 1) 0%, rgba(36,198,220,1) 100%); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* W3C */
     height: 500px;
     width: 100%;
 }
@@ -426,7 +427,7 @@ body {
 
 #pinterest:hover,
 #pinterest:focus {
-    color: rgba(145,1,1,1);
+    color: rgba(255,25,25,1);
 }
 
 #twitter:hover,
@@ -436,7 +437,7 @@ body {
 
 #youtube:hover,
 #youtube:focus {
-    color: rgba(255,15,15,1);
+    color: rgba(218,38,38,1);
 }
 
 #gplus:hover,

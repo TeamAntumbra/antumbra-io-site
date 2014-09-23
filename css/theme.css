@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #4FC472;
+    color: rgba(199,199,199,1);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;

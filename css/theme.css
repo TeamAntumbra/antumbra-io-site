@@ -337,7 +337,7 @@ footer {
     font-size: 11px;
     padding: 25px 0;
     color: #94BADB;
-    background: rgba(254,124,0,1);
+    background: rgba(173,84,255,1);
 }
 
 footer p {
@@ -404,17 +404,17 @@ body {
 }
 
 #contact {
-    background: rgba(254,124,0,1);
+    background: rgba(173,84,255,1);
     height: 120%;
     width: 100%;
 }
 
 #contact-transition {
-    background: -webkit-linear-gradient(0deg, rgba(254,124,0, 1) 0%, rgba(0,198,255,1) 100%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(0deg, rgba(254,124,0, 1) 0%, rgba(0,198,255,1) 100%); /* FF3.6+ */
-    background:     -ms-linear-gradient(0deg, rgba(254,124,0, 1), rgba(0,198,255,1)); /* IE10 */
-    background:      -o-linear-gradient(0deg, rgba(254,124,0, 1), rgba(0,198,255,1)); /* Opera 11.10+ */
-    background:         linear-gradient(0deg, rgba(254,124,0, 1), rgba(0,198,255,1)); /* W3C */
+    background: -webkit-linear-gradient(0deg, rgba(173,84,255, 1) 0%, rgba(0,198,255,1) 100%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(173,84,255, 1) 0%, rgba(0,198,255,1) 100%); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(173,84,255, 1), rgba(0,198,255,1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(173,84,255, 1), rgba(0,198,255,1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(173,84,255, 1), rgba(0,198,255,1)); /* W3C */
     height: 500px;
     width: 100%;
 }

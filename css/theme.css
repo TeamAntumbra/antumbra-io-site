@@ -300,15 +300,15 @@ a:focus {
 .btn-default {
     border: 1px solid #616161;
     color: #616161;
-    background-color: #B0B0B0;
+    background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid #616161;
     outline: 0;
-    color: #000;
-    background-color: transparent;
+    color: #616161;
+    background-color: rgba(0,0,0,.05);
 }
 
 ul.banner-social-buttons {
@@ -447,4 +447,23 @@ body {
 #vimeo:hover,
 #vimeo:focus {
     color: rgba(42,184,232,1);
+}
+
+#mc_embed_signup{
+    background: rgba(0,0,0,0);
+    clear: left;
+    color: #000;
+}
+
+#mce-EMAIL {
+    font:14px Helvetica, Arial, sans-serif;
+    text-align: center;
+    border: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }

@@ -309,8 +309,9 @@ a:focus {
 .btn-default:focus {
     border: 1px solid #616161;
     outline: 0;
-    color: #616161;
-    background-color: rgba(0,0,0,.05);
+    color: #616161;/*rgba(237,237,237,.9);*/
+    background-color: rgba(255,255,255,.25);
+    box-shadow: 0 0 .1em .1em rgba(255,255,255,.75);
 }
 
 ul.banner-social-buttons {

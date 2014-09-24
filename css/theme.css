@@ -472,6 +472,14 @@ body {
     -webkit-border-radius: 4px;
     color: transparent;
     text-shadow: 0 0 0 #171717;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#mce-EMAIL:hover,
+#mce-EMAIL:focus {
+    box-shadow: 0 0 .5em .5em rgba(255,255,255,.5);
 }
 
 *:focus {

@@ -83,6 +83,7 @@ a:focus {
     color: #fff;
 }
 
+.navbar-custom .navbar-brand .navbar-toggle:hover,
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
@@ -95,7 +96,6 @@ a:focus {
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
     background-color: rgba(255,255,255,.3);
 }
 
@@ -103,6 +103,7 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    outline: none;
 }
 
 .navbar-custom .nav li a:hover,
@@ -199,6 +200,7 @@ a:focus {
     font-size: 40px;
     color: #fff;
     background: 0 0;
+    outline: none;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;

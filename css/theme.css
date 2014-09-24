@@ -467,4 +467,6 @@ body {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
+    color: transparent;
+    text-shadow: 0 0 0 #171717;
 }

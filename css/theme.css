@@ -472,3 +472,7 @@ body {
     color: transparent;
     text-shadow: 0 0 0 #171717;
 }
+
+*:focus {
+    outline: 0;
+}

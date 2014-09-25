@@ -95,10 +95,13 @@ a:focus {
     color: #fff;
 }
 
+.navbar-custom .nav li {
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
 .navbar-custom .nav li.active {
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
     background-color: rgba(255,255,255,.3);
 }
 

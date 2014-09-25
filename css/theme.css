@@ -317,7 +317,6 @@ a:focus {
     outline: 0;
     color: #616161;/*rgba(237,237,237,.9);*/
     background-color: rgba(255,255,255,.25);
-    box-shadow: 0 0 .1em .1em rgba(255,255,255,.75);
 }
 
 ul.banner-social-buttons {

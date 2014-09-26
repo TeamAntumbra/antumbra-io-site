@@ -187,8 +187,8 @@ a:focus {
     .intro .intro-body .brand-heading {
         font-size: 100px;
         font-weight: lighter;
-        color: #000;
-        text-shadow: 0 0 .11em #FFF;
+        color: rgba(0,0,0,.7);
+        text-shadow: 0 0 .11em rgba(255,255,255,1);
     }
 
     .intro .intro-body .intro-text {

@@ -161,7 +161,6 @@ a:focus {
 #vid {
     position: absolute;
     width: 100%;
-    height: 100%;
     z-index: 0;
 }
 
@@ -452,12 +451,28 @@ body {
 }
 
 #contact-transition {
-    background: -webkit-linear-gradient(0deg, rgba(176,59,154, 1) 0%, rgba(36,198,220,1) 100%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(0deg, rgba(176,59,154, 1) 0%, rgba(36,198,220,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* FF3.6+ */
     background:     -ms-linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(176,59,154, 1), rgba(36,198,220,1)); /* W3C */
     height: 500px;
+    width: 100%;
+}
+
+#FAQ-transition {
+    background: -webkit-linear-gradient(0deg, rgba(231,95,80, 1), rgba(21,199,165,1)); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(231,95,80, 1), rgba(21,199,165,1)); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(231,95,80, 1), rgba(21,199,165,1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(231,95,80, 1), rgba(21,199,165,1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(231,95,80, 1), rgba(21,199,165,1)); /* W3C */
+    height: 500px;
+    width: 100%;
+}
+
+#FAQ {
+    background: rgba(231,95,80,1);
+    height: 120%;
     width: 100%;
 }
 
@@ -520,6 +535,6 @@ body {
     box-shadow: 0 0 .5em .5em rgba(255,255,255,.5);
 }
 
-*:focus {
+* {
     outline: 0;
 }

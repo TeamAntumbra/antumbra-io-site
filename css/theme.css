@@ -385,9 +385,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(21,199,165, 1), rgba(121,121,121,0)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(21,199,165, 1), rgba(121,121,121,0)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(21,199,165, 1), rgba(121,121,121,0)); /* W3C */
-    height: 500px;
+    height: 5px;
     width: 100%;
-    margin-top: 100%;
 }
 
 #about {
@@ -395,6 +394,7 @@ body {
     width: 100%;
     height: 120%;
     color: #F0F0F0;
+    margin-top: 100%;
 }
 
 #aboutBtn {

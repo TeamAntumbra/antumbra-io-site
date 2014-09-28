@@ -188,7 +188,7 @@ a:focus {
     .intro .intro-body .brand-heading {
         font-size: 100px;
         font-weight: lighter;
-        color: rgba(0,0,0,.7);
+        color: rgba(0,0,0,1);
         text-shadow: 0 0 .11em rgba(255,255,255,1);
     }
 
@@ -476,7 +476,7 @@ body {
 
 #FAQ {
     background: rgba(231,95,80,1);
-    height: 120%;
+    height: auto;
     width: 100%;
 }
 

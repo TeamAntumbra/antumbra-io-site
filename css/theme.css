@@ -540,7 +540,7 @@ body {
 }
 
 * {
-    outline: 0;
+    outline: none;
 }
 
 .hover {
@@ -554,4 +554,14 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+#scrollBtn {
+    align: center;
+    outline: none;
+    color: rgba(255,255,255,.7);
+}
+
+#scrollBtn:hover {
+    color: rgba(255,255,255,1);
 }

@@ -163,6 +163,7 @@ a:focus {
 #vid {
     position: absolute;
     width: 100%;
+    height: auto;
     z-index: 0;
 }
 
@@ -428,11 +429,11 @@ body {
 }
 
 #interested-transition {
-    background: -webkit-linear-gradient(0deg, rgba(36,198,220, 1), rgba(21,199,165, 1)); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(0deg, rgba(36,198,220, 1), rgba(21,199,165, 1)); /* FF3.6+ */
-    background:     -ms-linear-gradient(0deg, rgba(36,198,220, 1), rgba(21,199,165, 1)); /* IE10 */
-    background:      -o-linear-gradient(0deg, rgba(36,198,220, 1), rgba(21,199,165, 1)); /* Opera 11.10+ */
-    background:         linear-gradient(0deg, rgba(36,198,220, 1), rgba(21,199,165, 1)); /* W3C */
+    background: -webkit-linear-gradient(0deg, rgba(36,198,220, 1), rgba(231,95,80, 1)); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(36,198,220, 1), rgba(231,95,80, 1)); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(36,198,220, 1), rgba(231,95,80, 1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(36,198,220, 1), rgba(231,95,80, 1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(36,198,220, 1), rgba(231,95,80, 1)); /* W3C */
     width: 100%;
     height: 500px;
 }
@@ -478,10 +479,22 @@ body {
     background: rgba(231,95,80,1);
     height: auto;
     width: 100%;
+    padding-top: 120px;
+}
+
+#FAQBtn {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#FAQBtn:hover,
+#FAQBtn:focus {
+    background: rgba(231,95,80,1);
 }
 
 #instagram:hover,
-#instagram:focus{
+#instagram:focus {
     color: rgba(187,119,62,1);
 }
 
@@ -564,4 +577,84 @@ body {
 
 #scrollBtn:hover {
     color: rgba(255,255,255,1);
+}
+
+.faq_container {
+    padding: 13px;
+}
+
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.faq_answer {
+    font-size: 16px;
+}
+
+#plus1:hover,
+#plus1:focus {
+    color: rgba(36,177,1,1);
+}
+
+#plus2:hover,
+#plus2:focus {
+    color: rgba(220,226,17,1);
+}
+
+#plus3:hover,
+#plus3:focus {
+    color: rgba(222,48,210,1);
+}
+
+#plus4:hover,
+#plus4:focus {
+    color: rgba(93,156,246,1);
+}
+
+#plus5:hover,
+#plus5:focus {
+    color: rgba(151,96,173,1);
+}
+
+#plus6:hover,
+#plus6:focus {
+    color: rgba(166,38,91,1);
+}
+
+#plus7:hover,
+#plus7:focus {
+    color: rgba(5,196,126,1);
+}
+
+#plus8:hover,
+#plus8:focus {
+    color: rgba(255,0,0,1);
+}
+
+#plus9:hover,
+#plus9:focus {
+    color: rgba(18,196,249,1);
+}
+
+.smooth3 { /*TODO apply this to objects that have it*/
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.smooth10 {
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }

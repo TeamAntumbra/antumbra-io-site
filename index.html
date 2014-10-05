@@ -48,6 +48,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/theme.js"></script>
 
+    <script src="js/countdown.js"></script>
+
     <!-- Google+ Link -->
     <a href="https://plus.google.com/106064932965666182859" rel="publisher"></a>
 
@@ -122,10 +124,6 @@
                 </div>
             </div>
         </header>
-
-        <!-- About Transition --
-        <section id="about-transition" class="container hover">
-        </section>-->
 
         <!-- About Section -->
         <section id="about" class="container content-section text-center hover">
@@ -364,6 +362,24 @@
                         </div>
                         </form>
                         </div>
+                        <br><br>
+                        <p>Beta sales go live in </p><div class="countdownClock"
+                        style="align:center;"></div>
+                        <script type="text/javascript">
+                        var countdownClock = new Countdown({
+                                year : 2014,
+                                month : 10,
+                                day : 9,
+                                hour : 12,
+                                ampm : "pm",
+                                minute : 1,
+                                second : 0,
+                                height: 90,
+                                style:"flip",
+                                inline: true,
+                                rangeHi: "day"
+                         });
+                        </script>
                         <!--End mc_embed_signup-->
                     </div>
                 </div>

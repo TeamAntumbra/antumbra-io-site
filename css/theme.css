@@ -381,7 +381,7 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-#about-transition {
+#promoVid-transition {
     background: -webkit-linear-gradient(0deg, rgba(21,199,165, 1), rgba(121,121,121,0)); /* Chrome 10+, Saf5.1+ */
     background:    -moz-linear-gradient(0deg, rgba(21,199,165, 1), rgba(121,121,121,0)); /* FF3.6+ */
     background:     -ms-linear-gradient(0deg, rgba(21,199,165, 1), rgba(121,121,121,0)); /* IE10 */
@@ -391,7 +391,7 @@ body {
     width: 100%;
 }
 
-#about {
+#promoVid {
     background: rgba(21,199,165,1);
     width: 100%;
     height: 100%;
@@ -399,14 +399,14 @@ body {
     margin-top: 80%;
 }
 
-#aboutBtn {
+#promoVidBtn {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
-#aboutBtn:hover,
-#aboutBtn:active {
+#promoVidBtn:hover,
+#promoVidBtn:active {
     background: rgba(21,199,165,.7);
 }
 

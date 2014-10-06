@@ -347,7 +347,7 @@ ul.banner-social-buttons {
 footer {
     font-size: 11px;
     padding: 25px 0;
-    color: #94BADB;
+    color: #FFF;
     background: rgba(176,59,154,1);
     position: relative;
 }
@@ -397,7 +397,11 @@ body {
     height: 100%;
     color: #F0F0F0;
     margin-top: 70%;
-    padding-top: 150px;
+    padding-top: 90px;
+}
+
+#promoVid h1, h3{
+
 }
 
 #promoVidBtn {

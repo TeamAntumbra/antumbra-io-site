@@ -118,7 +118,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a.active {
-    outline: 0;
+    outline: none;
     background-color: rgba(255,255,255,.3);
 }
 
@@ -278,28 +278,13 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 80px;
+    padding-top: 7%;
 }
 
 .interested-section {
     width: 100%;
     /*padding: 50px 0;*/
     color: #fff;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 100px;
-    }
-
-    .interested-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
 }
 
 .btn {
@@ -406,7 +391,7 @@ body {
     height: 120%;
 }
 
-#promoVid-transition {
+#glowVid-transition {
     background: -webkit-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* Chrome 10+, Saf5.1+ */
     background:    -moz-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* FF3.6+ */
     background:     -ms-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* IE10 */
@@ -416,29 +401,22 @@ body {
     width: 100%;
 }
 
-#promoVid {
-    max-width: 100%;
-    padding-top: 100px;
-}
-
-#promoVidSection {
+#glowVidSection {
     background: rgba(61,182,153,1);
-    max-width: 100%;
-    min-height: 100%;
-    height: auto;
+    width: 100%;
+    height: 120%;
     color: #F0F0F0;
-    margin-top: 70%;
-    padding-top: 90px;
+    margin-top: 70%;/*to not cover the splash video*/
 }
 
-#promoVidBtn {
+#glowVidBtn {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
-#promoVidBtn:hover,
-#promoVidBtn:active {
+#glowVidBtn:hover,
+#glowVidBtn:active {
     background: rgba(61,182,153,.7);
 }
 
@@ -745,14 +723,21 @@ body {
 .videoWrapper169 {
     position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
 	height: 0;
 }
 
 .videoWrapper169 iframe {
     position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	top: 10%;
+	left: 10%;
+    bottom: 10%;
+    right: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+#glow {
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
 }

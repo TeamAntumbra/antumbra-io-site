@@ -10,11 +10,13 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
+    font-size: 1.01vw;
 }
 
 html {
     width: 100%;
     height: 100%;
+    font-size: .78vw;
 }
 
 h1,
@@ -24,26 +26,57 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
+    margin: 0 0 2.73vw;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    font-size: 2.5vw;
     letter-spacing: 1px;
+    letter-spacing: .078vw;
 }
 
-h4 {
-    margin: 0 0 25px;
+h1,
+.h1 {
+  font-size: 2.81vw;
+}
+h2,
+.h2 {
+  font-size: 2.34vw;
+}
+h3,
+.h3 {
+  font-size: 1.875vw;
+}
+h4,
+.h4 {
+  font-size: 1.41vw;
+}
+h5,
+.h5 {
+  font-size: 1.09vw;
+}
+h6,
+.h6 {
+  font-size: .94vw;
+}
+p {
+  margin: 0 0 .78vw;
 }
 
 p {
     margin: 0 0 25px;
+    margin: 0 0 1.95vw;
     font-size: 18px;
+    font-size: 1.41vw;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
+        margin: 0 0 2.73vw;
         font-size: 20px;
+        font-size: 1.56vw;
         line-height: 1.6;
     }
 }
@@ -83,7 +116,9 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
+    padding: .32vw .47vw;
     font-size: 16px;
+    font-size: 1.25vw;
     color: #fff;
 }
 
@@ -129,8 +164,9 @@ a:focus {
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
+        padding: 1.56vw 0;
         border-bottom: 0;
-        letter-spacing: 1px;
+        letter-spacing: .078vw;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -153,6 +189,7 @@ a:focus {
     width: 100%;
     height: 100%;
     padding: 100px 0;
+    padding: 7.8vw 0;
     text-align: center;
     color: argb(0,0,0,0);
     background-color: #000;
@@ -178,10 +215,12 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    font-size: 3.122vw;
 }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    font-size: 1.41vw;
 }
 
 @media(min-width:767px) {
@@ -192,6 +231,7 @@ a:focus {
 
     .intro .intro-body .brand-heading {
         font-size: 100px;
+        font-size: 7.82vw ;
         font-weight: lighter;
         color: rgba(0,0,0,1);
         text-shadow: 0 0 .11em rgba(255,255,255,1);
@@ -199,17 +239,24 @@ a:focus {
 
     .intro .intro-body .intro-text {
         font-size: 25px;
+        font-size: 1.95vw;
     }
 }
 
 .btn-circle {
     width: 70px;
+    width: 5.47vw;
     height: 70px;
+    height: 5.47vw;
     margin-top: 15px;
+    margin-top: 1.17vw;
     padding: 7px 16px;
+    padding: .55vw 1.25vw;
     border: 2px solid #fff;
     border-radius: 35px;
+    border-radius: 2.73vw;
     font-size: 40px;
+    font-size: 3.125vw;
     color: #fff;
     background: 0 0;
     outline: none;
@@ -283,7 +330,6 @@ a:focus {
 
 .interested-section {
     width: 100%;
-    /*padding: 50px 0;*/
     color: #fff;
 }
 
@@ -317,6 +363,7 @@ ul.banner-social-buttons {
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         margin-top: 15px;
+        margin-top: 1.17vw;
         margin-left: 0px;
     }
 }
@@ -325,6 +372,7 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
+        margin-bottom: 1.56vw;
         padding: 0;
     }
 
@@ -335,7 +383,9 @@ ul.banner-social-buttons {
 
 footer {
     font-size: 11px;
+    font-size: .86vw;
     padding: 25px 0;
+    padding: 1.95vw 0;
     color: #FFF;
     background: rgba(98,174,77,1);
     position: relative;
@@ -344,6 +394,7 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+    font-size: 1.09vw;
 }
 
 ::-moz-selection {
@@ -382,7 +433,8 @@ body {
     background:      -o-linear-gradient(0deg, rgba(53,112,160,1), rgba(61,182,153, 1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(53,112,160,1), rgba(61,182,153, 1)); /* W3C */
     width: 100%;
-    height: 500px;
+    height: 180px;
+    height: 14vw;
 }
 
 #about {
@@ -397,7 +449,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* W3C */
-    height: 5px;
+    height: 180px;
+    height: 14vw;
     width: 100%;
 }
 
@@ -425,6 +478,7 @@ body {
     width: 100%;
     height: 120%;
     padding-top: 150px;
+    padding-top: 11.7vw;
 }
 
 #interestedBtn {
@@ -445,7 +499,8 @@ body {
     background:      -o-linear-gradient(0deg, rgba(183,59,76, 1), rgba(187,89,200, 1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(183,59,76, 1), rgba(187,89,200, 1)); /* W3C */
     width: 100%;
-    height: 500px;
+    height: 180px;
+    height: 14vw;
 }
 
 #contact {
@@ -471,7 +526,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(98,174,77, 1), rgba(183,59,76,1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(98,174,77, 1), rgba(183,59,76,1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(98,174,77, 1), rgba(183,59,76,1)); /* W3C */
-    height: 500px;
+    height: 180px;
+    height: 14vw;
     width: 100%;
 }
 
@@ -481,7 +537,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(97,64,191, 1), rgba(53,112,160,1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(97,64,191, 1), rgba(53,112,160,1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(97,64,191, 1), rgba(53,112,160,1)); /* W3C */
-    height: 500px;
+    height: 180px;
+    height: 14vw;
     width: 100%;
 }
 
@@ -490,6 +547,7 @@ body {
     height: auto;
     width: 100%;
     padding-top: 75px;
+    padding-top: 5.86vw;
     align: center;
 }
 
@@ -510,7 +568,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(187,89,200,1), rgba(97,64,191, 1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(187,89,200,1), rgba(97,64,191, 1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(187,89,200,1), rgba(97,64,191, 1)); /* W3C */
-    height: 500px;
+    height: 180px;
+    height: 14vw;
     width: 100%;
 }
 
@@ -519,6 +578,7 @@ body {
     height: auto;
     width: 100%;
     padding-top: 75px;
+    padding-top: 5.86vw;
     align: center;
 }
 
@@ -571,15 +631,23 @@ body {
 
 #mce-EMAIL {
     font:14px Helvetica, Arial, sans-serif;
+    font:1.09vw Helvetica, Arial, sans-serif;
     text-align: center;
     border: 1px;
     padding-top: 6px;
+    padding-top: .47vw;
     padding-bottom: 6px;
+    padding-bottom: .47vw;
     padding-left: 12px;
+    padding-left: .94vw;
     padding-right: 12px;
+    padding-right: .94vw;
     border-radius: 4px;
+    border-radius: .31vw;
     -moz-border-radius: 4px;
+    -moz-border-radius: .31vw;
     -webkit-border-radius: 4px;
+    -webkit-border-radius: .31vw;
     color: transparent;
     text-shadow: 0 0 0 #171717;
     -webkit-transition: all .3s ease-in-out;
@@ -598,8 +666,6 @@ body {
 
 .hover {
     position: relative;
-    height:100%;
-    min-height:100%;
     width:100%;
 }
 
@@ -621,6 +687,7 @@ body {
 
 .faq_container {
     padding: 13px;
+    padding: 1.02vw
 }
 
 .faq_question {
@@ -630,6 +697,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-size: 24px;
+    font-size: 1.875vw;
 }
 
 .faq_answer_container {
@@ -640,6 +708,7 @@ body {
 
 .faq_answer {
     font-size: 16px;
+    font-size: 1.25vw;
 }
 
 #plus1:hover,
@@ -701,14 +770,17 @@ body {
 
 .medium-large-text {
     font-size: 24px;
+    font-size: 1.875vw;
 }
 
 .large-text {
     font-size: 32px;
+    font-size: 2.5vw;
 }
 
 .medium-text {
     font-size: 18px;
+    font-size: 1.41vw;
 }
 
 #glow_render {
@@ -740,4 +812,11 @@ body {
     height: 100%;
     width: 80%;
     margin-left: 10%;
+    padding-top: 3%;
+}
+
+#glow h1,
+#glow h3 {
+    margin: 0 0 10px;
+    margin: 0 0 .78vw;
 }

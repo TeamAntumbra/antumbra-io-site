@@ -741,3 +741,18 @@ body {
 .grey {
     color: rgba(221,221,221,1);
 }
+
+.videoWrapper169 {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper169 iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

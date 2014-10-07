@@ -89,6 +89,12 @@
                         <a id="promoVidBtn" class="page-scroll" href="#promoVid">Glow</a>
                     </li>
                     <li>
+                        <a id="aboutBtn" class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a id="hardwareBtn" class="page-scroll" href="#hardware">Hardware</a>
+                    </li>
+                    <li>
                         <a id="FAQBtn" class="page-scroll" href="#FAQ">FAQ</a>
                     </li>
                     <li>
@@ -126,13 +132,88 @@
         </header>
 
         <!-- promoVid Section -->
-        <section id="promoVid" class="container content-section text-center hover">
+        <section id="promoVidSection" class="container content-section text-center hover">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/aamGdhMQWhI" frameborder="0" allowfullscreen></iframe>
-                    <br><br>
-                    <h1>Introducing Glow.</h1>
-                    <h3>Stunning visuals.  Comfortable eyes.</h3>
+                    <iframe id="promoVid"
+                    src="http://player.vimeo.com/video/107345447?portrait=0&amp;color=3DB699"
+                    width="900" height="506" frameborder="0" webkitallowfullscreen
+                    mozallowfullscreen allowfullscreen></iframe>
+                    <br><br><br>
+                    <h1 class="light large-text">Introducing Glow.</h1>
+                    <h3 class="light medium-large-text grey">Stunning visuals.  Comfortable eyes.</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Transition -->
+        <section id="about-transition" class="container content-section text-center hover">
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container content-section hover">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 class="text-center">About</h1>
+                    <div style="float:left; width: 50%; height: 70%;
+                    border-right: thin solid #F2F2F2; padding-right: 5%;">
+                        <h4 class="text-center">Responsive mode.</h4>
+                        <p class="medium-text">
+                            <br>
+                            The best way to watch movies and play games.
+                            Using software that ties into the OS, Antumbra analyzes
+                            colors on the display in real time, projecting them behind
+                            your monitor as fast as they appear on screen.  Content
+                            on the screen blends into your peripheral vision,
+                            creating an immersive experience like no other.  Surround
+                            Sound for your eyes is finally here.
+                        </p>
+                    </div>
+                    <div style="float:right; width: 50%; height: 70%;
+                    padding-left: 5%; padding-top: auto;">
+                        <img style="max-width:100%; height: auto;"
+                        src="https://s3.amazonaws.com/antumbra-io/responsive.png"/>
+                    </div><!--
+                    <div style="float:right; width: 50%; padding-left: 10%;">
+                        <h4 class="text-center">Palette and Fade.<br>Define your workspace.</h4>
+                        <br>
+                        <p class="medium-text">
+                            Tired, strained eyes make work unbearable.  Glow is the
+                            antidote.  Choose a color and brightness that suits your
+                            mood, or have it fade gently over subtle, comfortable
+                            gradients.  In Sunset mode, Glow slowly ramps up in
+                            brightness as the sun sets, perfectly augmenting software
+                            like f.lux and keeping you productive.
+                        </p>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Hardware Transition -->
+        <section id="hardware-transition" class="container content-section text-center hover">
+        </section>
+
+        <!-- Hardware Section -->
+        <section id="hardware" class="container content-section text-center hover">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <img id="glow_render" src="https://s3.amazonaws.com/antumbra-io/glow_render.png"/>
+                    <h1 class="text-center"><b>Sleek design.</b></h1>
+                    <h2 class="text-center">Functional hardware.</h2>
+                    <br>
+                    <p class="medium-text">Measuring under 1.5”x1.5”x.5”,
+                        Glow is small and portable, perfect for laptop users who
+                        need to set up on the go.  A single high-brightness RGB
+                        LED illuminates the entire
+                        wall behind the monitor, sipping a mere 2.2w of power,
+                        but appearing nearly as bright as a 30w incandescent bulb.
+                        Data is delivered over USB HID to the device, meaning
+                        that Glow is fast, reliable and compatible with every
+                        major platform.  We’ve worked hard to make it simple -
+                        setup only takes 30 seconds, and configuration only
+                        another few minutes at most - letting you start enjoying
+                        content like never before in just moments.</p>
                 </div>
             </div>
         </section>

@@ -717,6 +717,11 @@ body {
     font-size: 1.875vw;
 }
 
+.faq_question:hover,
+.faq_question:focus {
+    color: rgba(247,247,247,.8);
+}
+
 .faq_answer_container {
     height: 0px;
     overflow: hidden;
@@ -779,7 +784,7 @@ body {
     transition: all .3s ease-in-out;
 }
 
-.smooth10 {
+.smooth8 {
     -webkit-transition: all .8s ease-in-out;
     -moz-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;

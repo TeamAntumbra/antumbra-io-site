@@ -441,8 +441,8 @@ body {
     background:      -o-linear-gradient(0deg, rgba(53,112,160,1), rgba(61,182,153, 1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(53,112,160,1), rgba(61,182,153, 1)); /* W3C */
     width: 100%;
-    height: 180px;
-    height: 14vw;
+    height: 250px;
+    height: 19.5vw;
 }
 
 #about {
@@ -460,8 +460,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* W3C */
-    height: 180px;
-    height: 14vw;
+    height: 250px;
+    height: 19.5vw;
     width: 100%;
 }
 
@@ -509,8 +509,8 @@ body {
     background:      -o-linear-gradient(0deg, rgba(183,59,76, 1), rgba(187,89,200, 1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(183,59,76, 1), rgba(187,89,200, 1)); /* W3C */
     width: 100%;
-    height: 180px;
-    height: 14vw;
+    height: 250px;
+    height: 19.5vw;
 }
 
 #contact {
@@ -536,8 +536,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(98,174,77, 1), rgba(183,59,76,1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(98,174,77, 1), rgba(183,59,76,1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(98,174,77, 1), rgba(183,59,76,1)); /* W3C */
-    height: 180px;
-    height: 14vw;
+    height: 250px;
+    height: 19.5vw;
     width: 100%;
 }
 
@@ -547,8 +547,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(97,64,191, 1), rgba(53,112,160,1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(97,64,191, 1), rgba(53,112,160,1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(97,64,191, 1), rgba(53,112,160,1)); /* W3C */
-    height: 180px;
-    height: 14vw;
+    height: 250px;
+    height: 19.5vw;
     width: 100%;
 }
 
@@ -578,8 +578,8 @@ body {
     background:     -ms-linear-gradient(0deg, rgba(187,89,200,1), rgba(97,64,191, 1)); /* IE10 */
     background:      -o-linear-gradient(0deg, rgba(187,89,200,1), rgba(97,64,191, 1)); /* Opera 11.10+ */
     background:         linear-gradient(0deg, rgba(187,89,200,1), rgba(97,64,191, 1)); /* W3C */
-    height: 180px;
-    height: 14vw;
+    height: 250px;
+    height: 19.5vw;
     width: 100%;
 }
 

@@ -201,11 +201,19 @@ a:focus {
     top: 0;
 }
 
-#vid {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: 0;
+@media(min-width:767px) {
+    #vid {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    #vid {
+        background-image: url("https://s3.amazonaws.com/antumbra-io/poster.png");
+    }
 }
 
 .intro .intro-body {
@@ -423,7 +431,7 @@ body {
 
 #aboutBtn:hover,
 #aboutBtn:focus {
-    background: rgba(53,112,160,1);
+    background: rgba(61,182,153,1);
 }
 
 #about-transition {
@@ -438,28 +446,30 @@ body {
 }
 
 #about {
-    background: rgba(53,112,160,1);
+    background: rgba(61,182,153,1);
     width: 100%;
-    height: 120%;
+    height: 110%;
+    color: #F0F0F0;
+    padding-top: 5%;
+    margin-top: 70%;/*to not cover the splash video*/
 }
 
 #glowVid-transition {
-    background: -webkit-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* FF3.6+ */
-    background:     -ms-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* IE10 */
-    background:      -o-linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* Opera 11.10+ */
-    background:         linear-gradient(0deg, rgba(61,182,153, 1), rgba(121,121,121,0)); /* W3C */
+    background: -webkit-linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(53,112,160, 1), rgba(61,182,153,1)); /* W3C */
     height: 180px;
     height: 14vw;
     width: 100%;
 }
 
 #glowVidSection {
-    background: rgba(61,182,153,1);
+    background: rgba(53,112,160,1);
     width: 100%;
     height: 120%;
-    color: #F0F0F0;
-    margin-top: 70%;/*to not cover the splash video*/
+    padding-top: 55px;
 }
 
 #glowVidBtn {
@@ -470,7 +480,7 @@ body {
 
 #glowVidBtn:hover,
 #glowVidBtn:active {
-    background: rgba(61,182,153,.7);
+    background: rgba(53,112,160,.7);
 }
 
 #interested {
@@ -812,11 +822,82 @@ body {
     height: 100%;
     width: 80%;
     margin-left: 10%;
-    padding-top: 3%;
+    padding-top: 1%;
 }
 
 #glow h1,
 #glow h3 {
     margin: 0 0 10px;
     margin: 0 0 .78vw;
+}
+
+#responsiveImg {
+    max-height: 80%;
+    max-width: 100%;
+}
+
+#manualImg {
+    max-height: 80%;
+    max-width: 100%;
+}
+
+#aboutLeft {
+    float: left;
+    width: 50%;
+    max-height: 80%;
+    max-width: 100%;
+    border-right: thin solid rgba(242,242,242,.8);
+    padding-right: 5%;
+}
+
+#aboutLeftBottom {
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-right: thin solid rgba(242,242,242,.8);
+    padding-right: 5%;
+}
+
+#aboutRight {
+    float:right;
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+#aboutRightBottom {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+#aboutContainerTop {
+    height: 45%;
+    margin-bottom: 5%;
+}
+
+#aboutContainerBottom {
+    height: 50%;
+}
+
+.centered {
+    position: relative;
+    margin-bottom: 25%;
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+#carousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#carouselContainer {
+    width: 85%;
+    padding-left: 15%;
 }

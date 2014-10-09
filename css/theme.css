@@ -213,6 +213,7 @@ a:focus {
 @media(max-width: 767px) {
     #vid {
         background-image: url(https://s3.amazonaws.com/antumbra-io/poster.png);
+        max-width: 100%;
     }
 }
 

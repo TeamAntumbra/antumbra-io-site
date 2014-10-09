@@ -187,6 +187,8 @@ a:focus {
     display: table;
     position: relative;
     max-width: 100%;
+    height: 100%;
+    background-image: url("https://s3.amazonaws.com/antumbra-io/mobile.png");
     padding: 100px 0;
     padding: 7.8vw 0;
     text-align: center;

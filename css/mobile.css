@@ -463,6 +463,8 @@ body {
     height: 110%;
     color: #F0F0F0;
     padding-top: 5%;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 #glowVid-transition {
@@ -482,6 +484,8 @@ body {
     height: 120%;
     padding-top: 75px;
     padding-top: 5.86vw;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 #glowVidBtn {
@@ -501,6 +505,8 @@ body {
     height: 120%;
     padding-top: 150px;
     padding-top: 11.7vw;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 #interestedBtn {
@@ -529,6 +535,8 @@ body {
     background: rgba(98,174,77,1);
     height: 120%;
     width: 100%;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 #contactBtn {
@@ -571,6 +579,8 @@ body {
     padding-top: 75px;
     padding-top: 5.86vw;
     align: center;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 #hardwareBtn {
@@ -602,6 +612,8 @@ body {
     padding-top: 75px;
     padding-top: 5.86vw;
     align: center;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 #FAQBtn {

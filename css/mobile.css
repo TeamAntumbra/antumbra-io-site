@@ -567,6 +567,8 @@ body {
     background: rgba(97,64,191,1);
     height: auto;
     width: 100%;
+    padding-top: 75px;
+    padding-top: 5.86vw;
     align: center;
 }
 

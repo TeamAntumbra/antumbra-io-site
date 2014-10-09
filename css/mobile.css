@@ -4,7 +4,7 @@ Mobile stylesheet for Antumbra (https://antumbra.io)
 
 !*/
 html {
-    font-size: 18px;
+    font-size: 15px;
     background: url(https://s3.amazonaws.com/antumbra-io/Introducing-Glow.png)
     no-repeat center center fixed;
     -webkit-background-size: cover;

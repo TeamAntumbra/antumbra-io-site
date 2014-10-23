@@ -654,6 +654,11 @@ body {
     color: rgba(42,184,232,1);
 }
 
+#facebook:hover,
+#facebook:focus {
+    color: rgba(59,89,152,1);
+}
+
 #mc_embed_signup{
     background: rgba(0,0,0,0);
     clear: left;

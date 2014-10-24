@@ -10,7 +10,7 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
-    font-size: 1.01vw;
+/*    font-size: 1.01vw;*/
 }
 
 html {
@@ -161,7 +161,7 @@ a:focus {
     background-color: rgba(0,0,0,0);
 }
 
-@media(min-width:767px) {
+@media(min-width:1300px) {/*max size without nav issues*/
     .navbar {
         padding: 20px 0;
         padding: 1.56vw 0;
@@ -201,7 +201,7 @@ a:focus {
     top: 0;
 }
 
-@media(min-width:767px) {
+@media(min-width:1300px) {
     #vid {
         position: absolute;
         width: 100%;
@@ -210,10 +210,12 @@ a:focus {
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1300px) {
     #vid {
+        position: absolute;
+        width: auto;
         max-width: 100%;
-        max-height: 100%;
+        height: 100%;
     }
 }
 
@@ -974,4 +976,12 @@ body {
 
 #glowVid {
     box-shadow: 0px 0px 12px 12px rgba(255,255,255,.8);
+}
+
+#topBar {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 78%;
+    padding-left: 1%;
+    padding-right: 1%;
 }

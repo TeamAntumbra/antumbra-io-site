@@ -83,7 +83,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div id="topBar" class="container">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
@@ -211,6 +211,21 @@
                     </div>
                     <h1 class="light large-text">Introducing Glow.</h1>
                     <h3 class="light medium-large-text grey">Stunning visuals.  Comfortable eyes.</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- See the Difference Transition -->
+        <section id="seeTheDifference-transition" class="container hover">
+        </section>
+
+        <!-- See the Difference Section -->
+        <section id="seeTheDifference" class="container text-center hover">
+            <div id="difference-container">
+                <div class="parallax">
+                    <h1 id="diffTitle">Experience the Difference</h1>
+                    <div class="para__unlit"></div>
+                    <div class="para__lit"></div>
                 </div>
             </div>
         </section>
@@ -562,44 +577,168 @@
                     </p>
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://instagram.com/teamantumbra" id="instagram" class="btn"><i
+                            <a href="https://instagram.com/teamantumbra" class="btn instagram"><i
                                 class="fa fa-instagram fa-5x"></i></a>
                         </li>
                         <li>
-                            <a href="http://www.pinterest.com/TeamAntumbra/" id="pinterest" class="btn"><i
+                            <a href="http://www.pinterest.com/TeamAntumbra/" class="btn pinterest"><i
                                 class="fa fa-pinterest fa-5x"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/TeamAntumbra" id="twitter" class="btn"><i class="fa fa-twitter
+                            <a href="https://twitter.com/TeamAntumbra" class="btn twitter"><i class="fa fa-twitter
                                 fa-5x"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCAPpQBc5wel1EhvTwi7f5Vw" id="youtube" class="btn"><i
+                            <a href="https://www.youtube.com/channel/UCAPpQBc5wel1EhvTwi7f5Vw" class="btn youtube"><i
                                 class="fa fa-youtube-play fa-5x"></i></a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/106064932965666182859/about" id="gplus" class="btn"><i
+                            <a href="https://plus.google.com/106064932965666182859/about" class="btn gplus"><i
                                 class="fa fa-google-plus fa-5x"></i></a>
                         </li>
                         <li>
-                            <a href="https://vimeo.com/teamantumbra" id="vimeo" class="btn"><i
+                            <a href="https://vimeo.com/teamantumbra" class="btn vimeo"><i
                                 class="fa fa-vimeo-square fa-5x"></i></a>
                         </li>
                     </ul>
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://github.com/TeamAntumbra" id="github" class="btn"><i class="fa
+                            <a href="https://github.com/TeamAntumbra" class="btn github"><i class="fa
                                 fa-github fa-5x"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/teamantumbra" id="facebook" class="btn"><i class="fa
+                            <a href="https://www.facebook.com/teamantumbra" class="btn facebook"><i class="fa
                                 fa-facebook-square fa-5x"></i></a>
                         </li>
                         <li>
-                            <a href="https://angel.co/antumbra" id="angellist" class="btn"><i class="fa
+                            <a href="https://angel.co/antumbra" class="btn angellist"><i class="fa
                                 fa-angellist fa-5x"></i></a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutUs-transition" class="container hover">
+        </section>
+
+        <section id="aboutUs" class="container content-section text-center hover">
+            <div id="aboutUs-container" class="row">
+                <div class="col-lg-8 margin5 full">
+                    <h1>About Us</h1>
+                    <h3>The Story of How Antumbra Came To Be</h3>
+                    <p>Antumbra was created after winning the AngelHack Boston `14
+                    competition, earning us a spot in their “Hackcelerator”
+                    pre-accelerator program.</p>
+                    <div id="team">
+                        <div id="davis" class="teamMember">
+                            <div id="davisFace" class="teamMemberImage">
+                                <img id="davisFaceImg"
+                                src="https://s3.amazonaws.com/antumbra-io/davis.jpg"></img>
+                            </div>
+                            <p class="name">Davis Foster</p>
+                            <p class="title">Hardware Engineer</p>
+                            <ul class="list-inline banner-social-buttons">
+                            <!--        <a href="" class="mini-social-item btn twitter"><i class="fa
+                                        fa-twitter fa-1x"></i></a>-->
+                                    <a href="https://angel.co/davis-foster"
+                                    class="mini-social-item btn angellist">
+                                    <i class="fa fa-angellist fa-1x"></i></a>
+                                    <a href="mailto:davis@antumbra.io"
+                                    class="mini-social-item btn email">
+                                    <i class="fa fa-envelope-o fa-1x"></i></a>
+                            <!--        <a href=""
+                                    class="mini-social-item btn instagram">
+                                    <i class="fa fa-instagram fa-1x"></i></a>-->
+                            </ul>
+                        </div>
+                        <div id="adam" class="teamMember">
+                            <div id="adamFace" class="teamMemberImage">
+                                <img id="adamFaceImg"
+                                src="https://s3.amazonaws.com/antumbra-io/adam.jpg"></img>
+                            </div>
+                            <p class="name">Adam Walsh</p>
+                            <p class="title">Windows Software Engineer</p>
+                            <ul class="list-inline banner-social-buttons">
+                                    <a href="https://twitter.com/_walshie_"
+                                    class="mini-social-item btn twitter">
+                                    <i class="fa fa-twitter fa-1x"></i></a>
+                                    <a href="https://angel.co/adamwalsh"
+                                    class="mini-social-item btn angellist">
+                                        <i class="fa fa-angellist fa-1x"></i></a>
+                                    <a href="mailto:adam@antumbra.io"
+                                    class="mini-social-item btn email"><i class="fa
+                                         fa-envelope-o fa-1x"></i></a>
+                            </ul>
+                        </div>
+                        <div id="sam" class="teamMember">
+                            <div id="samFace" class="teamMemberImage">
+                                <img id="samFaceImg"
+                                src="https://s3.amazonaws.com/antumbra-io/sam.jpg"></img>
+                            </div>
+                            <p class="name">Sam Harada</p>
+                            <p class="title">Embedded Software Engineer</p>
+                            <ul class="list-inline banner-social-buttons">
+                                    <a href="https://angel.co/sam-harada"
+                                    class="mini-social-item btn angellist">
+                                    <i class="fa fa-angellist fa-1x"></i></a>
+                                    <a href="mailto:sam@antumbra.io"
+                                    class="mini-social-item btn email">
+                                    <i class="fa fa-envelope-o fa-1x"></i></a>
+                            </ul>
+                        </div>
+                        <div id="nick" class="teamMember">
+                            <div id="nickFace" class="teamMemberImage">
+                                <img id="nickFaceImg"
+                                src="https://s3.amazonaws.com/antumbra-io/nick.jpg"></img>
+                            </div>
+                            <p class="name">Nick Peretti</p>
+                            <p class="title">OS X Software Engineer</p>
+                            <ul class="list-inline banner-social-buttons">
+                                    <a href="https://twitter.com/qwertyflagstop"
+                                    class="mini-social-item btn twitter">
+                                    <i class="fa fa-twitter fa-1x"></i></a>
+                                    <a href="https://angel.co/nick-peretti"
+                                    class="mini-social-item btn angellist">
+                                    <i class="fa fa-angellist fa-1x"></i></a>
+                                    <a href="mailto:nick@antumbra.io"
+                                    class="mini-social-item btn email">
+                                        <i class="fa fa-envelope-o fa-1x"></i></a>
+                                <!--    <a href="" class="mini-social-item btn instagram">
+                                    <i class="fa fa-instagram fa-1x"></i></a>-->
+                            </ul>
+                        </div>
+                        <div id="michel" class="teamMember">
+                            <div id="michelFace" class="teamMemberImage">
+                                <img id="michelFaceImg"
+                                src="https://s3.amazonaws.com/antumbra-io/michel.jpg"></img>
+                            </div>
+                            <p class="name">Michel Rodriguez</p>
+                            <p class="title">Head of Business</p>
+                            <ul class="list-inline banner-social-buttons">
+                            <!--        <a href="" class="mini-social-item btn twitter">
+                                    <i class="fa fa-twitter fa-1x"></i></a>-->
+                                    <a href="https://angel.co/michel-rodriguez-1"
+                                    class="mini-social-item btn angellist">
+                                    <i class="fa fa-angellist fa-1x"></i></a>
+                                    <a href="mailto:michel@antumbra.io"
+                                    class="mini-social-item btn email">
+                                    <i class="fa fa-envelope-o fa-1x"></i></a>
+                            <!--        <a href="" class="mini-social-item btn instagram"><i class="fa
+                                        fa-instagram fa-1x"></i></a>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <p>We won the hackathon with our ambient
+                    backlight concept, dubbed Glow - a small device you mount
+                    behind your screen, designed to illuminate the wall behind
+                    a computer monitor or TV.
+                    <br><br>On October 24th we competed in the
+                    RIT Tiger Tank competition, and were awarded 1st place!
+                    <br><br>
+                    On October 30th we will be pitching at the AngelHack Global Demo
+                    Day 2014, hosted @ UCSF.</p>
                 </div>
             </div>
         </section>

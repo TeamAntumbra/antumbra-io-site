@@ -1148,9 +1148,9 @@ body {
     border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-    -webkit-transition: all 1.1s;
-    -moz-transition: all 1.1s;
-    transition: all 1.1s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    transition: all 0s;
 }
 
 #davisFace {

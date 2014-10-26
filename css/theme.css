@@ -616,7 +616,7 @@ body {
 
 #seeTheDifference {
     background: rgba(156,156,156,1);
-    height: 220%;
+    height: 235%;
     width: 100%;
     padding-top: 75px;
     padding-top: 5.86vw;
@@ -1077,12 +1077,12 @@ body {
 }
 
 .parallax .para__unlit {
-    height: 24%;
+    height: 28%;
     border: 0px;
 }
 
 .parallax .para__lit {
-    height: 50%;
+    height: 60%;
 }
 
 .parallax .para__unlit {

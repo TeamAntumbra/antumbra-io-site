@@ -616,7 +616,7 @@ body {
 
 #seeTheDifference {
     background: rgba(156,156,156,1);
-    height: 235%;
+    height: 130%;
     width: 100%;
     padding-top: 75px;
     padding-top: 5.86vw;
@@ -1094,7 +1094,7 @@ body {
 }
 
 #difference-container {
-    height: 120%;
+    height: 100%;
     width: 100%;
 }
 
@@ -1242,4 +1242,19 @@ body {
 .title {
     margin: 0;
     font-size: 14px;
+}
+
+#difference {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 95%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url(https://s3.amazonaws.com/antumbra-io/unlit.png);
+}
+
+#difference:hover,
+#difference:active {
+    background-image: url(https://s3.amazonaws.com/antumbra-io/lit.png);
 }

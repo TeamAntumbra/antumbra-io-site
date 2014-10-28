@@ -10,13 +10,11 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
-    font-size: 1.01vw;
 }
 
 html {
     width: 100%;
     height: 100%;
-    font-size: .78vw;
 }
 
 h1,
@@ -30,34 +28,34 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    font-size: 2.5vw;
+    font-size: 32px;
     letter-spacing: 1px;
     letter-spacing: .078vw;
 }
 
 h1,
 .h1 {
-  font-size: 2.81vw;
+  font-size: 36px;
 }
 h2,
 .h2 {
-  font-size: 2.34vw;
+  font-size: 30px;
 }
 h3,
 .h3 {
-  font-size: 1.875vw;
+  font-size: 24px;
 }
 h4,
 .h4 {
-  font-size: 1.41vw;
+  font-size: 18px;
 }
 h5,
 .h5 {
-  font-size: 1.09vw;
+  font-size: 14px;
 }
 h6,
 .h6 {
-  font-size: .94vw;
+  font-size: 12px;
 }
 p {
   margin: 0 0 .78vw;
@@ -67,7 +65,6 @@ p {
     margin: 0 0 25px;
     margin: 0 0 1.95vw;
     font-size: 18px;
-    font-size: 1.41vw;
     line-height: 1.5;
 }
 
@@ -76,7 +73,6 @@ p {
         margin: 0 0 35px;
         margin: 0 0 2.73vw;
         font-size: 20px;
-        font-size: 1.56vw;
         line-height: 1.6;
     }
 }
@@ -118,7 +114,6 @@ a:focus {
     padding: 4px 6px;
     padding: .32vw .47vw;
     font-size: 16px;
-    font-size: 1.25vw;
     color: #fff;
 }
 
@@ -240,7 +235,6 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    font-size: 1.41vw;
 }
 
 @media(min-width:767px) {
@@ -259,7 +253,6 @@ a:focus {
 
     .intro .intro-body .intro-text {
         font-size: 25px;
-        font-size: 1.95vw;
     }
 }
 
@@ -276,7 +269,6 @@ a:focus {
     border-radius: 35px;
     border-radius: 2.73vw;
     font-size: 40px;
-    font-size: 3.125vw;
     color: #fff;
     background: 0 0;
     outline: none;
@@ -403,7 +395,6 @@ ul.banner-social-buttons {
 
 footer {
     font-size: 11px;
-    font-size: .86vw;
     padding: 25px 0;
     padding: 1.95vw 0;
     color: #FFF;
@@ -414,7 +405,6 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
-    font-size: 1.09vw;
 }
 
 ::-moz-selection {
@@ -852,7 +842,6 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-size: 24px;
-    font-size: 1.875vw;
 }
 
 .faq_question:hover,
@@ -868,7 +857,6 @@ body {
 
 .faq_answer {
     font-size: 18px;
-    font-size: 1.41vw;
 }
 
 #plus1:hover,
@@ -930,17 +918,14 @@ body {
 
 .medium-large-text {
     font-size: 24px;
-    font-size: 1.875vw;
 }
 
 .large-text {
     font-size: 32px;
-    font-size: 2.5vw;
 }
 
 .medium-text {
     font-size: 18px;
-    font-size: 1.41vw;
 }
 
 #glow_render {

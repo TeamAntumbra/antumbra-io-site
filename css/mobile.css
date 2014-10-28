@@ -667,6 +667,8 @@ body {
     width: 100%;
     padding-top: 75px;
     padding-top: 5.86vw;
+    padding-left: 0;
+    padding-right: 0;
     align: center;
     margin-top: -1px;
     margin-bottom: -1px;
@@ -1226,19 +1228,16 @@ body {
     font-size: 14px;
 }
 
-#difference {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    height: 95%;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-image: url(https://s3.amazonaws.com/antumbra-io/unlit.png);
+#fade {
+ width:100%;
+ height:100%;
+ background-size: 100% auto;
+ background-repeat: no-repeat;
+ background-image: url("https://s3.amazonaws.com/antumbra-io/lit.png");
 }
 
-#difference:hover,
-#difference:active {
-    background-image: url(https://s3.amazonaws.com/antumbra-io/lit.png);
+#fadeImg {
+    width: 100%;
 }
 
 .pad-top-2 {

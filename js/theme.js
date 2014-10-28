@@ -45,17 +45,19 @@ $(document).ready(function() {
 
     });
 
-});
-
-
-
-$(document).ready(function() {
-     $("#carousel").owlCarousel({
-        navigation : true, // Show next and prev buttons
-        navigationText : ["<-","->"],
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true,
-        loop: true
+    $("#fade").hover(function(){
+    $(this).find("img").stop().animate({opacity: 0}, 1200);
+    }, function() {
+    $(this).find("img").stop().animate({opacity: 1}, 1200);
     });
+
+    $("#carousel").owlCarousel({
+       navigation : true, // Show next and prev buttons
+       navigationText : ["<-","->"],
+       slideSpeed : 300,
+       paginationSpeed : 400,
+       singleItem:true,
+       loop: true
+   });
+
 });

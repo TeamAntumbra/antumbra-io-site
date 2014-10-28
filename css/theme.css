@@ -459,8 +459,8 @@ body {
     width: 100%;
     height: 110%;
     color: #F0F0F0;
-    padding-top: 5%;
-    margin-top: 70%;/*to not cover the splash video*/
+    padding-top: 75px;
+    padding-top: 5.86vw;
     margin-bottom: -1px;
 }
 
@@ -656,6 +656,39 @@ body {
     height: 250px;
     height: 19.5vw;
     width: 100%;
+}
+
+#overview {
+    background: rgba(255,212,44,1);
+    height: 130%;
+    width: 100%;
+    align: center;
+    padding-top: 8%;
+    margin-top: 70%;/*to not cover the splash video*/
+    margin-bottom: -1px;
+    color: rgba(0,0,0,1);
+}
+
+#overview-transition {
+    background: -webkit-linear-gradient(0deg, rgba(61,182,153, 1), rgba(255,212,44,1)); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, rgba(61,182,153, 1), rgba(255,212,44,1)); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, rgba(61,182,153, 1), rgba(255,212,44,1)); /* IE10 */
+    background:      -o-linear-gradient(0deg, rgba(61,182,153, 1), rgba(255,212,44,1)); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, rgba(61,182,153, 1), rgba(255,212,44,1)); /* W3C */
+    height: 250px;
+    height: 19.5vw;
+    width: 100%;
+}
+
+#overviewBtn {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#overviewBtn:hover,
+#overviewBtn:active {
+    background: rgba(255,212,44,.7);
 }
 
 #FAQBtn {
@@ -906,6 +939,11 @@ body {
 .medium-text {
     font-size: 18px;
     font-size: 1.41vw;
+}
+
+.huge-text {
+    font-size: 42px;
+    font-size: 3.28vw;
 }
 
 #glow_render {
@@ -1257,4 +1295,16 @@ body {
 #difference:hover,
 #difference:active {
     background-image: url(https://s3.amazonaws.com/antumbra-io/lit.png);
+}
+
+.pad-top-2 {
+    padding-top: 2%;
+}
+
+.pad-top-7 {
+    padding-top: 7%;
+}
+
+.normal-weight {
+    font-weight: normal;
 }

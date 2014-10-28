@@ -450,7 +450,7 @@ body {
 #about {
     background: rgba(61,182,153,1);
     width: 100%;
-    height: 110%;
+    height: auto;
     color: #F0F0F0;
     padding-top: 75px;
     padding-top: 5.86vw;
@@ -471,7 +471,7 @@ body {
 #glowVidSection {
     background: rgba(53,112,160,1);
     width: 100%;
-    height: 120%;
+    height: auto;
     padding-top: 75px;
     padding-top: 5.86vw;
     margin-top: -1px;
@@ -492,7 +492,7 @@ body {
 #interested {
     background: rgba(183,59,76,1);
     width: 100%;
-    height: 120%;
+    height: auto;
     padding-top: 150px;
     padding-top: 11.7vw;
     margin-top: -1px;
@@ -523,7 +523,7 @@ body {
 
 #contact {
     background: rgba(98,174,77,1);
-    height: 120%;
+    height: auto;
     width: 100%;
     margin-top: -1px;
     margin-bottom: -1px;
@@ -586,7 +586,7 @@ body {
 
 #aboutUs {
     background: rgba(115,168,176,1);
-    height: 100%;
+    height: auto;
     width: 100%;
     padding-top: 75px;
     padding-top: 5.86vw;
@@ -608,7 +608,7 @@ body {
 
 #overview {
     background: rgba(255,212,44,1);
-    height: 130%;
+    height: auto;
     width: 100%;
     align: center;
     padding-top: 8%;
@@ -663,7 +663,7 @@ body {
 
 #seeTheDifference {
     background: rgba(156,156,156,1);
-    height: 130%;
+    height: auto;
     width: 100%;
     padding-top: 75px;
     padding-top: 5.86vw;

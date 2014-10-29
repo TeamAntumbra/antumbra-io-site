@@ -1208,9 +1208,9 @@ body {
 }
 
 #adamFace:hover {
-    box-shadow: 0 0 36px rgba(115,109,220, 1);
-    -webkit-box-shadow: 0 0 36px rgba(115,109,220, 1);
-    -moz-box-shadow: 0 0 36px rgba(115,109,220, 1);
+    box-shadow: 0 0 36px rgba(201,218,154, 1);
+    -webkit-box-shadow: 0 0 36px rgba(201,218,154, 1);
+    -moz-box-shadow: 0 0 36px rgba(201,218,154, 1);
 }
 
 #samFace {
@@ -1238,9 +1238,9 @@ body {
 }
 
 #michelFace:hover {
-    box-shadow: 0 0 36px rgba(183,180,111,1);
-    -webkit-box-shadow: 0 0 36px rgba(183,180,111,1);
-    -moz-box-shadow: 0 0 36px rgba(183,180,111,1);
+    box-shadow: 0 0 36px rgba(200,200,200,1);
+    -webkit-box-shadow: 0 0 36px rgba(200,200,200,1);
+    -moz-box-shadow: 0 0 36px rgba(200,200,200,1);
 }
 
 #davisFace,

@@ -857,7 +857,7 @@ body {
 
 .faq_question:hover,
 .faq_question:focus {
-    color: rgba(247,247,247,.8);
+    color: rgba(247,247,247,1);
 }
 
 .faq_answer_container {
@@ -871,49 +871,49 @@ body {
     font-size: 1.41vw;
 }
 
-#plus1:hover,
-#plus1:focus {
-    color: rgba(36,177,1,1);
+#plus1:hover a,
+#plus1:focus a{
+    color: rgba(109,228,110,1);
 }
 
-#plus2:hover,
-#plus2:focus {
-    color: rgba(220,226,17,1);
+#plus2:hover a,
+#plus2:focus a {
+    color: rgba(250,94,106,1);
 }
 
-#plus3:hover,
-#plus3:focus {
-    color: rgba(222,48,210,1);
+#plus3:hover a,
+#plus3:focus a {
+    color: rgba(222,235,40,1);
 }
 
-#plus4:hover,
-#plus4:focus {
-    color: rgba(93,156,246,1);
+#plus4:hover a,
+#plus4:focus a {
+    color: rgba(215,110,242,1);
 }
 
-#plus5:hover,
-#plus5:focus {
-    color: rgba(151,96,173,1);
+#plus5:hover a,
+#plus5:focus a {
+    color: rgba(92,240,232,1);
 }
 
-#plus6:hover,
-#plus6:focus {
-    color: rgba(166,38,91,1);
+#plus6:hover a,
+#plus6:focus a {
+    color: rgba(19,201,101,1);
 }
 
-#plus7:hover,
-#plus7:focus {
-    color: rgba(5,196,126,1);
+#plus7:hover a,
+#plus7:focus a {
+    color: rgba(224,21,170,1);
 }
 
-#plus8:hover,
-#plus8:focus {
-    color: rgba(255,0,0,1);
+#plus8:hover a,
+#plus8:focus a {
+    color: rgba(243,154,129,1);
 }
 
-#plus9:hover,
-#plus9:focus {
-    color: rgba(18,196,249,1);
+#plus9:hover a,
+#plus9:focus a {
+    color: rgba(96,197,240,1);
 }
 
 .smooth3 { /*TODO apply this to objects that have it*/

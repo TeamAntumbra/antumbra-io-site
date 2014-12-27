@@ -1,0 +1,10 @@
+//Base SCSS for antumbra.io
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$font-stack: 'Roboto Condensed', sans-serif;
+
+html{
+    font-family: 100% $font-stack;
+    width: 100%;
+}

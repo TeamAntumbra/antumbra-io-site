@@ -8,18 +8,23 @@
         %meta{'name' => 'keywords', :content => data.page.keywords}
         %meta{'name' => 'author', :content => 'Antumbra'}
         %link{href: asset_path("image/png",
-        "//s3.amazonaws.com/antumbra-io/icon.png"), rel: "icon"}
+        "//s3.amazonaws.com/antumbra-io/icon.png"), rel: "shortcut icon"}
         %meta{'name' => 'bitly-verification', :content => "abc6ead8497a"}
+        %title
+            Antumbra
         :javascript
             if (screen.width <= 699) {
                 document.location = "mobile.html";
             }
+        %link{:href=>"stylesheets/base.css", :rel=>'stylesheet'}
         %link{:href=>"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css",
         :rel=>"stylesheet"}
         %link{:href=>"//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css",
         :rel=>"stylesheet"}
         %link{:href=>"//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css",
         :rel=>"stylesheet"}
+        %link{:href=>'//fonts.googleapis.com/css?family=Roboto+Condensed',
+        :rel=>"stylesheet", :type=>'text/css'}
         %script{:src =>"//code.jquery.com/jquery-1.11.2.min.js",
         'async' => true}
         %script{:src=>"//code.jquery.com/jquery-migrate-1.2.1.min.js",

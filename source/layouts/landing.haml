@@ -1,2 +1,38 @@
 = wrap_layout :base do
-    = yield
+    %body#page-top{:data=>{:spy=>'scroll', :target=>'.navbar-fixed-top'}}
+        %a{:href=>"https://plus.google.com/106064932965666182859", :rel=>"publisher"}
+        %nav.navbar.navbar-custom.navbar-fixed-top{:role=>'navigation'}
+            %div.container
+                %div.navbar-header
+                    %button.navbar-toggle{:type=>'button',
+                    :data=>{:toggle=>'collapse', :target=>'.navbar-main-collapse'}}
+                        %i.fa.fa-bars
+                    %a.navbar-brand.page-scroll{:href=>'#page-top'}
+                        %span.light
+                            Antumbra
+                %div.collapse.navbar-collapse.navbar-right.navbar-main-collapse
+                    %ul.nav.navbar-nav
+                        %li.hidden
+                            %a{:href=>'#page-top'}
+                        %li
+                            %a.page-scroll#overviewBtn{:href=>'#overview'}
+                                Overview
+                        %li
+                            %a.page-scroll#aboutBtn{:href=>'#about'}
+                                About
+                        %li
+                            %a.page-scroll#glowVidBtn{:href=>'#glow'}
+                                Glow
+                        %li
+                            %a.page-scroll#FAQBtn{:href=>'#FAQ'}
+                                FAQ
+                        %li
+                            %a.page-scroll#interestedBtn{:href=>'#interested'}
+                                Interested?
+                        %li
+                            %a.page-scroll#contactBtn{:href=>'#contact'}
+                                Contact Us
+                        %li
+                            %a.page-scroll#buyNowBtn{:href=>'https://antumbra.myshopify.com/'}
+                                Pre-Order
+        = yield

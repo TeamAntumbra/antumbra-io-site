@@ -8,11 +8,16 @@
 # end
 
 ###
+#HAML
+###
+set :haml, { :ugly => true, :format => :html5 }
+
+###
 # Page options, layouts, aliases and proxies
 ###
 
 # Per-page layout changes:
-#
+page "", :layout => :landing
 # With no layout
 # page "/path/to/file.html", :layout => false
 #

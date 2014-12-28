@@ -1,10 +1,189 @@
 //Base SCSS for antumbra.io
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import 'base/base';
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin transition($animations, $time, $style) {
+    -webkit-transition: $animations $time $style;
+       -moz-transition: $animations $time $style;
+         -o-transition: $animations $time $style;
+            transition: $animations $time $style;
+}
+
+@mixin background-linear-gradient($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background:    -moz-linear-gradient($deg, $color1, $color2);
+    background:     -ms-linear-gradient($deg, $color1, $color2);
+    background:      -o-linear-gradient($deg, $color1, $color2);
+    background:         linear-gradient($deg, $color1, $color2);
+}
+
+@mixin background-size($arg) {
+    -webkit-background-size: $arg;
+       -moz-background-size: $arg;
+         -o-background-size: $arg;
+            background-size: $arg;
+}
 
 $font-stack: 'Roboto Condensed', sans-serif;
+
+* { @include transition(all, 1.2, ease-in-out); }
 
 html{
     font-family: 100% $font-stack;
     width: 100%;
+    height: 100%;
+    font-size: .78vw;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 35px;
+    margin: 0 0 2.73vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+    letter-spacing: .078vw;
+}
+
+h1, .h1 {
+    font-size: 2.81vw;
+}
+
+h2, .h2 {
+    font-size: 2.34vw;
+}
+
+h3, .h3 {
+    font-size: 1.875vw;
+}
+
+h4, .h4 {
+    font-size: 1.41vw;
+}
+
+h5, .h5 {
+    font-size: 1.09vw;
+}
+
+h6, .h6 {
+    font-size: .94vw;
+}
+
+p {
+    margin: 0 0 .78vw;
+    margin: 0 0 25px;
+    margin: 0 0 1.95vw;
+    font-size: 18px;
+    font-size: 1.41vw;
+    line-height: 1.5;
+}
+
+@media (min-width: 767px) {
+    p {
+        margin: 0 0 35px;
+        margin: 0 0 2.73vw;
+        font-size: 20px;
+        font-size: 1.56vw;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: rgba(242, 242, 242, 1);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: rgba(237, 237, 237, 1);
+    }
+}
+
+.light {
+    font-weight: 200;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.3);
+    .navbar-brand {
+        font-weight: 700;
+        &:focus {
+            outline: 0;
+        }
+        .navbar-toggle {
+            padding: 4px 6px;
+            padding: .32vw .47vw;
+            font-size: 16px;
+            font-size: 1.25vw;
+            color: #fff;
+            &:hover, &:focus, &:active {
+                outline: 0;
+                color: #000;
+                text-shadow: 0 0 .11em #FFF;
+            }
+        }
+    }
+    a {
+        color: #fff;
+    }
+    .nav li {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+        &.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        a {
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+            outline: none;
+            &:hover, &.active {
+                outline: none;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+            &:focus {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    /*max size without nav issues*/
+    .navbar {
+        padding: 20px 0;
+        padding: 1.56vw 0;
+        border-bottom: 0;
+        letter-spacing: .078vw;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }

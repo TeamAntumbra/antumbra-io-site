@@ -1,4 +1,7 @@
 //SCSS stylings for landing page
+@import 'owl.carousel.css';
+@import 'owl.theme.css';
+@import 'owl.transitions.css';
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;

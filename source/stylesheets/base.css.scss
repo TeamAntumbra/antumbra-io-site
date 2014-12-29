@@ -109,10 +109,14 @@ a {
 }
 
 #overviewBtn, #aboutBtn, #glowVidBtn, #FAQBtn, #interestedBtn, #contactBtn, #buyNowBtn {
-    color: rgb(237,237,237);
+    color: rgb(252,252,252);
     &:hover{
-        color: rgb(143,143,143);
+        color: rgb(192,192,192);
     }
+}
+
+#overviewBtn:hover {
+    color: rgb(127,127,127);
 }
 
 @media (min-width: 767px) {

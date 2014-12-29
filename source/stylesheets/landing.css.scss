@@ -848,22 +848,22 @@ body {
 
 .medium-large-text {
     font-size: 24px;
-    font-size: 1.875vw;
+    font-size: 3vw;
 }
 
 .large-text {
     font-size: 32px;
-    font-size: 2.5vw;
+    font-size: 4vw;
 }
 
 .medium-text {
     font-size: 18px;
-    font-size: 1.41vw;
+    font-size: 1.81vw;
 }
 
 .huge-text {
     font-size: 42px;
-    font-size: 3.28vw;
+    font-size: 4.38vw;
 }
 
 #glow_render {
@@ -871,8 +871,13 @@ body {
     max-width: 100%;
 }
 
-.grey {
-    color: rgba(221, 221, 221, 1);
+h1,h2,h3,h4,h5,h6 {
+    &.grey-white {
+        color: rgba(231, 231, 231, 1);
+    }
+    &.grey {
+        color: rgba(191, 191, 191, 1);
+    }
 }
 
 .videoWrapper169 {

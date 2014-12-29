@@ -1,4 +1,33 @@
 //SCSS stylings for landing page
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($animations, $time, $style) {
+    -webkit-transition: $animations $time $style;
+    -moz-transition: $animations $time $style;
+    -o-transition: $animations $time $style;
+    transition: $animations $time $style;
+}
+
+@mixin background-linear-gradient($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background:    -moz-linear-gradient($deg, $color1, $color2);
+    background:     -ms-linear-gradient($deg, $color1, $color2);
+    background:      -o-linear-gradient($deg, $color1, $color2);
+    background:         linear-gradient($deg, $color1, $color2);
+}
+
+@mixin background-size($arg) {
+    -webkit-background-size: $arg;
+    -moz-background-size: $arg;
+    -o-background-size: $arg;
+    background-size: $arg;
+}
+
 .intro {
     display: table;
     position: fixed;
@@ -9,10 +38,7 @@
     text-align: center;
     color: argb(0, 0, 0, 0);
     background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    @include background-size("cover");
     overflow: hidden;
     top: 0;
     .intro-body {
@@ -41,8 +67,13 @@
 
 .brand-heading {
     text-align: center;
+    font-weight: 900;
     font-size: 32px;
-    /*font-size: 2.5vw;causes issues with large displays and centering of title*/
+}
+
+#mainTitle {
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .intro .intro-body {
@@ -1114,7 +1145,7 @@ background-size: 100% 100%;
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url("https://s3.amazonaws.com/antumbra-io/lit.png");
+    background-image: url("//s3.amazonaws.com/antumbra-io/lit.png");
 }
 
 #fadeImg {

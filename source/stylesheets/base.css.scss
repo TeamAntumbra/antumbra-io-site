@@ -32,8 +32,6 @@
             background-size: $arg;
 }
 
-* { @include transition(all, 1.2, ease-in-out); }
-
 @media (min-width: 767px) {
     p {
         margin: 0 0 35px;
@@ -46,9 +44,6 @@
 
 a {
     color: rgba(242, 242, 242, 1);
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
     &:hover, &:focus {
         text-decoration: none;
         color: rgba(253, 253, 253, 1);
@@ -86,16 +81,10 @@ a {
         color: #fff;
     }
     .nav li {
-        -webkit-transition: all .7s ease-in-out;
-        -moz-transition: all .7s ease-in-out;
-        transition: all .7s ease-in-out;
         &.active {
             background-color: rgba(255, 255, 255, 0.3);
         }
         a {
-            -webkit-transition: background .3s ease-in-out;
-            -moz-transition: background .3s ease-in-out;
-            transition: background .3s ease-in-out;
             outline: none;
             &:hover, &.active {
                 outline: none;
@@ -109,14 +98,10 @@ a {
 }
 
 #overviewBtn, #aboutBtn, #glowVidBtn, #FAQBtn, #interestedBtn, #contactBtn, #buyNowBtn {
-    color: rgb(252,252,252);
+    color: rgb(222,222,222);
     &:hover{
-        color: rgb(192,192,192);
+        color: rgb(252,252,252);
     }
-}
-
-#overviewBtn:hover {
-    color: rgb(127,127,127);
 }
 
 @media (min-width: 767px) {
@@ -127,9 +112,6 @@ a {
         border-bottom: 0;
         letter-spacing: .078vw;
         background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
     .top-nav-collapse {
         padding: 0;
@@ -138,4 +120,9 @@ a {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
+}
+
+* {
+    @include transition(all, 1.2s, ease);
+    outline: none;
 }

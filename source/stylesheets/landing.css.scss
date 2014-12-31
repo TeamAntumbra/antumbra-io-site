@@ -9,11 +9,11 @@
     border-radius: $radius;
 }
 
-@mixin transition($animations, $time, $style) {
-    -webkit-transition: $animations $time $style;
-    -moz-transition: $animations $time $style;
-    -o-transition: $animations $time $style;
-    transition: $animations $time $style;
+@mixin transition($animations, $time) {
+    -webkit-transition: $animations $time;
+    -moz-transition: $animations $time;
+    -o-transition: $animations $time;
+    transition: $animations $time;
 }
 
 @mixin background-linear-gradient($deg, $color1, $color2) {
@@ -126,12 +126,7 @@
     font-size: 3.125vw;
     color: #fff;
     background: 0 0;
-    outline: none;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
     &:hover, &:focus {
-        outline: 0;
         color: #fff;
         background: rgba(255, 255, 255, 0.1);
     }
@@ -197,9 +192,6 @@
 .btn {
     text-transform: uppercase;
     font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
 }
 
 .btn-default {
@@ -207,9 +199,7 @@
     color: rgba(232, 232, 232, 1);
     background-color: transparent;
     &:hover, &:focus {
-        border: 1px solid rgba(250, 250, 250, 1);
-        outline: 0;
-        color: rgba(242, 242, 242, 1);
+        color: rgba(252, 252, 252, 1);
         background-color: rgba(255, 255, 255, 0.25);
     }
 }
@@ -333,9 +323,6 @@ body {
 }
 
 #glowVidBtn {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     &:hover, &:active {
         background: rgba(53, 112, 160, 0.7);
     }
@@ -352,9 +339,6 @@ body {
 }
 
 #interestedBtn {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     &:hover, &:active {
         background: rgba(183, 59, 76, 0.7);
     }
@@ -387,9 +371,6 @@ body {
 }
 
 #contactBtn {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     &:hover, &:active {
         background: rgba(98, 174, 77, 0.7);
     }
@@ -439,9 +420,6 @@ body {
 }
 
 #hardwareBtn {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     &:hover, &:focus {
         background: rgba(97, 64, 191, 1);
     }
@@ -559,18 +537,12 @@ body {
 }
 
 #overviewBtn {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     &:hover, &:active {
         background: rgba(255, 212, 44, 0.7);
     }
 }
 
 #FAQBtn {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     &:hover, &:focus {
         background: rgba(187, 89, 200, 1);
     }
@@ -632,18 +604,11 @@ body {
     padding-bottom: 6px;
     padding-bottom: .47vw;
     margin-left: 35%;
-    width: 20%;
-    border-radius: 4px;
-    border-radius: .31vw;
-    -moz-border-radius: 4px;
-    -moz-border-radius: .31vw;
-    -webkit-border-radius: 4px;
-    -webkit-border-radius: .31vw;
+    box-shadow: 0;
+    @include border-radius(4px);
+    @include transition(all, 2s);
     color: transparent;
     text-shadow: 0 0 0 #171717;
-    -webkit-transition: all .8s ease;
-    -moz-transition: all .8s ease;
-    transition: all .8s ease;
     &:hover, &:focus {
         box-shadow: 0 0 0.5em 0.5em rgba(255, 255, 255, 0.5);
     }
@@ -738,10 +703,10 @@ body {
     -ms-animation: wobble 1.0s infinite;
     -o-animation: wobble 1.0s infinite;
     animation: wobble 1.0s infinite;
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
     &:hover {
         color: rgba(255, 255, 255, 1);
     }
@@ -826,18 +791,6 @@ body {
     &:hover a, &:focus a {
         color: rgba(96, 197, 240, 1);
     }
-}
-
-.smooth3 {
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-.smooth8 {
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    transition: all 0.8s ease;
 }
 
 .medium-large-text {
@@ -944,11 +897,6 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 25%;
 }
 
-.fill {
-    height: 100%;
-    width: 100%;
-}
-
 #carousel .item img {
     display: block;
     width: 100%;
@@ -971,37 +919,6 @@ h1,h2,h3,h4,h5,h6 {
     padding-left: 1%;
     padding-right: 1%;
 }
-
-/*#parallax {
-position : relative;
-height : 100%;
-width: 100%;
-background-attachment : fixed;
-background-position   : top center;
-background-size       : cover;
-}
-
-#unlit {
-height: 90%;
-width:100%;
-background-image : url(
-https://s3.amazonaws.com/antumbra-io/unlit.png
-);
-background-repeat: no-repeat;
-background-position: center;
-background-size: auto 100%;
-}
-
-#lit {
-height: 100%;
-width:100%;
-background-image : url(
-https://s3.amazonaws.com/antumbra-io/lit.png
-);
-background-repeat: no-repeat;
-background-position: 0px 0px, center;
-background-size: 100% 100%;
-}*/
 
 .full {
     width: 100%;
@@ -1068,12 +985,7 @@ background-size: 100% 100%;
     height: 16vw;
     overflow: hidden;
     border: none;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+    @include border-radius(50%);
 }
 
 #davisFace:hover {
@@ -1164,4 +1076,9 @@ background-size: 100% 100%;
 
 .normal-weight {
     font-weight: normal;
+}
+
+* {
+    @include transition(all, 2s);
+    outline: none;
 }

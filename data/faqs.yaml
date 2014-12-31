@@ -1,0 +1,162 @@
+faqs:
+    -   id: plus1
+        question: What is an ‘Antumbra’?
+        answer: >
+            The word ‘Antumbra’ means the region from which an occluding body appears
+            entirely contained within the disc of a light
+            source - like a solar eclipse.
+    -   id: plus2
+        question: What is Glow?
+        answer: >
+            Antumbra | Glow is a small
+            light emitting device, designed to enhance your
+            work and entertainment experience while reducing
+            eye strain.  Simply mount it behind your monitor,
+            point it at a wall, plug in the included micro-USB
+            cable and start the Glow software.
+    -   id: plus3
+        question: Who is Glow for?
+        answer: >
+            Anyone can benefit from
+            Glow - however, people who use their
+            computer in low light environments will enjoy
+            it most.  Games, movies, and even work are
+            all better with Glow.
+    -   id: plus4
+        question: How does this affect my computing experience?
+        answer: >
+            Glow can be controlled
+            any way you like. You can manually set its
+            color (16 million discrete values), or allow
+            it to react dynamically to the content on
+            your screen. We will be launching an Extension
+            Store for Glow that will allow users to easily
+            download extended functionality. In addition,
+            we're an open-source project,
+            so if there’s a missing feature you want,
+            feel free to implement it. If we like it
+            enough, we may just add it to the official
+            release.
+    -   id: plus5
+        question: How does Glow work?
+        answer: >
+            Glow is connected to your computer via a
+            Micro-USB cable. This connection provides
+            both power and data, allowing you to manipulate
+            your Glow from the Antumbra application.
+    -   id: plus6
+        question: How does this effect reduce eyestrain?
+        answer: >
+            Ambient backlighting creates a seamless transition
+            from your bright display to dark environment.
+            In doing so the light object you're looking at
+            (your monitor) is extended into your peripherals.
+            For a more in-depth explanation check out this
+            <a href="http://bit.ly/AntumbraGlowScience">scientific study</a>.
+    -   id: plus7
+        question: How does Glow connect to my monitor?
+        answer: >
+            Glow mounts behind your monitor (or to
+            almost any surface you’d like) using 3M
+            Dual-Lock, a super strong plastic “velcro”.
+            We are also developing a clip-on stand for
+            laptop users, but we don’t expect to ship it
+            with beta.  Right now, Antumbra is best suited
+            for users with desktop monitors (15 to 30
+            inches diagonal) that are placed anywhere from
+            one to three feet from a wall.
+            Results may vary in other configurations.
+    -   id: plus8
+        question: How does this help my eyes?
+        answer: >
+            By illuminating the wall behind a computer
+            monitor or TV, the contrast between the
+            display and the rest of the room is
+            reduced - making long sessions of both work
+            and play more comfortable.  Your eyes are
+            meant to look at light reflecting off of
+            objects, not the light source itself.  By
+            introducing more light into a dark room,
+            your pupils constrict and limit the amount
+            of light from the monitor that enters your
+            eyes, preventing eye strain caused by staring
+            at a (relatively small) bright source of light.
+            In addition, more constricted pupils allow
+            the screen to go from dark to bright quickly
+            without causing discomfort - a common issue
+            when watching many movies and videogames.
+            Colors, brightness and responsive modes can
+            all be set in software, allowing you to
+            create the perfect experience for any task.
+    -   id: plus9
+        question: Are there any system requirements?
+        answer: >
+            In order to control Glow, you will need to
+            be able to run one of the controller
+            applications.  We currently offer software
+            for Mac OS X 10.7, 10.8 and 10.9, Windows
+            Vista, Windows 7 and Windows 8 / 8.1, as well
+            as Linux (command-line interface only). However, if
+            you would like to see support for a different
+            platform, just shoot us an email!  In addition
+            to this, your computer must have one powered
+            USB port (USB 2.0 or better).
+    -   id: plus10
+        question: Is Glow customizable?
+        answer: >
+            Yes. Glow is open-source software <b>and</b> hardware.
+            Aside from the customizability offered by
+            default (such as choosing colors, fades and
+            responsive modes), developers, engineers,
+            hackers and makers can add and implement
+            whatever new features they want. The
+            possibilities are endless!
+    -   id: plus11
+        question: What does 'beta' mean?
+        answer: >
+            Glow is still in development.  Although all
+            the hardware and software is complete, fully
+            functional and very reliable, we need to
+            ensure that everything works absolutely
+            perfectly for every user before we move into
+            large-scale production.  Beta allows us to
+            test that, gather user feedback for additional
+            features, and tackle any bugs that might arise.
+            Beta units are offered without warranty and
+            are not guaranteed be perfect - so we advise
+            that users who aren’t comfortable solving
+            computer problems hold off until the official
+            product launch.  If you like being on the
+            cutting edge and getting your hands dirty
+            with open-source products, Beta is perfect for you.
+    -   id: plus12
+        question: When do you ship?
+        answer: >
+            Units will be shipped approximately three
+            weeks after beta sells out.  The manufacturing
+            process is currently in progress.
+    -   id: plus13
+        question: So you're open-source?
+        answer: >
+            Completely.  We’re releasing all our code,
+            all the hardware designs, and even the code
+            for this website.  Feel free to use anything
+            for commercial purposes or otherwise, just
+            attribute the original work to us and link
+            to our site.  We’re not pursuing any patents
+            and are excited to see what the open-source
+            community will contribute.  Hardware will be
+            released under Creative Commons Attribution
+            Share-Alike, and all software will be released under GPL.
+    -   id: plus14
+        question: What are your plans for the future?
+        answer: >
+            We've had an overwhelming interest for a Glow
+            implementation for TV's so we are looking into
+            different solutions including streaming devices, and
+            open-source content platforms. We also have plans to
+            take our technology to other lighting applications
+            including customizable, controllable, and
+            extendable ambient lighting. If you have another idea
+            on some cool way to use this technology
+            shoot us an email at contact@antumbra.io.

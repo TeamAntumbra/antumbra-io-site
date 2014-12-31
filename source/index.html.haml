@@ -137,6 +137,7 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                     %h3.text-center
                         Functional Hardware.
                     %br
+                    %br
                     %p.medium-text
                         Measuring under 1.5” x 1.5” x 0.5”,
                         Glow is small and portable, perfect for laptop users who
@@ -151,3 +152,14 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                         most - letting you start enjoying content like never
                         before in just moments.
         %section#FAQ-transition.container.hover
+        %section#FAQ.container.hover.content-section
+            .row
+                .col-lg-8.col-lg-offset-2
+                    %h1.text-center
+                        FAQ
+                -data.faqs.faqs.each do |q|
+                    = partial('layouts/faq_item',                         |
+                    :locals => { :id=> q.id,                              |
+                    :question => q.question,                              |
+                    :answer => q.answer})                                 |
+                    -#

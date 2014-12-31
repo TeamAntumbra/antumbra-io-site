@@ -752,13 +752,12 @@ body {
 }
 
 .faq_container {
-    padding: 13px;
-    padding: 1.02vw;
+    padding: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .faq_question {
-    margin: 0px;
-    padding: 0px 0px 5px 0px;
     display: inline-block;
     cursor: pointer;
     font-weight: bold;
@@ -772,7 +771,6 @@ body {
 .faq_answer_container {
     height: 0px;
     overflow: hidden;
-    padding: 0px;
 }
 
 .faq_answer {

@@ -44,15 +44,6 @@ $(document).ready ->
       $(this).closest(".faq").addClass "open"
     return
 
-  $("#fade").hover (->
-    $(this).find("img").stop().animate
-      opacity: 0, 1200
-    return
-  ), ->
-    $(this).find("img").stop().animate
-      opacity: 1, 1200
-    return
-
   $("#carousel").owlCarousel
     navigation: true # Show next and prev buttons
     navigationText: [

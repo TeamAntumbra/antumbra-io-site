@@ -10,10 +10,10 @@
 }
 
 @mixin transition($animations, $time) {
-    -webkit-transition: $animations $time;
-    -moz-transition: $animations $time;
-    -o-transition: $animations $time;
-    transition: $animations $time;
+    -webkit-transition: $animations $time ease-in-out;
+    -moz-transition: $animations $time ease-in-out;
+    -o-transition: $animations $time ease-in-out;
+    transition: $animations $time ease-in-out;
 }
 
 @mixin background-linear-gradient($deg, $color1, $color2) {
@@ -1080,6 +1080,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 5%;
     margin-top: 5%;
     height: 95%;
+    overflow: hidden;
 }
 
 #fade {
@@ -1092,6 +1093,9 @@ h1,h2,h3,h4,h5,h6 {
 
 #fadeImg {
     width: 100%;
+    &:hover {
+        opacity: 0;
+    }
 }
 
 .pad-top-2 {
@@ -1107,6 +1111,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 * {
-    @include transition(all, 2s);
+    @include transition(all, 1.3s);
     outline: none;
 }

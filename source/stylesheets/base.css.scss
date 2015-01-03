@@ -42,6 +42,10 @@
     }
 }
 
+a, h1, h2, h3, h4, h5, h6, p {
+    @include transition(all, 1.2s, ease-in-out);
+}
+
 a {
     color: rgba(242, 242, 242, 1);
     &:hover, &:focus {

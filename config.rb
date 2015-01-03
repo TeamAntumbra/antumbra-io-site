@@ -10,14 +10,16 @@
 ###
 #HAML
 ###
-set :haml, { :ugly => false, :format => :html5 }
+set :haml, { :ugly => true, :format => :html5 }
 
 ###
 # Page options, layouts, aliases and proxies
 ###
 
 # Per-page layout changes:
-page "", :layout => :base
+page "", :layout => "base"
+page "/blog", :layout => "blog"
+page "/blog/*", :layout => "blog"
 # With no layout
 # page "/path/to/file.html", :layout => false
 #
@@ -68,8 +70,18 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 
+  activate :blog do |blog|
+      blog.layout = "blog"
+      blog.sources = '/blog/{year}-{month}-{day}-{title}.html'
+      blog.paginate = true
+  end
+
+  activate :directory_indexes
+
   # Enable cache buster
   # activate :asset_hash
+
+  # activate :relative_links
 
   # Use relative URLs
   # activate :relative_assets

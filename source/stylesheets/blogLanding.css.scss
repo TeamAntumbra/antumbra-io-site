@@ -37,6 +37,12 @@ html, body {
     color: rgba(240,240,240,.8);
 }
 
+#headingLink {
+    @extend #heading;
+    padding-right: 0;
+    font-family: inherit;
+}
+
 #postList li {
     margin: 2%;
     font-size: 18px;

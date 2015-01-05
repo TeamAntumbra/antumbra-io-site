@@ -24,14 +24,14 @@ title: Antumbra Development Blog
 -#     = blog.articles.each do |a|  -#sheet don't work without junk D:
 -#         %li.blogPost
 -#             = link_to(a.title, a)
--# %h2#postListHeader.text-center
--#     Development Blog Posts
--# %ul#blogPosts.text-center
--# :erb
--#     <% blog.articles.each do |a| %>
--#         <li class="blogPost text-center">
--#             <%= link_to a.title, a %>
--#             </br>
--#             <small><%= a.date.strftime('%b %e') %></small>
--#         </li>
--#     <% end %>
+%h2#postListHeader.text-center
+    Development Blog Posts
+%ul#blogPosts.text-center
+:erb
+    <% blog.articles.each do |a| %>
+        <li class="blogPost text-center">
+            <%= link_to a.title, a %>
+            </br>
+            <small><%= a.date.strftime('%b %e') %></small>
+        </li>
+    <% end %>

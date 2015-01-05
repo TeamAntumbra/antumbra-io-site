@@ -1,6 +1,7 @@
 ---
 title: Blogh
 date: 2015-01-03
+tags: blog
 ---
 
 blah blah blah

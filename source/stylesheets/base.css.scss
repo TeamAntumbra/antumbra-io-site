@@ -42,6 +42,19 @@
     }
 }
 
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, p, i, small, b, body, html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 a, h1, h2, h3, h4, h5, h6, p {
     @include transition(all, 1.2s, ease-in-out);
 }
@@ -124,6 +137,14 @@ a {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
+}
+
+.no-background {
+    background: transparent;
+}
+
+.black-text {
+    color: rgba(0,0,0,.8);
 }
 
 * {

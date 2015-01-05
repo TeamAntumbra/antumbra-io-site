@@ -1,3 +1,27 @@
 ---
 title: Antumbra Development Blog
 ---
+%link{:href=>'/stylesheets/blogLanding.css', :rel=>'stylesheet'}
+%link{:href=>'/stylesheets/timeline.css', :rel=>'stylesheet'}
+%body.dark-gradient
+    %h1.text-center.black-text.no-background
+        Antumbra Roadmap
+
+    #timeline-embed
+    :javascript
+        var timeline_config = {
+            width:              '100%',
+            height:             '600',
+            source:             'https://docs.google.com/spreadsheet/pub?key=0Ai5u0NF8moTWdE9OSThPaFNFTUsxTjVRbF9GVVBCb2c&output=html',
+            embed_id:           'timeline-embed',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+            start_zoom_adjust:  '-1',                            //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
+            hash_bookmark:      true,                           //OPTIONAL LOCATION BAR HASHES
+            font:               'Open-Sans',                    //OPTIONAL FONT
+            lang:               'en',                           //OPTIONAL LANGUAGE
+            maptype:            'watercolor',                   //OPTIONAL MAP STYLE
+            css:                '/stylesheets/timeline.css',     //OPTIONAL PATH TO CSS
+        }
+    %script{:type=>"text/javascript",
+        :src=>"https://s3.amazonaws.com/cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"}
+=blog.articles.each do |a|
+    link_to(a.data.title, a.url)

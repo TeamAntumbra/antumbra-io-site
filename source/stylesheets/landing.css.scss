@@ -986,6 +986,13 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0px;
     font-size: 52px;
     color: rgba(21, 21, 21, 0.8);
+    text-align: center;
+}
+
+#diffSubTitle {
+    @extend #diffTitle;
+    padding: 0px;
+    font-size: 24px;
 }
 
 #team {

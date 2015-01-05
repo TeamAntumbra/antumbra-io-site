@@ -10,7 +10,7 @@
 ###
 #HAML
 ###
-set :haml, { :ugly => true, :format => :html5 }
+set :haml, { :ugly => false, :format => :html5 }
 
 ###
 # Page options, layouts, aliases and proxies
@@ -18,7 +18,7 @@ set :haml, { :ugly => true, :format => :html5 }
 
 # Per-page layout changes:
 page "", :layout => "base"
-page "/blog", :layout => "blog"
+page "/blog.html", :layout => "base"
 page "/blog/*", :layout => "blog"
 # With no layout
 # page "/path/to/file.html", :layout => false
@@ -38,6 +38,15 @@ page "/blog/*", :layout => "blog"
 ###
 # Helpers
 ###
+# Methods defined in the helpers block are available in templates
+helpers do
+    # Returns all pages under a certain directory.
+    def sub_pages(dir)
+        sitemap.resources.select do |resource|
+            resource.path.start_with?(dir)
+        end
+    end
+end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -45,14 +54,13 @@ page "/blog/*", :layout => "blog"
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  activate :blog do |blog|
+      blog.layout = "blog"
+      blog.sources = '/blog/{year}-{month}-{day}-{title}.html'
+      blog.paginate = true
+  end
+  activate :directory_indexes
 end
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 set :css_dir, 'stylesheets'
 
@@ -77,6 +85,7 @@ configure :build do
   end
 
   activate :directory_indexes
+
 
   # Enable cache buster
   # activate :asset_hash

@@ -26,12 +26,12 @@ title: Antumbra Development Blog
 -#             = link_to(a.title, a)
 %h2#postListHeader.text-center
     Development Blog Posts
-%ul#blogPosts.text-center
-:erb
-    <% blog.articles.each do |a| %>
-        <li class="blogPost text-center">
-            <%= link_to a.title, a %>
-            </br>
-            <small><%= a.date.strftime('%b %e') %></small>
-        </li>
-    <% end %>
+%ul#postList.text-center
+    :erb
+        <% blog.articles.each do |a| %>
+            <li class="blogPost text-center">
+                <%= link_to a.title, a %>
+                </br>
+                <i><small><%= a.date.strftime('%b %e %Y') %></small></i>
+            </li>
+        <% end %>

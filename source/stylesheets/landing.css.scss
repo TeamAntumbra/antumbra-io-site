@@ -1121,3 +1121,12 @@ h1,h2,h3,h4,h5,h6 {
     @include transition(all, 1.3s);
     outline: none;
 }
+
+#mc-embedded-subscribe {
+    background-color: rgba(180, 180, 180, .8);
+    border: 1px solid transparent;
+    &:hover {
+        background-color: rgba(40,40,40,.4);
+        border: 1px solid rgba(240,240,240,.6);
+    }
+}

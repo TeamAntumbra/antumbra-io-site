@@ -1,5 +1,5 @@
 ---
-title: Development Blog & Roadmap Go Live
+title: Development Blog and Roadmap Go Live
 date: 2015-01-05
 author: Adam Walsh
 tags: launch, dev, blog, roadmap, timeline, website, development

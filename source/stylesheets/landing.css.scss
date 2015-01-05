@@ -2,6 +2,7 @@
 @import 'owl.carousel.css';
 @import 'owl.theme.css';
 @import 'owl.transitions.css';
+@import 'bourbon/bourbon';
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -31,6 +32,13 @@
     background-size: $arg;
 }
 
+@mixin background-size-2d($arg1, $arg2) {
+    -webkit-background-size: $arg1, $arg2;
+    -moz-background-size: $arg1, $arg2;
+    -o-background-size: $arg1, $arg2;
+    background-size: $arg1, $arg2;
+}
+
 .intro {
     display: table;
     position: fixed;
@@ -51,7 +59,7 @@
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 680px) {
     #vid {
         position: absolute;
         width: 100%;
@@ -60,11 +68,15 @@
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 680px) {
     #vid {
-        position: absolute;
-        width: auto;
-        max-width: 100%;
+        display: none;
+    }
+    .intro-body {
+        @include background-image(url("//s3.amazonaws.com/antumbra-io/mobile.png"));
+        @include background-size-2d(130%,100%);
+        background-repeat: no-repeat;
+        background-position: top center;
     }
 }
 
@@ -604,6 +616,7 @@ body {
     padding-bottom: 6px;
     padding-bottom: .47vw;
     margin-left: 35%;
+    width: 30%;
     box-shadow: 0;
     @include border-radius(4px);
     @include transition(all, 2s);
@@ -951,7 +964,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .full {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .parallax {

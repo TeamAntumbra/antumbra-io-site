@@ -1,6 +1,217 @@
 //SCSS to modify landing page for mobile devices
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($animations, $time) {
+    -webkit-transition: $animations $time ease-in-out;
+    -moz-transition: $animations $time ease-in-out;
+    -o-transition: $animations $time ease-in-out;
+    transition: $animations $time ease-in-out;
+}
+
+@mixin background-linear-gradient($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background:    -moz-linear-gradient($deg, $color1, $color2);
+    background:     -ms-linear-gradient($deg, $color1, $color2);
+    background:      -o-linear-gradient($deg, $color1, $color2);
+    background:         linear-gradient($deg, $color1, $color2);
+}
+
+@mixin background-size($arg) {
+    -webkit-background-size: $arg;
+    -moz-background-size: $arg;
+    -o-background-size: $arg;
+    background-size: $arg;
+}
+
+@mixin background-size-2d($arg1, $arg2) {
+    -webkit-background-size: $arg1, $arg2;
+    -moz-background-size: $arg1, $arg2;
+    -o-background-size: $arg1, $arg2;
+    background-size: $arg1, $arg2;
+}
+
 section {
     min-height: 100%;
     height: auto;
     width: 100%;
+}
+
+.huge-text {
+    font-size: 54px;
+}
+
+.large-text {
+    font-size: 32px
+}
+
+.medium-large-text {
+    font-size: 26px;
+}
+
+.medium-text {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p, a {
+    font-size: 14px;
+}
+
+nav.navbar-custom {
+    background-color: rgba(5,5,5,.9);
+}
+
+.intro {
+    min-height: 100%;
+}
+
+#carouselContainer {
+    padding-left: 0px;
+    width: 100%;
+}
+
+div.faq_container {
+    padding: 7px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.faq_question {
+    font-size: 16px;
+}
+
+div.faq_answer {
+    font-size: 12px;
+}
+
+#mce-EMAIL {
+    font-size: 14px;
+    margin-left: 15%;
+    width: 70%;
+}
+
+#mc-embedded-subscribe {
+
+}
+
+.btn {
+    padding: 3px;
+}
+
+i.fa-5x {
+    font-size: 32px;
+}
+
+ul.list-inline li {
+    display: inline;
+}
+
+#aboutUs-container {
+    margin: 1%;
+    width: 98%;
+}
+
+#aboutUs-container div.col-lg-8, #aboutUs {
+    padding: 2px;
+}
+
+#davis, #adam, #sam {
+    margin: 0px;
+    min-width: 33.3%;
+    max-width: 33.3%;
+    height: 250px;
+}
+
+#nick, #michel {
+    @extend #davis;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+#team {
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#adamFace, #davisFace, #samFace {
+    align: center;
+    height: 92px;
+    width: 92px;
+    margin-left: 13%;
+    margin-right: 13%;
+    overflow: hidden;
+    @include border-radius(50%);
+}
+
+#nickFace, #michelFace {
+    @extend #adamFace;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+#davisFace:hover {
+    box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
+}
+
+#adamFace:hover {
+    box-shadow: 0 0 36px rgba(201, 218, 154, 1);
+    -webkit-box-shadow: 0 0 36px rgba(201, 218, 154, 1);
+    -moz-box-shadow: 0 0 36px rgba(201, 218, 154, 1);
+}
+
+#samFace:hover {
+    box-shadow: 0 0 36px rgba(166, 138, 98, 1);
+    -webkit-box-shadow: 0 0 36px rgba(166, 138, 98, 1);
+    -moz-box-shadow: 0 0 36px rgba(166, 138, 98, 1);
+}
+
+#nickFace:hover {
+    box-shadow: 0 0 36px rgba(92, 164, 54, 1);
+    -webkit-box-shadow: 0 0 36px rgba(92, 164, 54, 1);
+    -moz-box-shadow: 0 0 36px rgba(92, 164, 54, 1);
+}
+
+#michelFace:hover {
+    box-shadow: 0 0 36px rgba(200, 200, 200, 1);
+    -webkit-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
+    -moz-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
+}
+
+i.fa-1x {
+    font-size: 20px;
+}
+
+footer, footer p {
+    font-size: 12px;
 }

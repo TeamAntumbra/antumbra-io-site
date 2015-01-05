@@ -1,8 +1,8 @@
 faqs:
     -   id: plus1
-        question: What is an ‘Antumbra’?
+        question: What is an &quot;Antumbra&quot;?
         answer: >
-            The word ‘Antumbra’ means the region from which an occluding body appears
+            The word &quot;Antumbra&quot; means the region from which an occluding body appears
             entirely contained within the disc of a light
             source - like a solar eclipse.
     -   id: plus2
@@ -33,7 +33,7 @@ faqs:
             Store for Glow that will allow users to easily
             download extended functionality. In addition,
             we're an open-source project,
-            so if there’s a missing feature you want,
+            so if there&apos;s a missing feature you want,
             feel free to implement it. If we like it
             enough, we may just add it to the official
             release.
@@ -49,7 +49,7 @@ faqs:
         answer: >
             Ambient backlighting creates a seamless transition
             from your bright display to dark environment.
-            In doing so the light object you're looking at
+            In doing so the light object you&apos;re looking at
             (your monitor) is extended into your peripherals.
             For a more in-depth explanation check out this
             <a href="http://bit.ly/AntumbraGlowScience">scientific study</a>.
@@ -57,10 +57,10 @@ faqs:
         question: How does Glow connect to my monitor?
         answer: >
             Glow mounts behind your monitor (or to
-            almost any surface you’d like) using 3M
-            Dual-Lock, a super strong plastic “velcro”.
+            almost any surface you&apos;d like) using 3M
+            Dual-Lock, a super strong plastic &quot;velcro&quot;.
             We are also developing a clip-on stand for
-            laptop users, but we don’t expect to ship it
+            laptop users, but we don&apos;t expect to ship it
             with beta.  Right now, Antumbra is best suited
             for users with desktop monitors (15 to 30
             inches diagonal) that are placed anywhere from
@@ -94,7 +94,7 @@ faqs:
             In order to control Glow, you will need to
             be able to run one of the controller
             applications.  We currently offer software
-            for Mac OS X 10.7, 10.8 and 10.9, Windows
+            for Mac OS X 10.7, 10.8, 10.9 and 10.10, Windows
             Vista, Windows 7 and Windows 8 / 8.1, as well
             as Linux (command-line interface only). However, if
             you would like to see support for a different
@@ -112,7 +112,7 @@ faqs:
             whatever new features they want. The
             possibilities are endless!
     -   id: plus11
-        question: What does 'beta' mean?
+        question: What does &apos;beta&apos; mean?
         answer: >
             Glow is still in development.  Although all
             the hardware and software is complete, fully
@@ -124,7 +124,7 @@ faqs:
             features, and tackle any bugs that might arise.
             Beta units are offered without warranty and
             are not guaranteed be perfect - so we advise
-            that users who aren’t comfortable solving
+            that users who aren&apos;t comfortable solving
             computer problems hold off until the official
             product launch.  If you like being on the
             cutting edge and getting your hands dirty
@@ -136,23 +136,23 @@ faqs:
             weeks after beta sells out.  The manufacturing
             process is currently in progress.
     -   id: plus13
-        question: So you're open-source?
+        question: So you&apos;re open-source?
         answer: >
-            Completely.  We’re releasing all our code,
+            Completely.  We&apos;re releasing all our code,
             all the hardware designs, and even the code
             for this website.  Feel free to use anything
             for commercial purposes or otherwise, just
             attribute the original work to us and link
-            to our site.  We’re not pursuing any patents
+            to our site.  We&apos;re not pursuing any patents
             and are excited to see what the open-source
             community will contribute.  Hardware will be
             released under Creative Commons Attribution
-            Share-Alike, and all software will be released under GPL.
+            Share-Alike Non-Commercial, and all software will be released under GPL.
     -   id: plus14
         question: What are your plans for the future?
         answer: >
-            We've had an overwhelming interest for a Glow
-            implementation for TV's so we are looking into
+            We&apos;ve had an overwhelming interest for a Glow
+            implementation for TV&apos;s so we are looking into
             different solutions including streaming devices, and
             open-source content platforms. We also have plans to
             take our technology to other lighting applications

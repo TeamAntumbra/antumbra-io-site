@@ -7,6 +7,8 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 %link{:href=>"stylesheets/owl.theme.css", :rel=>"stylesheet"}
 %link{:href=>"stylesheets/owl.transitions.css", :rel=>"stylesheet"}
 %link{:href=>"stylesheets/landing.css", :rel=>'stylesheet'}
+%link{:href=>"stylesheets/mobileLanding.css", :rel=>'stylesheet', :type=>'text/css',
+      :media=>"only screen and (max-width: 480px), only screen and (max-device-width: 480px)"}
 %body#page-top{:data=>{:spy=>'scroll', :target=>'.navbar-fixed-top'}}
     %a{:href=>"//plus.google.com/106064932965666182859", :rel=>"publisher"}
     %nav.navbar.navbar-custom.navbar-fixed-top{:role=>'navigation'}
@@ -51,7 +53,8 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                 %source{:src=>'//s3.amazonaws.com/antumbra-io/background.mp4',
                 :type=>'video/mp4'}
                 %img{:src=>'//s3.amazonaws.com/antumbra-io/poster.png',
-                :alt=>'Antumbra | Glow', :type=>'image/png'}
+                :alt=>'Antumbra | Glow', :type=>'image/png',
+                :media=>"only screen and (max-width: 480px), only screen and (max-device-width: 480px)"}
             .intro-body
                 .container
                     .row

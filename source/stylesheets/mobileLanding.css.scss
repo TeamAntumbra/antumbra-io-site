@@ -84,7 +84,9 @@ nav.navbar-custom {
 }
 
 header.intro {
+    position: relative;
     height: 60%;
+    padding-bottom: 0%;
 }
 
 a#scrollBtn {
@@ -92,7 +94,7 @@ a#scrollBtn {
 }
 
 section#overview {
-    margin-top: 75%;
+    margin-top: 0%;
 }
 
 #carouselContainer {
@@ -140,10 +142,14 @@ ul.list-inline li {
 #aboutUs-container {
     margin: 1%;
     width: 98%;
+    div.col-lg-8 {
+        padding: 2px;
+    }
 }
 
-#aboutUs-container div.col-lg-8, #aboutUs {
+#aboutUs {
     padding: 2px;
+    height: 200%;
 }
 
 #davis, #adam, #sam {

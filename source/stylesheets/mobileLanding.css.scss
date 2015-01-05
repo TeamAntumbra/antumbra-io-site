@@ -83,11 +83,12 @@ nav.navbar-custom {
     background-color: rgba(5,5,5,.9);
 }
 
-.intro {
-    min-height: 100%;
-    .intro-body {
+header.intro {
+    height: 60%;
+}
 
-    }
+section#overview {
+    margin-top: 75%;
 }
 
 #carouselContainer {

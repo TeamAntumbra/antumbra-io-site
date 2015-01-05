@@ -35,12 +35,6 @@
     background-size: $arg1, $arg2;
 }
 
-section {
-    min-height: 100%;
-    height: auto;
-    width: 100%;
-}
-
 .huge-text {
     font-size: 54px;
 }
@@ -91,6 +85,9 @@ nav.navbar-custom {
 
 .intro {
     min-height: 100%;
+    .intro-body {
+
+    }
 }
 
 #carouselContainer {
@@ -119,7 +116,8 @@ div.faq_answer {
 }
 
 #mc-embedded-subscribe {
-
+    width: 50%;
+    font-size: 12px;
 }
 
 .btn {
@@ -150,10 +148,17 @@ ul.list-inline li {
     height: 250px;
 }
 
-#nick, #michel {
+#nick {
     @extend #davis;
-    min-width: 50%;
-    max-width: 50%;
+    margin-left: 10%;
+    min-width: 40%;
+    max-width: 40%;
+}
+
+#michel {
+    @extend #nick;
+    margin-left: 0%;
+    margin-right: 10%;
 }
 
 #team {
@@ -174,8 +179,7 @@ ul.list-inline li {
 
 #nickFace, #michelFace {
     @extend #adamFace;
-    margin-left: 24%;
-    margin-right: 24%;
+    margin-left: 25%;
 }
 
 #davisFace:hover {

@@ -1,31 +1,17 @@
 ---
-title: Blogh
-date: 2015-01-03
-tags: blog
+title: Development Blog & Roadmap Go Live
+date: 2015-01-05
+author: Adam Walsh
+tags: launch, dev, blog, roadmap, timeline, website, development
 ---
 
-blah blah blah
+Hello!
 
-blah
-blah
-b
+If you've made it here then you can see we now have a development roadmap, as well
+as a development blog that you can use to find out what is up-and-coming for
+Antumbra.
 
-blah
-blahb
+Check back tomorrow (10/6) when we officially launch the Roadmap and Dev Blog
+for more information.
 
-
-albjasdklhasdv
-asdfhaklsdhflkajsdhflkjahsdf
-asdfjhaskdhfkjashdfkljahsdf
-
-asdfjhaksdfa
-sdf
-a
-
-sdf
-a
-sd
-f
-
-as
-df
+:)

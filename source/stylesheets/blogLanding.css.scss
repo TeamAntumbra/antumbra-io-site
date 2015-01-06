@@ -35,13 +35,13 @@ html, body {
 #heading, #postListHeader {
     padding: 2%;
     color: rgba(240,240,240,.8);
+    font-size: 2em;
 }
 
 #headingLink {
     @extend #heading;
     padding-right: 0;
     font-family: inherit;
-    font-size: 36px;
 }
 
 #postList li {

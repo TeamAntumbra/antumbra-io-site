@@ -14,14 +14,20 @@
             Antumbra
         %script{:src =>"//code.jquery.com/jquery-1.11.2.min.js"}
         %script{:src=>"//code.jquery.com/jquery-migrate-1.2.1.min.js"}
-        %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"}
-        %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"}
-        %script{:src=>"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"}
-        %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js"}
+        %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
+        :async=>'true'}
+        %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js",
+        :async=>'true'}
+        %script{:src=>"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js",
+        :async=>'true'}
+        %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js",
+        :async=>'true'}
         %script{:src=>"/javascripts/base.js", :async=>'true'}
         /[if lt IE 9]
-            %script{:src => "//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
-            %script{:src => "//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"}
+            %script{:src => "//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js",
+            :async=>'true'}
+            %script{:src => "//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js",
+            :async=>'true'}
         %link{:href=>'//fonts.googleapis.com/css?family=Montserrat',
             :rel=>'stylesheet',:type=>'text/css'}
         %link{:href=>'//fonts.googleapis.com/css?family=Open+Sans',

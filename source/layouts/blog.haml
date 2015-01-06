@@ -1,12 +1,12 @@
 = wrap_layout :base do
     %link{:href=>"/stylesheets/blog.css", :rel=>'stylesheet'}
     %nav
-        %h1
+        %h1.text-center
             %a#brandHeading.glowOnHover{:href=>"//antumbra.io"}
                 Antumbra
             %a#subTitle.glowOnHover{:href=>"//antumbra.io/blog"}
                 Development Blog
-    %body
+    %body.blogBody
         %h3#postHeading
             = current_page.data.title
             %small

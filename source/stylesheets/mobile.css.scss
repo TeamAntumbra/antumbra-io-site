@@ -1,0 +1,51 @@
+//SCSS for mobile overrides
+p, a {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.huge-text {
+    font-size: 54px;
+}
+
+.large-text {
+    font-size: 32px
+}
+
+.medium-large-text {
+    font-size: 26px;
+}
+
+.medium-text {
+    font-size: 15px;
+}
+
+body.blogBody {
+    width: 90%;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}

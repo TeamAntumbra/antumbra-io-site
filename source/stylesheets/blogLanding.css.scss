@@ -32,14 +32,14 @@ html, body {
     background-color: #1a1a1a;
 }
 
-#heading, #postListHeader {
+h1#heading, #postListHeader {
     padding: 2%;
     color: rgba(240,240,240,.8);
-    font-size: 2em;
+    font-size: 4.5vw;
 }
 
-#headingLink {
-    @extend #heading;
+a#headingLink {
+    @extend h1#heading;
     padding-right: 0;
     font-family: inherit;
 }

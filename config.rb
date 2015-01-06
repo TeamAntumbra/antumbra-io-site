@@ -45,6 +45,9 @@ page "/blog/*", :layout => "blog"
 
 # Reload the browser automatically whenever files change
 configure :development do
+  activate :disqus do |d|
+      d.shortname = 'antumbra-development'
+  end
   activate :livereload
   activate :blog do |blog|
       blog.layout = "blog"
@@ -72,6 +75,10 @@ configure :build do
   activate :gzip
   # Minify HTML on build
   activate :minify_html
+
+  activate :disqus do |d|
+      d.shortname = 'antumbra'
+  end
 
   activate :blog do |blog|
       blog.layout = "blog"

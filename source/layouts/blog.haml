@@ -9,7 +9,13 @@
     %body.blogBody
         %h3#postHeading
             = current_page.data.title
-            %small
+            %br
+            %p#postDate
                 = current_page.data.date
         #container
             =yield
+        / link with `#disqus_thread` is optional if not using `disqus_count` -->
+        %a{:href => "http://example.com/foo.html#disqus_thread"} Comments
+
+        = disqus
+        = disqus_count

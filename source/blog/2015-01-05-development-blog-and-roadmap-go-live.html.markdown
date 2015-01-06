@@ -1,7 +1,10 @@
 ---
 title: Development Blog and Roadmap Go Live
 date: 2015-01-05
-author: Adam Walsh
+author:
+    name: Adam Walsh
+    title: Windows Software Engineer & Web Developer
+    pic: adam
 tags: launch, dev, blog, roadmap, timeline, website, development
 ---
 

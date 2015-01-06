@@ -45,12 +45,7 @@
 html {
     width: 100%;
     min-height: 100%;
-}
-
-section {
-    min-height: 80%;
-    width: auto;
-    width: 100%;
+    height: fit;
 }
 
 h1, h2, h3, h4, h5, h6 {

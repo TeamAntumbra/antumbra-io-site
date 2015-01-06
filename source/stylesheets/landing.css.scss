@@ -277,6 +277,13 @@ body {
     webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
+section#overview, section#about, section#glowVidSection, section#seeTheDifference,
+section#hardware, section#FAQ, section#interested, section#contact, section#aboutUs {
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
 #aboutBtn {
     &:hover, &:focus {
         background: rgba(61, 182, 153, 1);
@@ -1142,4 +1149,13 @@ h1,h2,h3,h4,h5,h6 {
         background-color: rgba(40,40,40,.4);
         border: 1px solid rgba(240,240,240,.6);
     }
+}
+
+#aboutContainer {
+    height: 100%;
+    width: 100%;
+}
+
+#briefHistory {
+    padding-top: 10%;
 }

@@ -98,7 +98,7 @@ section#overview {
 }
 
 #carouselContainer {
-    padding-left: 0px;
+    padding-left: 0%;
     width: 100%;
 }
 
@@ -161,15 +161,14 @@ ul.list-inline li {
 
 #nick {
     @extend #davis;
-    margin-left: 10%;
+    margin-left: 5%;
     min-width: 40%;
     max-width: 40%;
 }
 
 #michel {
     @extend #nick;
-    margin-left: 0%;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 #team {
@@ -190,7 +189,7 @@ ul.list-inline li {
 
 #nickFace, #michelFace {
     @extend #adamFace;
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 #davisFace:hover {
@@ -221,6 +220,10 @@ ul.list-inline li {
     box-shadow: 0 0 36px rgba(200, 200, 200, 1);
     -webkit-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
     -moz-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
+}
+
+.title {
+    font-size: 11px;
 }
 
 i.fa-1x {

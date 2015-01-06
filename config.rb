@@ -68,10 +68,10 @@ configure :build do
   activate :minify_css
   # Minify Javascript on build
   activate :minify_javascript
-  # Minify HTML on build
-  activate :minify_html
   # Utilize gzip compression
   activate :gzip
+  # Minify HTML on build
+  activate :minify_html
 
   activate :blog do |blog|
       blog.layout = "blog"

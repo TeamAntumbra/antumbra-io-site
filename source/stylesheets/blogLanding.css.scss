@@ -32,10 +32,16 @@ html, body {
     background-color: #1a1a1a;
 }
 
-h1#heading, #postListHeader {
+h1#heading {
     padding: 2%;
     color: rgba(240,240,240,.8);
     font-size: 4.5vw;
+}
+
+#postListHeader {
+    @extend h1#heading;
+    border-top: .5px solid rgba(140,140,140,.4);
+    margin-top: 4%;
 }
 
 a#headingLink {
@@ -44,7 +50,18 @@ a#headingLink {
     font-family: inherit;
 }
 
-#postList li {
-    margin: 2%;
+#postList {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#postList li.blogPost {
+    padding-top: 1%;
+    padding-bottom: 1%;
     font-size: 18px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    border-top: .5px solid rgba(140,140,140,.4);
+    border-bottom: .5px solid rgba(140,140,140,.4);
 }

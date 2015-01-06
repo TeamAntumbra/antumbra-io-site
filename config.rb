@@ -64,11 +64,12 @@ set :build_dir, 'build'
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-
+  # Minify CSS on build
+  activate :minify_cssls
   # Minify Javascript on build
   activate :minify_javascript
+  # Minify HTML on build
+  activate :minify_html
 
   activate :blog do |blog|
       blog.layout = "blog"

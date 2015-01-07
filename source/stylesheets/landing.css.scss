@@ -300,6 +300,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 #blogBtn {
     color: #DEDEDE;
     &:hover, &:focus {
+        color: #FCFCFC;
         background: rgba(1,186,103,1);
     }
 }

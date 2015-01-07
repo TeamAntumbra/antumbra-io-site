@@ -90,7 +90,7 @@ configure :build do
 
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # activate :relative_links
 

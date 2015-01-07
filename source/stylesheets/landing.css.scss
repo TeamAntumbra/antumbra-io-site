@@ -3,6 +3,7 @@
 @import 'owl.theme.css';
 @import 'owl.transitions.css';
 @import 'bourbon/bourbon';
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -37,6 +38,18 @@
     -moz-background-size: $arg1, $arg2;
     -o-background-size: $arg1, $arg2;
     background-size: $arg1, $arg2;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x, $y, $blur, $spread, $color;
+    -moz-box-shadow: $x, $y, $blur, $spread, $color;
+    -webkit-box-shadow: $x, $y, $blur, $spread, $color;
+}
+
+@mixin rotate($arg) {
+    transform: rotate($arg);
+    -o-transform: rotate($arg);
+    -moz-transform: rotate($arg);
 }
 
 .intro {
@@ -284,9 +297,22 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     width: 100%;
 }
 
+#blogBtn {
+    color: #DEDEDE;
+    &:hover, &:focus {
+        background: rgba(1,186,103,1);
+    }
+}
+
 #aboutBtn {
     &:hover, &:focus {
         background: rgba(61, 182, 153, 1);
+    }
+}
+
+#buyNowBtn {
+    &:hover, &:focus {
+        background: rgba(200,100,20,1);
     }
 }
 

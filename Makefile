@@ -7,7 +7,7 @@ push:
 update: push pull
 run:
 	bundle exec middleman
-build: clean
+build:
 	bundle exec middleman build
 test: build
 	cd build/

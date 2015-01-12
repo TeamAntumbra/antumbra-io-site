@@ -16,7 +16,7 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
             .navbar-header
                 %button.navbar-toggle{:type=>'button',
                 :data=>{:toggle=>'collapse', :target=>'.navbar-main-collapse'}}
-                    %i.fa.fa-bars
+                    %i#mobileNavBtn.fa.fa-bars
                 %a.navbar-brand.page-scroll{:href=>'#page-top'}
                     %b
                         Antumbra
@@ -87,36 +87,36 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                         experience like never before.
         %section#overview-transition.container.hover
         %section#about.container.hover
-            #carouselContainer
-                #carousel.owl-carousel.owl-theme
-                    .item
-                        %img{:src=>"//s3.amazonaws.com/antumbra-io/Introducing-Glow.png",
-                        :alt=>"Introducing Glow. Stunning visuals. Comfortable " + |
-                        "eyes. The $35 ambient backlight."}                        |
-                    .item
-                        %img{:src=>"https://s3.amazonaws.com/antumbra-io/AntumBack.png",
-                        :alt=>"Up and running in moments. Mount. Install. Enjoy." + |
-                        "Simply stick Glow to your monitor, plug in the USB cable"+ |
-                        "and install the software. Enjoy media like never before" + |
-                        "fin just minutes."}                                        |
-                    .item
-                        %img{:src=>"https://s3.amazonaws.com/antumbra-io/ResponsiveMode.png",
-                        :alt=>"Responsive mode.  The best way to watch movies and"+   |
-                        "play games. Using software that ties into the OS, Antumbra"+ |
-                        "analyzes colors on the display in real time, projecting" +   |
-                        "them behind your monitor as fast as they appear on screen."+ |
-                        "Content on the display blends into your peripheral vision,"+ |
-                        "creating an immersive experience like no other.  Surround" + |
-                        "sound for your eyes is finally here."}                       |
-                    .item
-                        %img{:src=>"https://s3.amazonaws.com/antumbra-io/PaletteFade.png",
-                        :alt=>"Palette and Fade.  Define your workspace. Tired," +    |
-                        "strained eyes make work unbearable.  Glow is the antidote."+ |
-                        "Choose a color and brightness that suits your mood, or" +    |
-                        "have it fade gently over subtle, comfortable gradients." +   |
-                        "In Sunset mode, Glow slowly ramps up in brightness as the" + |
-                        "sun sets, perfectly augmenting software like f.lux and" +    |
-                        "keeping you productive well into the AM."}                   |
+            #slick.slick
+                %div
+                    %img{:src=>"//s3.amazonaws.com/antumbra-io/Introducing-Glow.png",
+                    :alt=>"Introducing Glow. Stunning visuals. Comfortable " + |
+                    "eyes. The $35 ambient backlight."}                        |
+                %div
+                    %img{:src=>"//s3.amazonaws.com/antumbra-io/AntumBack.png",
+                    :alt=>"Up and running in moments. Mount. Install. Enjoy." + |
+                    "Simply stick Glow to your monitor, plug in the USB cable"+ |
+                    "and install the software. Enjoy media like never before" + |
+                    "fin just minutes."}                                        |
+                %div
+                    %img{:src=>"//s3.amazonaws.com/antumbra-io/ResponsiveMode.png",
+                    :alt=>"Responsive mode.  The best way to watch movies and"+   |
+                    "play games. Using software that ties into the OS, Antumbra"+ |
+                    "analyzes colors on the display in real time, projecting" +   |
+                    "them behind your monitor as fast as they appear on screen."+ |
+                    "Content on the display blends into your peripheral vision,"+ |
+                    "creating an immersive experience like no other.  Surround" + |
+                    "sound for your eyes is finally here."}                       |
+                %div
+                    %img{:src=>"//s3.amazonaws.com/antumbra-io/PaletteFade.png",
+                    :alt=>"Palette and Fade.  Define your workspace. Tired," +    |
+                    "strained eyes make work unbearable.  Glow is the antidote."+ |
+                    "Choose a color and brightness that suits your mood, or" +    |
+                    "have it fade gently over subtle, comfortable gradients." +   |
+                    "In Sunset mode, Glow slowly ramps up in brightness as the" + |
+                    "sun sets, perfectly augmenting software like f.lux and" +    |
+                    "keeping you productive well into the AM."}                   |
+        %script{:src=>"/javascripts/landing.js"}
         %section#glowVid-transition.container.hover
         %section#glowVidSection.container.hover.text-center
             .row

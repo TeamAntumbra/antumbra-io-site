@@ -1,7 +1,4 @@
 //SCSS stylings for landing page
-@import 'owl.carousel.css';
-@import 'owl.theme.css';
-@import 'owl.transitions.css';
 @import 'bourbon/bourbon';
 
 @mixin border-radius($radius) {
@@ -973,17 +970,6 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 25%;
 }
 
-#carousel .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-#carouselContainer {
-    width: 85%;
-    padding-left: 15%;
-}
-
 #glowVid {
     box-shadow: 0px 0px 12px 12px rgba(255, 255, 255, 0.8);
 }
@@ -1185,4 +1171,16 @@ h1,h2,h3,h4,h5,h6 {
 
 #briefHistory {
     padding-top: 10%;
+}
+
+#mobileNavBtn {
+    font-size: 14px;
+}
+
+#slick {
+    width: 95%;
+    margin: 2.5%;
+    height: 95%;
+    margin-bottom: 5%;
+    margin-top: 0%;
 }

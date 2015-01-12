@@ -112,82 +112,88 @@ ul.list-inline li {
     height: 200%;
 }
 
-#davis, #adam, #sam {
-    margin: 0px;
-    min-width: 33.3%;
-    max-width: 33.3%;
-    height: 250px;
+#davis, #adam, #sam, #michel, #nick {
+    display: none;
 }
+//     margin: 0px;
+//     min-width: 33.3%;
+//     max-width: 33.3%;
+//     height: 250px;
+// }
+//
+// #nick {
+//     @extend #davis;
+//     margin-left: 5%;
+//     min-width: 40%;
+//     max-width: 40%;
+// }
+//
+// #michel {
+//     @extend #nick;
+//     margin-right: 5%;
+// }
+//
+// #team {
+//     height: 100%;
+//     min-width: 100%;
+//     max-width: 100%;
+// }
+//
+// #adamFace, #davisFace, #samFace {
+//     align: center;
+//     height: 92px;
+//     width: 92px;
+//     margin-left: 13%;
+//     margin-right: 13%;
+//     overflow: hidden;
+//     @include border-radius(50%);
+// }
+//
+// #nickFace, #michelFace {
+//     @extend #adamFace;
+//     margin-left: 20%;
+// }
+//
+// #davisFace:hover {
+//     box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
+//     -webkit-box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
+//     -moz-box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
+// }
+//
+// #adamFace:hover {
+//     box-shadow: 0 0 36px rgba(201, 218, 154, 1);
+//     -webkit-box-shadow: 0 0 36px rgba(201, 218, 154, 1);
+//     -moz-box-shadow: 0 0 36px rgba(201, 218, 154, 1);
+// }
+//
+// #samFace:hover {
+//     box-shadow: 0 0 36px rgba(166, 138, 98, 1);
+//     -webkit-box-shadow: 0 0 36px rgba(166, 138, 98, 1);
+//     -moz-box-shadow: 0 0 36px rgba(166, 138, 98, 1);
+// }
+//
+// #nickFace:hover {
+//     box-shadow: 0 0 36px rgba(92, 164, 54, 1);
+//     -webkit-box-shadow: 0 0 36px rgba(92, 164, 54, 1);
+//     -moz-box-shadow: 0 0 36px rgba(92, 164, 54, 1);
+// }
+//
+// #michelFace:hover {
+//     box-shadow: 0 0 36px rgba(200, 200, 200, 1);
+//     -webkit-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
+//     -moz-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
+// }
+//
+// .title {
+//     font-size: 11px;
+// }
+//
+// i.fa-1x {
+//     font-size: 20px;
+// }
 
-#nick {
-    @extend #davis;
-    margin-left: 5%;
-    min-width: 40%;
-    max-width: 40%;
-}
-
-#michel {
-    @extend #nick;
-    margin-right: 5%;
-}
-
-#team {
-    height: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-
-#adamFace, #davisFace, #samFace {
-    align: center;
-    height: 92px;
-    width: 92px;
-    margin-left: 13%;
-    margin-right: 13%;
-    overflow: hidden;
-    @include border-radius(50%);
-}
-
-#nickFace, #michelFace {
-    @extend #adamFace;
-    margin-left: 20%;
-}
-
-#davisFace:hover {
-    box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
-    -webkit-box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
-    -moz-box-shadow: 0 0 36px rgba(255, 255, 255, 0.8);
-}
-
-#adamFace:hover {
-    box-shadow: 0 0 36px rgba(201, 218, 154, 1);
-    -webkit-box-shadow: 0 0 36px rgba(201, 218, 154, 1);
-    -moz-box-shadow: 0 0 36px rgba(201, 218, 154, 1);
-}
-
-#samFace:hover {
-    box-shadow: 0 0 36px rgba(166, 138, 98, 1);
-    -webkit-box-shadow: 0 0 36px rgba(166, 138, 98, 1);
-    -moz-box-shadow: 0 0 36px rgba(166, 138, 98, 1);
-}
-
-#nickFace:hover {
-    box-shadow: 0 0 36px rgba(92, 164, 54, 1);
-    -webkit-box-shadow: 0 0 36px rgba(92, 164, 54, 1);
-    -moz-box-shadow: 0 0 36px rgba(92, 164, 54, 1);
-}
-
-#michelFace:hover {
-    box-shadow: 0 0 36px rgba(200, 200, 200, 1);
-    -webkit-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
-    -moz-box-shadow: 0 0 36px rgba(200, 200, 200, 1);
-}
-
-.title {
-    font-size: 11px;
-}
-
-i.fa-1x {
-    font-size: 20px;
+.aboutUsText {
+    padding: 2%;
 }
 
 footer, footer p {

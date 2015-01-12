@@ -869,17 +869,14 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 .medium-large-text {
     font-size: 24px;
-    font-size: 3vw;
 }
 
 .large-text {
     font-size: 32px;
-    font-size: 4vw;
 }
 
 .medium-text {
     font-size: 18px;
-    font-size: 1.81vw;
 }
 
 .huge-text {
@@ -1031,11 +1028,16 @@ h1,h2,h3,h4,h5,h6 {
 #team {
     width: 100%;
     height: 30%;
+    margin-top: 3%;
 }
 
 .teamMember {
     float: left;
     margin-left: 13px;
+    img {
+        margin: auto;
+        display: block;
+    }
 }
 
 #aboutUs-container {
@@ -1047,10 +1049,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .teamMemberImage {
     @include border-radius(50%);
-    margin: 3px;
     width: 200px;
     height: 200px;
     border: none;
+    align: center;
 }
 
 #adamFace, #davisFace, #samFace, #nickFace, #michelFace {
@@ -1183,4 +1185,9 @@ h1,h2,h3,h4,h5,h6 {
     height: 95%;
     margin-bottom: 5%;
     margin-top: 0%;
+}
+
+#subAboutText {
+    display: block;
+    margin-top: 3%;
 }

@@ -36,13 +36,22 @@
 }
 
 nav.navbar-custom {
+    height: 60px;
     background-color: rgba(5,5,5,.9);
+    .container, .navbar-header, .navbar-brand {
+        height: 60px;
+        font-size: 22px;
+    }
 }
 
 header.intro {
     position: relative;
-    height: 45%;
+    height: 260px;
+    padding-top: 12%;
     padding-bottom: 0%;
+    .intro-body {
+        vertical-align: bottom;
+    }
 }
 
 a#scrollBtn {

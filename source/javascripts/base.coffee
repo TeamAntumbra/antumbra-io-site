@@ -43,15 +43,4 @@ $(document).ready ->
         height: newHeight, 500
       $(this).closest(".faq").addClass "open"
     return
-
-  $("#carousel").owlCarousel
-    navigation: true # Show next and prev buttons
-    navigationText: [
-      "<-"
-      "->" ]
-    slideSpeed: 300
-    paginationSpeed: 400
-    singleItem: true
-    loop: true
-
   return

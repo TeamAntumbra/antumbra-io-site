@@ -1153,7 +1153,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 * {
-    @include transition(all, 1.3s);
+    @include transition(all, .9s);
     outline: none;
 }
 

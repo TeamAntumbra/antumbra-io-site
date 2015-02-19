@@ -10,7 +10,7 @@
 ###
 #HAML
 ###
-set :haml, { :ugly => false, :format => :html5 }
+set :haml, { :ugly => true, :format => :html5 }
 
 ###
 # Page options, layouts, aliases and proxies
@@ -20,6 +20,7 @@ set :haml, { :ugly => false, :format => :html5 }
 page "", :layout => "base"
 page "/blog.html", :layout => "base"
 page "/blog/*", :layout => "blog"
+page "/beta.html", :layout => "base"
 # With no layout
 # page "/path/to/file.html", :layout => false
 #

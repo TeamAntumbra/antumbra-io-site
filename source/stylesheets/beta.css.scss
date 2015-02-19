@@ -1,0 +1,88 @@
+//SCSS stylings for beta page
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($animations, $time) {
+    -webkit-transition: $animations $time ease-in-out;
+    -moz-transition: $animations $time ease-in-out;
+    -o-transition: $animations $time ease-in-out;
+    transition: $animations $time ease-in-out;
+}
+
+@mixin background-linear-gradient($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background:    -moz-linear-gradient($deg, $color1, $color2);
+    background:     -ms-linear-gradient($deg, $color1, $color2);
+    background:      -o-linear-gradient($deg, $color1, $color2);
+    background:         linear-gradient($deg, $color1, $color2);
+}
+
+@mixin background-size($arg) {
+    -webkit-background-size: $arg;
+    -moz-background-size: $arg;
+    -o-background-size: $arg;
+    background-size: $arg;
+}
+
+@mixin background-size-2d($arg1, $arg2) {
+    -webkit-background-size: $arg1, $arg2;
+    -moz-background-size: $arg1, $arg2;
+    -o-background-size: $arg1, $arg2;
+    background-size: $arg1, $arg2;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x, $y, $blur, $spread, $color;
+    -moz-box-shadow: $x, $y, $blur, $spread, $color;
+    -webkit-box-shadow: $x, $y, $blur, $spread, $color;
+}
+
+@mixin rotate($arg) {
+    transform: rotate($arg);
+    -o-transform: rotate($arg);
+    -moz-transform: rotate($arg);
+}
+
+h1,h2,h3,h4,h5,h6,a,p {
+    color: rgba(238,238,238,.8);
+}
+
+* {
+    @include transition(1.2s, ease-in-out);
+}
+
+html, body {
+    background-color: #1a1a1a;
+}
+
+#welcome {
+    padding-top: 7%;
+}
+
+#dwnloadTitle {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#sourceTitle {
+    margin-top: 3%;
+}
+
+#sourceList {
+    margin-top: 2%;
+}
+
+ul.inlineList {
+    margin-right: 20%;
+    margin-left: 20%;
+    li {
+        display: inline;
+        padding-top: 5%;
+        margin-left: 19%;
+    }
+}

@@ -10,7 +10,6 @@ $(window).scroll ->
     $(".navbar-fixed-top").removeClass "top-nav-collapse"
   return
 
-
 # jQuery for page scrolling feature - requires jQuery Easing plugin
 $ ->
   $("a.page-scroll").bind "click", (event) ->
@@ -22,7 +21,6 @@ $ ->
     return
 
   return
-
 
 # Closes the Responsive Menu on Menu Item Click
 $(".navbar-collapse ul li a").click ->

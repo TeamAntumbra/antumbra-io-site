@@ -87,7 +87,7 @@ a {
             padding: .32vw .47vw;
             font-size: 16px;
             font-size: 1.25vw;
-            color: #fff;
+            color: rgb(187,187,187);
             &:hover, &:focus, &:active {
                 outline: 0;
                 color: #000;
@@ -96,7 +96,7 @@ a {
         }
     }
     a {
-        color: #fff;
+        color: rgb(187,187,187);
     }
     .nav li {
         &.active {
@@ -115,10 +115,11 @@ a {
     }
 }
 
-#overviewBtn, #aboutBtn, #glowVidBtn, #FAQBtn, #interestedBtn, #contactBtn, #buyNowBtn {
-    color: rgb(222,222,222);
+#overviewBtn, #aboutBtn, #glowVidBtn, #FAQBtn, #interestedBtn, #contactBtn,
+#buyNowBtn, #blogBtn {
+    color: rgb(187,187,187);
     &:hover{
-        color: rgb(252,252,252);
+        color: rgb(102,102,102);
     }
 }
 

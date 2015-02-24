@@ -11,13 +11,8 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
     %a{:href=>"//plus.google.com/106064932965666182859", :rel=>"publisher"}
     %nav.navbar.navbar-custom.navbar-fixed-top{:role=>'navigation'}
         #navContainer
-            .navbar-header
-                %button.navbar-toggle{:type=>'button',
-                :data=>{:toggle=>'collapse', :target=>'.navbar-main-collapse'}}
-                    %i#mobileNavBtn.fa.fa-bars
-                %a.navbar-brand.page-scroll{:href=>'#page-top'}
-                    %b
-                        Antumbra
+            %a.page-scroll{:href=>'#page-top'}
+                %img#logotype{:src=>'//s3.amazonaws.com/antumbra-io/logotype_trimmed.png'}
             #navMenu.collapse.navbar-collapse.navbar-right.navbar-main-collapse
                 %ul.nav.navbar-nav
                     %li.hidden
@@ -50,23 +45,21 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
         .intro-body
             .container
                 .row
-                    .col-md-8.col-md-offset-2
-                        %h1#mainTitle.brand-heading
-                            Antumbra
+                    .col-md-8.col-md-offset-2.text-center
+                        %h3.grey-text
+                            Don't let eyestrain limit how long
+                            %br
+                            you can work or play
+                        %br
+                        %h2.red-text
+                            Fight back with Glow.
                         %a#scrollBtn.page-scroll.btn.fa.fa-angle-down.fa-5x{:href=>'#glowVid'}
     %section#overview.container
         %video#introVid{:src=>'//s3.amazonaws.com/antumbra-io/background.webm',
         :controls=>'true'}
         .row
             .col-lg-8.col-lg-offset-2.text-center
-                %vid
                 %h2
-                    Don&apos;t let eyestrain limit how long you can work or play
-                %h1.huge-text.pad-top-2
-                    Fight back with Glow
-                %br
-                %br
-                %h4
                     %i.medium-large-text
                         Work longer, game harder, feel better.
                 %p.pad-top-7.medium-text

@@ -58,18 +58,16 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
         %video#introVid{:src=>'//s3.amazonaws.com/antumbra-io/background.webm',
         :controls=>'true'}
         .row
-            .col-lg-8.col-lg-offset-2.text-center
-                %h2
-                    %i.medium-large-text
-                        Work longer, game harder, feel better.
-                %p.pad-top-7.medium-text
+            #introSubTxt.text-center
+                %h2.blue-text
+                    Work longer, Game harder, Feel better.
+                %p.pad-top-2.medium-text.grey-text
                     Glow illuminates the wall behind your
                     monitor, creating a seamless transition from dark
                     environment to bright display.  An extension store coupled
                     with highly customizable open-source software allows you to take
                     your desk into the future, and define your computing
                     experience like never before.
-    %section#overview-transition.container
     %section#about.container
         #slick.slick
             %div
@@ -100,7 +98,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                 "In Sunset mode, Glow slowly ramps up in brightness as the" + |
                 "sun sets, perfectly augmenting software like f.lux and" +    |
                 "keeping you productive well into the AM."}                   |
-    %section#glowVid-transition.container
     %script{:src=>"/javascripts/slick.js"}
     %section#glowVidSection.container.text-center
         .row
@@ -114,7 +111,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                     Introducing Glow.
                 %h3.medium-large-text.grey
                     Stunning visuals.  Comfortable eyes.
-    %section#seeTheDifference-transition.container
     %section#seeTheDifference.container
         #difference-container
             #h1#diffTitle
@@ -124,7 +120,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
             #fade
                 %img#fadeImg{:src=>"https://s3.amazonaws.com/antumbra-io/unlit.png",
                 :alt=>"Experience the Difference of Antumbra | Glow"}
-    %section#hardware-transition.container
     %section#hardware.container.content-section.text-center
         .row
             .col-lg-8.col-lg-offset-2
@@ -149,7 +144,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                     and configuration only another couple minutes at
                     most - letting you start enjoying content like never
                     before in just moments.
-    %section#FAQ-transition.container
     %section#FAQ.container.content-section
         .row
             .col-lg-8.col-lg-offset-2
@@ -161,7 +155,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                 :question => q.question,                              |
                 :answer => q.answer})                                 |
                 -#
-    %section#interested-transition.container
     %section#interested.container.text-center
         .interested-section
             .container
@@ -205,7 +198,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                                     Check the Dev blog & Roadmap.
                         %br
                             Free shipping inside the USA. $15 International.
-    %section#contact-transition.container
     %section#contact.container.text-center.content-section
         .row
             .col-lg-8.col-lg-offset-2
@@ -247,7 +239,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                     %li
                         %a.btn.angellist{:href=>"https://angel.co/antumbra"}
                             %i.fa.fa-angellist.fa-5x
-    %section#aboutUs-transition.container
     %section#aboutUs.container.content-section.text-center
         #aboutUs-container.row
             .col-lg-8.full

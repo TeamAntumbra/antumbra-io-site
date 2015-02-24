@@ -261,7 +261,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #aboutBtn {
     &:hover, &:focus {
-        background: rgba(61, 182, 153, 1);
+        background: rgba(61, 182, 228, 1);
     }
 }
 
@@ -271,46 +271,14 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     }
 }
 
-#about-transition {
-    background: -webkit-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* W3C */
-    width: 100%;
-    height: 250px;
-    height: 19.5vw;
-}
-
 #about {
-    background: rgba(61, 182, 153, 1);
+    background: rgba(61, 182, 228, 1);
     width: 100%;
     height: 110%;
     color: #F0F0F0;
     padding-top: 75px;
     padding-top: 5.86vw;
     margin-bottom: -1px;
-}
-
-#glowVid-transition {
-    background: -webkit-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
 }
 
 #glowVidSection {
@@ -344,22 +312,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     }
 }
 
-#interested-transition {
-    background: -webkit-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* W3C */
-    width: 100%;
-    height: 250px;
-    height: 19.5vw;
-}
-
 #contact {
     background: rgba(98, 174, 77, 1);
     height: 120%;
@@ -374,38 +326,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     &:hover, &:active {
         background: rgba(98, 174, 77, 0.7);
     }
-}
-
-#contact-transition {
-    background: -webkit-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
-}
-
-#hardware-transition {
-    background: -webkit-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
 }
 
 #hardware {
@@ -425,22 +345,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     }
 }
 
-#FAQ-transition {
-    background: -webkit-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
-}
-
 #FAQ {
     background: rgba(187, 89, 200, 1);
     height: auto;
@@ -454,31 +358,13 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #seeTheDifference {
     background: rgba(156, 156, 156, 1);
-    height: 130%;
+    height: 100%;
     width: 100%;
-    padding-top: 75px;
-    padding-top: 5.86vw;
     padding-left: 0;
     padding-right: 0;
     align: center;
     margin-top: -1px;
     margin-bottom: -1px;
-}
-
-#seeTheDifference-transition {
-    background: -webkit-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
 }
 
 #aboutUs {
@@ -492,22 +378,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     margin-bottom: -1px;
 }
 
-#aboutUs-transition {
-    background: -webkit-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
-}
-
 #overview {
     background: rgba(39, 37, 38, 1);
     height: 130%;
@@ -515,22 +385,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     align: center;
     margin-bottom: -1px;
     color: rgba(0, 0, 0, 1);
-}
-
-#overview-transition {
-    background: -webkit-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
 }
 
 #overviewBtn {
@@ -620,12 +474,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     position: relative;
     width: 100%;
 }
-
-/*#wrapper {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}*/
 
 @-webkit-keyframes wobble {
     0% {
@@ -830,7 +678,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 .medium-text {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .huge-text {
@@ -962,7 +810,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #difference-container {
-    height: 90%;
+    height: 100%;
     width: 100%;
 }
 
@@ -971,6 +819,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 52px;
     color: rgba(21, 21, 21, 0.8);
     text-align: center;
+    z-index: 100;
 }
 
 #diffSubTitle {
@@ -1089,6 +938,8 @@ h1,h2,h3,h4,h5,h6 {
 
 #fadeImg {
     width: 100%;
+    left: 0;
+    top: 0;
     &:hover {
         opacity: 0;
     }
@@ -1162,4 +1013,8 @@ nav {
 
 .red-text {
     color: rgb(252,70,75);
+}
+
+.blue-text {
+    color: rgb(62,182,226);
 }

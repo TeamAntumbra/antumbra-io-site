@@ -66,6 +66,10 @@ section.intro {
     }
 }
 
+#introSubTxt {
+    transform: translateY(-75%);
+}
+
 video#introVid {
     width: 80%;
     margin-left: 10%;
@@ -381,7 +385,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #overview {
     background: rgba(39, 37, 38, 1);
-    height: 130%;
+    height: 100%;
     width: 100%;
     align: center;
     margin-bottom: -1px;

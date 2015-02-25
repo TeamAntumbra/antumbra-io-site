@@ -6,8 +6,12 @@
 $(window).scroll ->
   if $(".navbar").offset().top > 50
     $(".navbar-fixed-top").addClass "top-nav-collapse"
+    $(".menu-item").removeClass "dark-text"
+    $(".menu-item").addClass "bright-text"
   else
     $(".navbar-fixed-top").removeClass "top-nav-collapse"
+    $(".menu-item").addClass "dark-text"
+    $(".menu-item").removeClass "bright-text"
   return
 
 # jQuery for page scrolling feature - requires jQuery Easing plugin

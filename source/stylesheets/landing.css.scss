@@ -984,13 +984,13 @@ h3#lightPurpTxt {
 }
 
 a.light-hover {
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
         color: rgb(242,242,242);
     }
 }
 
 a.dark-hover {
-    &:hover, &:active {
+    &:hover, &:active, &:focus {
         color: rgb(2,2,2);
     }
 }

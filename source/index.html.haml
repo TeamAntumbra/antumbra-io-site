@@ -151,7 +151,7 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                     FAQ
             -data.faqs.faqs.each do |q|
                 = partial('layouts/faq_item',                         |
-                :locals => { :id=> q.id,                              |
+                :locals => {                                          |
                 :question => q.question,                              |
                 :answer => q.answer})                                 |
                 -#

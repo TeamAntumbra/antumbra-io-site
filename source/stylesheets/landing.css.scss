@@ -971,3 +971,15 @@ nav {
 h3#lightPurpTxt {
     color: rgba(252,252,252,.4);
 }
+
+a.light-hover {
+    &:hover, &:active {
+        color: rgb(242,242,242);
+    }
+}
+
+a.dark-hover {
+    &:hover, &:active {
+        color: rgb(2,2,2);
+    }
+}

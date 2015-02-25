@@ -6,8 +6,14 @@
 $(window).scroll ->
   if $(".navbar").offset().top > 50
     $(".navbar-fixed-top").addClass "top-nav-collapse"
+    $(".menu-item").removeClass "dark-text"
+    $(".menu-item").addClass "bright-text"
+    $("#logotype").attr("src", "//s3.amazonaws.com/antumbra-io/logotype_trimmed.png")
   else
     $(".navbar-fixed-top").removeClass "top-nav-collapse"
+    $(".menu-item").addClass "dark-text"
+    $(".menu-item").removeClass "bright-text"
+    $("#logotype").attr("src", "//s3.amazonaws.com/antumbra-io/logotype_bw.png")
   return
 
 # jQuery for page scrolling feature - requires jQuery Easing plugin

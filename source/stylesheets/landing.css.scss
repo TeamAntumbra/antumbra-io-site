@@ -49,17 +49,14 @@
     -moz-transform: rotate($arg);
 }
 
-.intro {
+section.intro {
     display: table;
-    position: fixed;
     width: 100%;
-    height: 100%;
-    padding: 100px 0;
-    padding: 7.8vw 0;
+    padding-top: 10%;
+    padding-bottom: 15%;
     text-align: center;
     color: argb(0, 0, 0, 0);
-    background-color: #000;
-    @include background-size("cover");
+    background-color: rgb(225,225,225);
     overflow: hidden;
     top: 0;
     .intro-body {
@@ -69,25 +66,26 @@
     }
 }
 
-@media (min-width: 680px) {
-    #vid {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        z-index: 0;
-    }
+#introSubTxt {
+    transform: translateY(-75%);
 }
 
-@media (max-width: 680px) {
-    #vid {
-        display: none;
-    }
-    .intro-body {
-        @include background-image(url("//s3.amazonaws.com/antumbra-io/mobile.png"));
-        @include background-size-2d(130%,100%);
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
+video#introVid {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 60%;
+    transform: translateY(-35%);
+    z-index: 100;
+}
+
+img#logotype {
+    width: 15%;
+    padding-top: 1%;
+}
+
+img#hiddenLogotype {
+    display: none;
 }
 
 .brand-heading {
@@ -99,37 +97,6 @@
 #mainTitle {
     font-weight: 500;
     text-transform: uppercase;
-}
-
-.intro .intro-body {
-    .brand-heading {
-        font-size: 40px;
-        /*    font-size: 3.122vw;*/
-    }
-    .intro-text {
-        font-size: 18px;
-        font-size: 1.41vw;
-    }
-}
-
-@media (min-width: 767px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-        .intro-body {
-            .brand-heading {
-                font-size: 100px;
-                /*    font-size: 7.82vw ;*/
-                font-weight: lighter;
-                color: rgba(0, 0, 0, 1);
-                text-shadow: 0 0 0.11em rgba(255, 255, 255, 1);
-            }
-            .intro-text {
-                font-size: 25px;
-                font-size: 1.95vw;
-            }
-        }
-    }
 }
 
 .btn-circle {
@@ -295,16 +262,14 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #blogBtn {
-    color: #DEDEDE;
     &:hover, &:focus {
-        color: #FCFCFC;
         background: rgba(1,186,103,1);
     }
 }
 
 #aboutBtn {
     &:hover, &:focus {
-        background: rgba(61, 182, 153, 1);
+        background: rgba(61, 182, 228, 1);
     }
 }
 
@@ -314,24 +279,8 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     }
 }
 
-#about-transition {
-    background: -webkit-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* W3C */
-    width: 100%;
-    height: 250px;
-    height: 19.5vw;
-}
-
 #about {
-    background: rgba(61, 182, 153, 1);
+    background: rgba(61, 182, 228, 1);
     width: 100%;
     height: 110%;
     color: #F0F0F0;
@@ -340,28 +289,13 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     margin-bottom: -1px;
 }
 
-#glowVid-transition {
-    background: -webkit-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(53, 112, 160, 1), rgba(61, 182, 153, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
-}
-
 #glowVidSection {
     background: rgba(53, 112, 160, 1);
     width: 100%;
     height: 120%;
     padding-top: 75px;
-    padding-top: 5.86vw;
+    padding-bottom: 75px;
+    // padding-top: 5.86vw;
     margin-top: -1px;
 }
 
@@ -372,7 +306,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #interested {
-    background: rgba(183, 59, 76, 1);
+    background: rgba(252, 70, 75, 1);
     width: 100%;
     height: 120%;
     padding-top: 150px;
@@ -383,30 +317,15 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #interestedBtn {
     &:hover, &:active {
-        background: rgba(183, 59, 76, 0.7);
+        background: rgba(252, 70, 75, 0.7);
     }
 }
 
-#interested-transition {
-    background: -webkit-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(183, 59, 76, 1), rgba(187, 89, 200, 1));
-    /* W3C */
-    width: 100%;
-    height: 250px;
-    height: 19.5vw;
-}
-
 #contact {
-    background: rgba(98, 174, 77, 1);
+    background: rgba(39, 37, 38, 1);
     height: 120%;
     width: 100%;
+    padding-bottom: 5%;
     margin-top: -1px;
     margin-bottom: -1px;
     margin-top: -1px;
@@ -415,40 +334,8 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #contactBtn {
     &:hover, &:active {
-        background: rgba(98, 174, 77, 0.7);
+        background: rgba(39, 37, 38, 0.7);
     }
-}
-
-#contact-transition {
-    background: -webkit-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(98, 174, 77, 1), rgba(183, 59, 76, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
-}
-
-#hardware-transition {
-    background: -webkit-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(97, 64, 191, 1), rgba(156, 156, 156, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
 }
 
 #hardware {
@@ -468,60 +355,27 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     }
 }
 
-#FAQ-transition {
-    background: -webkit-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(187, 89, 200, 1), rgba(97, 64, 191, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
-}
-
 #FAQ {
-    background: rgba(187, 89, 200, 1);
+    background: rgba(39, 37, 38, 1);
     height: auto;
     width: 100%;
     padding-top: 75px;
-    padding-top: 5.86vw;
+    padding-bottom: 75px;
     align: center;
     margin-top: -1px;
     margin-bottom: -1px;
 }
 
 #seeTheDifference {
-    background: rgba(156, 156, 156, 1);
-    height: 130%;
+    height: 100%;
     width: 100%;
-    padding-top: 75px;
-    padding-top: 5.86vw;
     padding-left: 0;
     padding-right: 0;
     align: center;
+    position: relative;
+    z-index: 0;
     margin-top: -1px;
     margin-bottom: -1px;
-}
-
-#seeTheDifference-transition {
-    background: -webkit-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(156, 156, 156, 1), rgba(53, 112, 160, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
 }
 
 #aboutUs {
@@ -535,48 +389,13 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     margin-bottom: -1px;
 }
 
-#aboutUs-transition {
-    background: -webkit-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(115, 168, 176, 1), rgba(98, 174, 77, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
-}
-
 #overview {
-    background: rgba(255, 212, 44, 1);
-    height: 130%;
+    background: rgba(39, 37, 38, 1);
+    height: 100%;
     width: 100%;
     align: center;
-    padding-top: 8%;
-    margin-top: 70%;
-    /*to not cover the splash video*/
     margin-bottom: -1px;
     color: rgba(0, 0, 0, 1);
-}
-
-#overview-transition {
-    background: -webkit-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* FF3.6+ */
-    background: -ms-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* IE10 */
-    background: -o-linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* Opera 11.10+ */
-    background: linear-gradient(0deg, rgba(61, 182, 153, 1), rgba(255, 212, 44, 1));
-    /* W3C */
-    height: 250px;
-    height: 19.5vw;
-    width: 100%;
 }
 
 #overviewBtn {
@@ -587,7 +406,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #FAQBtn {
     &:hover, &:focus {
-        background: rgba(187, 89, 200, 1);
+        background: rgba(39, 37, 38, 1);
     }
 }
 
@@ -633,6 +452,12 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     }
 }
 
+.github, .angellist {
+    &:hover, &:focus {
+        color: rgb(106,106,106);
+    }
+}
+
 #mc_embed_signup {
     background: rgba(0, 0, 0, 0);
     color: #000;
@@ -646,8 +471,8 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     padding-top: .47vw;
     padding-bottom: 6px;
     padding-bottom: .47vw;
-    margin-left: 35%;
-    width: 30%;
+    margin-left: 25%;
+    width: 50%;
     box-shadow: 0;
     @include border-radius(4px);
     @include transition(all, 2s);
@@ -665,12 +490,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 .hover {
     position: relative;
     width: 100%;
-}
-
-#wrapper {
-    height: 100%;
-    width: 100%;
-    position: absolute;
 }
 
 @-webkit-keyframes wobble {
@@ -741,7 +560,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 #scrollBtn {
     align: center;
     outline: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(55, 55, 55, 0.9);
     -webkit-animation: wobble 1.0s infinite;
     -moz-animation: wobble 1.0s infinite;
     -ms-animation: wobble 1.0s infinite;
@@ -752,7 +571,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     -o-animation-delay: 2s;
     animation-delay: 2s;
     &:hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(175, 175, 175, 1);
     }
 }
 
@@ -762,14 +581,21 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     margin-right: 15%;
 }
 
+a.redOnHover {
+    &:hover, &:focus {
+        color: rgba(249,71,72, 1);
+    }
+}
+
 .faq_question {
     display: inline-block;
     cursor: pointer;
+    text-decoration: none;
     font-weight: bold;
     font-size: 24px;
     font-size: 1.875vw;
-    &:hover, &:focus {
-        color: rgba(247, 247, 247, 1);
+    a {
+        text-decoration: none;
     }
 }
 
@@ -783,90 +609,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     font-size: 1.41vw;
 }
 
-#plus1 {
-    &:hover a {
-        color: rgba(109, 228, 110, 1);
-    }
-}
-
-#plus2 {
-    &:hover a {
-        color: rgba(47,107,156, 1);
-    }
-}
-
-#plus3 {
-    &:hover a {
-        color: rgba(222, 235, 40, 1);
-    }
-}
-
-#plus4 {
-    &:hover a {
-        color: rgba(24,220,195, 1);
-    }
-}
-
-#plus5 {
-    &:hover a {
-        color: rgba(92, 240, 232, 1);
-    }
-}
-
-#plus6 {
-    &:hover a {
-        color: rgba(19, 201, 101, 1);
-    }
-}
-
-#plus7 {
-    &:hover a {
-        color: rgba(170,25,34, 1);
-    }
-}
-
-#plus8 {
-    &:hover a {
-        color: rgba(243, 154, 129, 1);
-    }
-}
-
-#plus9 {
-    &:hover a {
-        color: rgba(96, 197, 240, 1);
-    }
-}
-
-#plus10 {
-    &:hover a {
-        color: rgba(93, 193, 60, 1);
-    }
-}
-
-#plus11 {
-    &:hover a {
-        color: rgba(250, 144, 13, 1);
-    }
-}
-
-#plus12 {
-    &:hover a {
-        color: rgba(122, 171, 55, 1);
-    }
-}
-
-#plus13 {
-    &:hover a {
-        color: rgba(95, 166, 143, 1);
-    }
-}
-
-#plus14 {
-    &:hover a {
-        color: rgba(219, 182, 10, 1);
-    }
-}
-
 .medium-large-text {
     font-size: 24px;
 }
@@ -876,7 +618,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 .medium-text {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .huge-text {
@@ -1008,20 +750,35 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #difference-container {
-    height: 90%;
+    height: 100%;
     width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+#titleContainer {
+    color: rgb(52,52,52);
+    height: 0;
+    z-index: 101;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    pointer-events: none;
 }
 
 #diffTitle {
+    padding-top: 20%;
     margin: 0px;
     font-size: 52px;
-    color: rgba(21, 21, 21, 0.8);
     text-align: center;
+    position: relative;
+    z-index: 101;
 }
 
 #diffSubTitle {
     @extend #diffTitle;
     padding: 0px;
+    opacity: 70%;
     font-size: 24px;
 }
 
@@ -1117,24 +874,22 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
 }
 
-#fade-container {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    height: 95%;
-    overflow: hidden;
-}
-
 #fade {
     width: 100%;
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-image: url("//s3.amazonaws.com/antumbra-io/lit.png");
+    position: relative;
 }
 
 #fadeImg {
     width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: .99;
+    position: relative;
     &:hover {
         opacity: 0;
     }
@@ -1200,4 +955,20 @@ nav {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.grey-text {
+    color: rgb(182,182,182);
+}
+
+.red-text {
+    color: rgb(252,70,75);
+}
+
+.blue-text {
+    color: rgb(62,182,226);
+}
+
+h3#lightPurpTxt {
+    color: rgba(252,252,252,.4);
 }

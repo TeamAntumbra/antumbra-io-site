@@ -7,9 +7,4 @@ push:
 update: push pull
 run:
 	bundle exec middleman
-build:
-	bundle exec middleman build
-test: build
-	cd build/
-	python -m SimpleHTTPServer
 

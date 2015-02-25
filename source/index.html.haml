@@ -11,363 +11,340 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
     %a{:href=>"//plus.google.com/106064932965666182859", :rel=>"publisher"}
     %nav.navbar.navbar-custom.navbar-fixed-top{:role=>'navigation'}
         #navContainer
-            .navbar-header
-                %button.navbar-toggle{:type=>'button',
-                :data=>{:toggle=>'collapse', :target=>'.navbar-main-collapse'}}
-                    %i#mobileNavBtn.fa.fa-bars
-                %a.navbar-brand.page-scroll{:href=>'#page-top'}
-                    %b
-                        Antumbra
+            %a.page-scroll{:href=>'#page-top'}
+                %img#logotype{:src=>'//s3.amazonaws.com/antumbra-io/logotype_bw.png'}
+                %img#hiddenLogotype{:src=>'//s3.amazonaws.com/antumbra-io/logotype_trimmed.png'}
             #navMenu.collapse.navbar-collapse.navbar-right.navbar-main-collapse
                 %ul.nav.navbar-nav
                     %li.hidden
                         %a{:href=>'#page-top'}
                     %li
-                        %a.page-scroll.menu-item#overviewBtn{:href=>'#overview'}
+                        %a.page-scroll.dark-text.menu-item#overviewBtn{:href=>'#overview'}
                             Overview
                     %li
-                        %a.page-scroll.menu-item#aboutBtn{:href=>'#about'}
+                        %a.page-scroll.dark-text.menu-item#aboutBtn{:href=>'#about'}
                             About
                     %li
-                        %a.page-scroll.menu-item#glowVidBtn{:href=>'#glow'}
+                        %a.page-scroll.dark-text.menu-item#glowVidBtn{:href=>'#glow'}
                             Glow
                     %li
-                        %a.page-scroll.menu-item#FAQBtn{:href=>'#FAQ'}
+                        %a.page-scroll.dark-text.menu-item#FAQBtn{:href=>'#FAQ'}
                             FAQ
                     %li
-                        %a.page-scroll.menu-item#interestedBtn{:href=>'#interested'}
+                        %a.page-scroll.dark-text.menu-item#interestedBtn{:href=>'#interested'}
                             Interested?
                     %li
-                        %a.page-scroll.menu-item#contactBtn{:href=>'#contact'}
+                        %a.page-scroll.dark-text.menu-item#contactBtn{:href=>'#contact'}
                             Contact Us
                     %li
-                        %a.menu-item#blogBtn{:href=>'/blog/'}
+                        %a.dark-text.menu-item#blogBtn{:href=>'/blog/'}
                             Dev Blog
                     %li
-                        %a.menu-item#buyNowBtn{:href=>'//antumbra.myshopify.com/products/glow-pre-order'}
+                        %a.dark-text.menu-item#buyNowBtn{:href=>'//antumbra.myshopify.com/products/glow-pre-order'}
                             Pre-Order
-    #wrapper
-        %header.intro
-            %video#vid{'autoplay'=>true, 'muted'=>true, 'loop'=>true,
-            'preload'=>true, 'poster'=>'//s3.amazonaws.com/antumbra-io/poster.png'}
-                %source{:src=>'//s3.amazonaws.com/antumbra-io/background.webm',
-                :type=>'video/webm'}
-                %source{:src=>'//s3.amazonaws.com/antumbra-io/background.mp4',
-                :type=>'video/mp4'}
-                %img{:src=>'//s3.amazonaws.com/antumbra-io/poster.png',
-                :alt=>'Antumbra | Glow', :type=>'image/png',
-                :media=>"only screen and (max-width: 480px), only screen and (max-device-width: 480px)"}
-            .intro-body
-                .container
-                    .row
-                        .col-md-8.col-md-offset-2
-                            %h1#mainTitle.brand-heading
-                                Antumbra
-                            %a#scrollBtn.page-scroll.btn.fa.fa-angle-down.fa-5x{:href=>'#glowVid'}
-        %section#overview.container.hover
-            .row
-                .col-lg-8.col-lg-offset-2.text-center
-                    %h2
-                        Don&apos;t let eyestrain limit how long you can work or play
-                    %h1.huge-text.pad-top-2
-                        Fight back with Glow
-                    %br
-                    %br
-                    %h4
-                        %i.medium-large-text
-                            Work longer, game harder, feel better.
-                    %p.pad-top-7.medium-text
-                        Glow illuminates the wall behind your
-                        monitor, creating a seamless transition from dark
-                        environment to bright display.  An extension store coupled
-                        with highly customizable open-source software allows you to take
-                        your desk into the future, and define your computing
-                        experience like never before.
-        %section#overview-transition.container.hover
-        %section#about.container.hover
-            #slick.slick
-                %div
-                    %img{:src=>"//s3.amazonaws.com/antumbra-io/Introducing-Glow.png",
-                    :alt=>"Introducing Glow. Stunning visuals. Comfortable " + |
-                    "eyes. The $35 ambient backlight."}                        |
-                %div
-                    %img{:src=>"//s3.amazonaws.com/antumbra-io/AntumBack.png",
-                    :alt=>"Up and running in moments. Mount. Install. Enjoy." + |
-                    "Simply stick Glow to your monitor, plug in the USB cable"+ |
-                    "and install the software. Enjoy media like never before" + |
-                    "fin just minutes."}                                        |
-                %div
-                    %img{:src=>"//s3.amazonaws.com/antumbra-io/ResponsiveMode.png",
-                    :alt=>"Responsive mode.  The best way to watch movies and"+   |
-                    "play games. Using software that ties into the OS, Antumbra"+ |
-                    "analyzes colors on the display in real time, projecting" +   |
-                    "them behind your monitor as fast as they appear on screen."+ |
-                    "Content on the display blends into your peripheral vision,"+ |
-                    "creating an immersive experience like no other.  Surround" + |
-                    "sound for your eyes is finally here."}                       |
-                %div
-                    %img{:src=>"//s3.amazonaws.com/antumbra-io/PaletteFade.png",
-                    :alt=>"Palette and Fade.  Define your workspace. Tired," +    |
-                    "strained eyes make work unbearable.  Glow is the antidote."+ |
-                    "Choose a color and brightness that suits your mood, or" +    |
-                    "have it fade gently over subtle, comfortable gradients." +   |
-                    "In Sunset mode, Glow slowly ramps up in brightness as the" + |
-                    "sun sets, perfectly augmenting software like f.lux and" +    |
-                    "keeping you productive well into the AM."}                   |
-        %section#glowVid-transition.container.hover
-        %script{:src=>"/javascripts/slick.js"}
-        %section#glowVidSection.container.hover.text-center
-            .row
-                #glow.col-lg-offset-2.navPadded
-                    .videoWrapper169
-                        %iframe#glowVid{:src=>"https://player.vimeo.com/video/108070048?portrait=0&amp;color=ff9933",
-                        :width=>3840, :heigh=>2160, :frameborder=>0,
-                        :webkitallowfullscreen=>true, :mozallowfullscreen=>true,
-                        :allowfullscreen=>true}
-                    %h1.large-text.grey-white
-                        Introducing Glow.
-                    %h3.medium-large-text.grey
-                        Stunning visuals.  Comfortable eyes.
-        %section#seeTheDifference-transition.container.hover
-        %section#seeTheDifference.container.hover
-            #difference-container
+    %section.intro
+        .intro-body
+            .container
+                .row
+                    .col-md-8.col-md-offset-2.text-center
+                        %h3.grey-text
+                            Don't let eyestrain limit how long
+                            %br
+                            you can work or play
+                        %br
+                        %h2.red-text
+                            Fight back with Glow.
+                        %a#scrollBtn.page-scroll.btn.fa.fa-angle-down.fa-5x{:href=>'#glowVid'}
+    %section#overview.container
+        %video#introVid{:src=>'//s3.amazonaws.com/antumbra-io/background.webm',
+        :controls=>'true'}
+        .row
+            #introSubTxt.text-center
+                %h2.blue-text
+                    Work longer, Game harder, Feel better.
+                %p.pad-top-2.medium-text.grey-text
+                    Glow illuminates the wall behind your
+                    monitor, creating a seamless transition from dark
+                    environment to bright display.  An extension store coupled
+                    with highly customizable open-source software allows you to take
+                    your desk into the future, and define your computing
+                    experience like never before.
+    %section#about.container
+        #slick.slick
+            %div
+                %img{:src=>"//s3.amazonaws.com/antumbra-io/introducing-glow-blue.png",
+                :alt=>"Introducing Glow. Stunning visuals. Comfortable " + |
+                "eyes. The $35 ambient backlight."}                        |
+            %div
+                %img{:src=>"//s3.amazonaws.com/antumbra-io/AntumBackBlue.png",
+                :alt=>"Up and running in moments. Mount. Install. Enjoy." + |
+                "Simply stick Glow to your monitor, plug in the USB cable"+ |
+                "and install the software. Enjoy media like never before" + |
+                "fin just minutes."}                                        |
+            %div
+                %img{:src=>"//s3.amazonaws.com/antumbra-io/ResponsiveModeBlue.png",
+                :alt=>"Responsive mode.  The best way to watch movies and"+   |
+                "play games. Using software that ties into the OS, Antumbra"+ |
+                "analyzes colors on the display in real time, projecting" +   |
+                "them behind your monitor as fast as they appear on screen."+ |
+                "Content on the display blends into your peripheral vision,"+ |
+                "creating an immersive experience like no other.  Surround" + |
+                "sound for your eyes is finally here."}                       |
+            %div
+                %img{:src=>"//s3.amazonaws.com/antumbra-io/PaletteFadeBlue.png",
+                :alt=>"Palette and Fade.  Define your workspace. Tired," +    |
+                "strained eyes make work unbearable.  Glow is the antidote."+ |
+                "Choose a color and brightness that suits your mood, or" +    |
+                "have it fade gently over subtle, comfortable gradients." +   |
+                "In Sunset mode, Glow slowly ramps up in brightness as the" + |
+                "sun sets, perfectly augmenting software like f.lux and" +    |
+                "keeping you productive well into the AM."}                   |
+    %script{:src=>"/javascripts/slick.js"}
+    %section#glowVidSection.container.text-center
+        .row
+            #glow.col-lg-offset-2.navPadded
+                .videoWrapper169
+                    %iframe#glowVid{:src=>"https://player.vimeo.com/video/108070048?portrait=0&amp;color=ff9933",
+                    :width=>3840, :height=>2160, :frameborder=>0,
+                    :webkitallowfullscreen=>true, :mozallowfullscreen=>true,
+                    :allowfullscreen=>true}
+                %h1.grey-white
+                    Introducing Glow.
+                %h3.grey
+                    Stunning visuals.  Comfortable eyes.
+    %section#seeTheDifference.container
+        #difference-container
+            #titleContainer
                 #h1#diffTitle
                     Experience The Difference
                 %p#diffSubTitle
-                    Hover mouse for effect.
-                #fade
-                    %img#fadeImg{:src=>"https://s3.amazonaws.com/antumbra-io/unlit.png",
-                    :alt=>"Experience the Difference of Antumbra | Glow"}
-        %section#hardware-transition.container.hover
-        %section#hardware.container.content-section.text-center.hover
-            .row
-                .col-lg-8.col-lg-offset-2
-                    %img#glow_render{:src=>"//s3.amazonaws.com/antumbra-io/glow_render.png"}
-                    %h2.text-center
-                        %b
-                            Sleek Design.
-                    %h3.text-center
-                        Functional Hardware.
-                    %br
-                    %br
-                    %p.medium-text
-                        Measuring under 1.5&quot; x 1.5&quot; x 0.5&quot;,
-                        Glow is small and portable, perfect for laptop users who
-                        need to set up on the go.  A single high-brightness RGB
-                        LED illuminates the entire wall behind the monitor,
-                        sipping a mere 2.2w of power, but appearing nearly as
-                        bright as a 30w incandescent bulb.  Data is delivered
-                        over USB to the device, meaning that Glow is fast,
-                        reliable and compatible with every major platform.  We&#39;ve
-                        worked hard to make it simple - setup only takes 30 seconds,
-                        and configuration only another couple minutes at
-                        most - letting you start enjoying content like never
-                        before in just moments.
-        %section#FAQ-transition.container.hover
-        %section#FAQ.container.hover.content-section
-            .row
-                .col-lg-8.col-lg-offset-2
-                    %h1.text-center
-                        FAQ
-                -data.faqs.faqs.each do |q|
-                    = partial('layouts/faq_item',                         |
-                    :locals => { :id=> q.id,                              |
-                    :question => q.question,                              |
-                    :answer => q.answer})                                 |
-                    -#
-        %section#interested-transition.container.hover
-        %section#interested.container.hover.text-center
-            .interested-section
-                .container
-                    .col-lg-8.col-lg-offset-2
-                        %h2
-                            Interested?
-                        %p
-                            Join our mailing list. We&#39;ll keep you posted.
-                        :plain
-                            <!-- Begin MailChimp Signup Form -->
-                            <div id="mc_embed_signup">
-                                <form action="//antumbra.us9.list-manage.com/subscribe/post?
-                                u=edc8572362936e2af0b5c904f&amp;id=00da3a3ac0"
-                                method="post" id="mc-embedded-subscribe-form"
-                                name="mc-embedded-subscribe-form"
-                                class="validate" target="_blank" novalidate>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
-                            placeholder="Email Address" required>
-                            <div style="position: absolute; left: -5000px;">
-                            <input type="text" name="b_edc8572362936e2af0b5c904f_00da3a3ac0" tabindex="-1" value="">
-                            </div>
-                            <div class="clear">
-                                <br>
-                                <input type="submit" value="Subscribe" name="subscribe"
-                                id="mc-embedded-subscribe" class="btn btn-default">
-                            </div>
-                            </form>
-                            </div>
-                            <!--End mc_embed_signup-->
-                        %br
-                        %br
-                        %p
-                            On October 9th, Beta units sold out in 15 minutes!
-                            %br
-                            %br
-                                Pre-order your final unit now.
-                            %br
-                                Expected Delivery:
-                                %a{:href=>'/blog/'}
-                                    %i
-                                        Check the Dev blog & Roadmap.
-                            %br
-                                Free shipping inside the USA. $15 International.
-        %section#contact-transition.container.hover
-        %section#contact.container.hover.text-center.content-section
-            .row
+                    (Hover mouse for effect.)
+            #fade
+                %img#fadeImg{:src=>"https://s3.amazonaws.com/antumbra-io/unlit.png",
+                :alt=>"Experience the Difference of Antumbra | Glow"}
+    %section#hardware.container.content-section.text-center
+        .row
+            .col-lg-8.col-lg-offset-2
+                %img#glow_render{:src=>"//s3.amazonaws.com/antumbra-io/glow_render.png"}
+                %h2.text-center
+                    %b
+                        Sleek Design.
+                %h3#lightPurpTxt.text-center
+                    Functional Hardware.
+                %br
+                %br
+                %p.medium-text
+                    Measuring under 1.5&quot; x 1.5&quot; x 0.5&quot;,
+                    Glow is small and portable, perfect for laptop users who
+                    need to set up on the go.  A single high-brightness RGB
+                    LED illuminates the entire wall behind the monitor,
+                    sipping a mere 2.2w of power, but appearing nearly as
+                    bright as a 30w incandescent bulb.  Data is delivered
+                    over USB to the device, meaning that Glow is fast,
+                    reliable and compatible with every major platform.  We&#39;ve
+                    worked hard to make it simple - setup only takes 30 seconds,
+                    and configuration only another couple minutes at
+                    most - letting you start enjoying content like never
+                    before in just moments.
+    %section#FAQ.container.content-section
+        .row
+            .col-lg-8.col-lg-offset-2
+                %h1.text-center
+                    FAQ
+            -data.faqs.faqs.each do |q|
+                = partial('layouts/faq_item',                         |
+                :locals => {                                          |
+                :question => q.question,                              |
+                :answer => q.answer})                                 |
+                -#
+    %section#interested.container.text-center
+        .interested-section
+            .container
                 .col-lg-8.col-lg-offset-2
                     %h2
-                        Contact Antumbra
+                        Interested?
                     %p
-                        Feel free to email us to provide some feedback on our
-                        product, give us suggestions for new features, or to
-                        just say hello!
+                        Join our mailing list. We&#39;ll keep you posted.
+                    :plain
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                            <form action="//antumbra.us9.list-manage.com/subscribe/post?
+                            u=edc8572362936e2af0b5c904f&amp;id=00da3a3ac0"
+                            method="post" id="mc-embedded-subscribe-form"
+                            name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                        placeholder="Email Address" required>
+                        <div style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_edc8572362936e2af0b5c904f_00da3a3ac0" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <br>
+                            <input type="submit" value="Subscribe" name="subscribe"
+                            id="mc-embedded-subscribe" class="btn btn-default">
+                        </div>
+                        </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                    %br
                     %p
-                        %a{:href=>'mailto:contact@antumbra.io'}
-                            contact@antumbra.io
-                    %ul.list-inline.banner-social-buttons
-                        %li
-                            %a.btn.instagram{:href=>"https://instagram.com/teamantumbra"}
-                                %i.fa.fa-instagram.fa-5x
-                        %li
-                            %a.btn.pinterest{:href=>"http://www.pinterest.com/TeamAntumbra/"}
-                                %i.fa.fa-pinterest.fa-5x
-                        %li
-                            %a.btn.twitter{:href=>"https://twitter.com/TeamAntumbra"}
-                                %i.fa.fa-twitter.fa-5x
-                        %li
-                            %a.btn.youtube{:href=>"https://www.youtube.com/channel/UCAPpQBc5wel1EhvTwi7f5Vw"}
-                                %i.fa.fa-youtube-play.fa-5x
-                        %li
-                            %a.btn.gplus{:href=>"https://plus.google.com/106064932965666182859/about"}
-                                %i.fa.fa-google-plus.fa-5x
-                        %li
-                            %a.btn.vimeo{:href=>"https://vimeo.com/teamantumbra"}
-                                %i.fa.fa-vimeo-square.fa-5x
-                    %ul.list-inline.banner-social-buttons
-                        %li
-                            %a.btn.github{:href=>"https://github.com/TeamAntumbra"}
-                                %i.fa.fa-github.fa-5x
-                        %li
-                            %a.btn.facebook{:href=>"https://www.facebook.com/teamantumbra"}
-                                %i.fa.fa-facebook-square.fa-5x
-                        %li
-                            %a.btn.angellist{:href=>"https://angel.co/antumbra"}
-                                %i.fa.fa-angellist.fa-5x
-        %section#aboutUs-transition.container.hover
-        %section#aboutUs.container.hover.content-section.text-center
-            #aboutUs-container.row
-                .col-lg-8.full
-                    %h1
-                        About Us
-                    %h3.medium-large-text
-                        The Story of How Antumbra Came To Be
-                    %br
-                    %h5.medium-text.aboutUsText
-                        Antumbra was created after winning the AngelHack Boston `14
-                        competition, earning us a spot in their &quot;Hackcelerator&quot;
-                        pre-accelerator program.
-                    #team
-                        #davis.teamMember
-                            #davisFace.teamMemberImage
-                                %img#davisFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/davis.jpg"}
-                            %p.name
-                                Davis Foster
-                            %p.title
-                                Hardware Engineer
-                            %ul.list-inline.banner-social-buttons
-                                %a.mini-social-item.btn.angellist{:href=>"https://angel.co/davis-foster"}
-                                    %i.fa.fa-angellist.fa-1x
-                                %a.mini-social-item.btn.email{:href=>"mailto:davis@antumbra.io"}
-                                    %i.fa.fa-envelope-o.fa-1x
-                                %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/davis-foster/83/75b/3b2"}
-                                    %i.fa.fa-linkedin.fa-1x
-                        #adam.teamMember
-                            #adamFace.teamMemberImage
-                                %img#adamFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/adam.jpg"}
-                            %p.name
-                                Adam Walsh
-                            %p.title
-                                Windows Software Engineer
-                            %ul.list-inline.banner-social-buttons
-                                %a.mini-social-item.btn.angellist{:href=>"https://angel.co/adamwalsh"}
-                                    %i.fa.fa-angellist.fa-1x
-                                %a.mini-social-item.btn.email{:href=>"mailto:adam@antumbra.io"}
-                                    %i.fa.fa-envelope-o.fa-1x
-                                %a.mini-social-item.btn.github{:href=>"https://github.com/walshie4"}
-                                    %i.fa.fa-github-alt.fa-1x
-                                %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/adam-walsh/36/3a1/b8a/"}
-                                    %i.fa.fa-linkedin.fa-1x
-                        #sam.teamMember
-                            #samFace.teamMemberImage
-                                %img#samFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/sam.jpg"}
-                            %p.name
-                                Sam Harada
-                            %p.title
-                                Embedded Software Engineer
-                            %ul.list-inline.banner-social-buttons
-                                %a.mini-social-item.btn.angellist{:href=>"https://angel.co/sam-harada"}
-                                    %i.fa.fa-angellist.fa-1x
-                                %a.mini-social-item.btn.email{:href=>"mailto:sam@antumbra.io"}
-                                    %i.fa.fa-envelope-o.fa-1x
-                                %a.mini-social-item.btn.github{:href=>"https://github.com/pharada"}
-                                    %i.fa.fa-github-alt.fa-1x
-                                %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/samuel-harada/7b/62b/749"}
-                                    %i.fa.fa-linkedin.fa-1x
-                        #nick.teamMember
-                            #nickFace.teamMemberImage
-                                %img#nickFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/nick.jpg"}
-                            %p.name
-                                Nick Peretti
-                            %p.title
-                                OS X Software Engineer
-                            %ul.list-inline.banner-social-buttons
-                                %a.mini-social-item.btn.angellist{:href=>"https://angel.co/nick-peretti"}
-                                    %i.fa.fa-angellist.fa-1x
-                                %a.mini-social-item.btn.email{:href=>"mailto:nick@antumbra.io"}
-                                    %i.fa.fa-envelope-o.fa-1x
-                                %a.mini-social-item.btn.github{:href=>"https://github.com/qwertyflagstop"}
-                                    %i.fa.fa-github-alt.fa-1x
-                                %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/nick-peretti/a6/608/b89"}
-                                    %i.fa.fa-linkedin.fa-1x
-                        #michel.teamMember
-                            #michelFace.teamMemberImage
-                                %img#michelFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/michel.jpg"}
-                            %p.name
-                                Michel Rodriguez
-                            %p.title
-                                Business Development
-                            %ul.list-inline.banner-social-buttons
-                                %a.mini-social-item.btn.angellist{:href=>"https://angel.co/michel-rodriguez-1"}
-                                    %i.fa.fa-angellist.fa-1x
-                                %a.mini-social-item.btn.email{:href=>"mailto:michel@antumbra.io"}
-                                    %i.fa.fa-envelope-o.fa-1x
-                                %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/michel-rodriguez/5b/716/199"}
-                                    %i.fa.fa-linkedin.fa-1x
-            %div#subAboutText.text-center
-                %p.medium-text.aboutUsText
-                    We won the hackathon with our ambient
-                    backlight concept, dubbed Glow - a small device you mount
-                    behind your screen, designed to illuminate the wall behind
-                    a computer monitor or TV.
-                    %br
-                    %br
-                        On October 24th we competed in the
-                        RIT Tiger Tank competition, and were awarded 1st place!
-                    %br
-                        On October 30th we pitched at the AngelHack Global Demo
-                        Day 2014, hosted @ USF.
-        %footer
-            .container.text-center.hover
+                        Pre-order your final unit now!
+                        %br
+                        %br
+                        Expected Delivery:
+                        %a{:href=>'/blog/'}
+                            %i
+                                Check the Dev blog & Roadmap.
+                        %br
+                        %br
+                            Free shipping inside the USA. $15 International.
+    %section#contact.container.text-center.content-section
+        .row
+            .col-lg-8.col-lg-offset-2
+                %h2
+                    Contact Antumbra
                 %p
-                    Copyright &copy; Antumbra 2014
-                    %br
-                    %small
-                        Website experience best with Glow.
+                    Feel free to email us to provide some feedback on our
+                    product, give us suggestions for new features, or to
+                    just say hello!
+                %p
+                    %a{:href=>'mailto:contact@antumbra.io'}
+                        contact@antumbra.io
+                %ul.list-inline.banner-social-buttons
+                    %li
+                        %a.btn.instagram{:href=>"https://instagram.com/teamantumbra"}
+                            %i.fa.fa-instagram.fa-5x
+                    %li
+                        %a.btn.pinterest{:href=>"http://www.pinterest.com/TeamAntumbra/"}
+                            %i.fa.fa-pinterest.fa-5x
+                    %li
+                        %a.btn.twitter{:href=>"https://twitter.com/TeamAntumbra"}
+                            %i.fa.fa-twitter.fa-5x
+                    %li
+                        %a.btn.youtube{:href=>"https://www.youtube.com/channel/UCAPpQBc5wel1EhvTwi7f5Vw"}
+                            %i.fa.fa-youtube-play.fa-5x
+                    %li
+                        %a.btn.gplus{:href=>"https://plus.google.com/106064932965666182859/about"}
+                            %i.fa.fa-google-plus.fa-5x
+                    %li
+                        %a.btn.vimeo{:href=>"https://vimeo.com/teamantumbra"}
+                            %i.fa.fa-vimeo-square.fa-5x
+                %ul.list-inline.banner-social-buttons
+                    %li
+                        %a.btn.github{:href=>"https://github.com/TeamAntumbra"}
+                            %i.fa.fa-github.fa-5x
+                    %li
+                        %a.btn.facebook{:href=>"https://www.facebook.com/teamantumbra"}
+                            %i.fa.fa-facebook-square.fa-5x
+                    %li
+                        %a.btn.angellist{:href=>"https://angel.co/antumbra"}
+                            %i.fa.fa-angellist.fa-5x
+    %section#aboutUs.container.content-section.text-center
+        #aboutUs-container.row
+            .col-lg-8.full
+                %h1
+                    About Us
+                %h3.medium-large-text
+                    The Story of How Antumbra Came To Be
+                %br
+                %h5.medium-text.aboutUsText
+                    Antumbra was created after winning the AngelHack Boston `14
+                    competition, earning us a spot in their &quot;Hackcelerator&quot;
+                    pre-accelerator program.
+                #team
+                    #davis.teamMember
+                        #davisFace.teamMemberImage
+                            %img#davisFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/davis.jpg"}
+                        %p.name
+                            Davis Foster
+                        %p.title
+                            Hardware Engineer
+                        %ul.list-inline.banner-social-buttons
+                            %a.mini-social-item.btn.angellist{:href=>"https://angel.co/davis-foster"}
+                                %i.fa.fa-angellist.fa-1x
+                            %a.mini-social-item.btn.email{:href=>"mailto:davis@antumbra.io"}
+                                %i.fa.fa-envelope-o.fa-1x
+                            %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/davis-foster/83/75b/3b2"}
+                                %i.fa.fa-linkedin.fa-1x
+                    #adam.teamMember
+                        #adamFace.teamMemberImage
+                            %img#adamFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/adam.jpg"}
+                        %p.name
+                            Adam Walsh
+                        %p.title
+                            Windows Software Engineer
+                        %ul.list-inline.banner-social-buttons
+                            %a.mini-social-item.btn.angellist{:href=>"https://angel.co/adamwalsh"}
+                                %i.fa.fa-angellist.fa-1x
+                            %a.mini-social-item.btn.email{:href=>"mailto:adam@antumbra.io"}
+                                %i.fa.fa-envelope-o.fa-1x
+                            %a.mini-social-item.btn.github{:href=>"https://github.com/walshie4"}
+                                %i.fa.fa-github-alt.fa-1x
+                            %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/adam-walsh/36/3a1/b8a/"}
+                                %i.fa.fa-linkedin.fa-1x
+                    #sam.teamMember
+                        #samFace.teamMemberImage
+                            %img#samFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/sam.jpg"}
+                        %p.name
+                            Sam Harada
+                        %p.title
+                            Embedded Software Engineer
+                        %ul.list-inline.banner-social-buttons
+                            %a.mini-social-item.btn.angellist{:href=>"https://angel.co/sam-harada"}
+                                %i.fa.fa-angellist.fa-1x
+                            %a.mini-social-item.btn.email{:href=>"mailto:sam@antumbra.io"}
+                                %i.fa.fa-envelope-o.fa-1x
+                            %a.mini-social-item.btn.github{:href=>"https://github.com/pharada"}
+                                %i.fa.fa-github-alt.fa-1x
+                            %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/samuel-harada/7b/62b/749"}
+                                %i.fa.fa-linkedin.fa-1x
+                    #nick.teamMember
+                        #nickFace.teamMemberImage
+                            %img#nickFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/nick.jpg"}
+                        %p.name
+                            Nick Peretti
+                        %p.title
+                            OS X Software Engineer
+                        %ul.list-inline.banner-social-buttons
+                            %a.mini-social-item.btn.angellist{:href=>"https://angel.co/nick-peretti"}
+                                %i.fa.fa-angellist.fa-1x
+                            %a.mini-social-item.btn.email{:href=>"mailto:nick@antumbra.io"}
+                                %i.fa.fa-envelope-o.fa-1x
+                            %a.mini-social-item.btn.github{:href=>"https://github.com/qwertyflagstop"}
+                                %i.fa.fa-github-alt.fa-1x
+                            %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/nick-peretti/a6/608/b89"}
+                                %i.fa.fa-linkedin.fa-1x
+                    #michel.teamMember
+                        #michelFace.teamMemberImage
+                            %img#michelFaceImg{:src=>"https://s3.amazonaws.com/antumbra-io/michel.jpg"}
+                        %p.name
+                            Michel Rodriguez
+                        %p.title
+                            Business Development
+                        %ul.list-inline.banner-social-buttons
+                            %a.mini-social-item.btn.angellist{:href=>"https://angel.co/michel-rodriguez-1"}
+                                %i.fa.fa-angellist.fa-1x
+                            %a.mini-social-item.btn.email{:href=>"mailto:michel@antumbra.io"}
+                                %i.fa.fa-envelope-o.fa-1x
+                            %a.mini-social-item.btn.linkedin{:href=>"https://www.linkedin.com/pub/michel-rodriguez/5b/716/199"}
+                                %i.fa.fa-linkedin.fa-1x
+        %div#subAboutText.text-center
+            %p.medium-text.aboutUsText
+                We won the hackathon with our ambient
+                backlight concept, dubbed Glow - a small device you mount
+                behind your screen, designed to illuminate the wall behind
+                a computer monitor or TV.
+                %br
+                %br
+                    On October 24th, 2014 we competed in the
+                    RIT Tiger Tank competition, and were awarded 1st place!
+                %br
+                    On October 30th, 2014 we pitched at the AngelHack Global Demo
+                    Day 2014, hosted @ USF.
+    %footer
+        .container.text-center
+            %p
+                Copyright &copy; Antumbra 2015
+                %br
+                %small
+                    Website experience best with Glow.

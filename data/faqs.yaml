@@ -1,12 +1,10 @@
 faqs:
-    -   id: plus1
-        question: What is an &quot;Antumbra&quot;?
+    -   question: What is an &quot;Antumbra&quot;?
         answer: >
             The word &quot;Antumbra&quot; means the region from which an occluding body appears
             entirely contained within the disc of a light
             source - like a solar eclipse.
-    -   id: plus2
-        question: What is Glow?
+    -   question: What is Glow?
         answer: >
             Antumbra | Glow is a small
             light emitting device, designed to enhance your
@@ -14,16 +12,14 @@ faqs:
             eye strain.  Simply mount it behind your monitor,
             point it at a wall, plug in the included micro-USB
             cable and start the Glow software.
-    -   id: plus3
-        question: Who is Glow for?
+    -   question: Who is Glow for?
         answer: >
             Anyone can benefit from
             Glow - however, people who use their
             computer in low light environments will enjoy
             it most.  Games, movies, and even work are
             all better with Glow.
-    -   id: plus4
-        question: How does this affect my computing experience?
+    -   question: How does this affect my computing experience?
         answer: >
             Glow can be controlled
             any way you like. You can manually set its
@@ -37,15 +33,13 @@ faqs:
             feel free to implement it. If we like it
             enough, we may just add it to the official
             release.
-    -   id: plus5
-        question: How does Glow work?
+    -   question: How does Glow work?
         answer: >
             Glow is connected to your computer via a
             Micro-USB cable. This connection provides
             both power and data, allowing you to manipulate
             your Glow from the Antumbra application.
-    -   id: plus6
-        question: How does this effect reduce eyestrain?
+    -   question: How does this effect reduce eyestrain?
         answer: >
             Ambient backlighting creates a seamless transition
             from your bright display to dark environment.
@@ -53,8 +47,7 @@ faqs:
             (your monitor) is extended into your peripherals.
             For a more in-depth explanation check out this
             <a href="http://bit.ly/AntumbraGlowScience">scientific study</a>.
-    -   id: plus7
-        question: How does Glow connect to my monitor?
+    -   question: How does Glow connect to my monitor?
         answer: >
             Glow mounts behind your monitor (or to
             almost any surface you&apos;d like) using 3M
@@ -66,8 +59,7 @@ faqs:
             inches diagonal) that are placed anywhere from
             one to three feet from a wall.
             Results may vary in other configurations.
-    -   id: plus8
-        question: How does this help my eyes?
+    -   question: How does this help my eyes?
         answer: >
             By illuminating the wall behind a computer
             monitor or TV, the contrast between the
@@ -88,8 +80,9 @@ faqs:
             Colors, brightness and responsive modes can
             all be set in software, allowing you to
             create the perfect experience for any task.
-    -   id: plus9
-        question: Are there any system requirements?
+            Check out <a href="http://bit.ly/AntumbraGlowScience">
+            this study</a> for more info.
+    -   question: Are there any system requirements?
         answer: >
             In order to control Glow, you will need to
             be able to run one of the controller
@@ -101,8 +94,7 @@ faqs:
             platform, just shoot us an email!  In addition
             to this, your computer must have one powered
             USB port (USB 2.0 or better).
-    -   id: plus10
-        question: Is Glow customizable?
+    -   question: Is Glow customizable?
         answer: >
             Yes. Glow is open-source software <b>and</b> hardware.
             Aside from the customizability offered by
@@ -111,8 +103,7 @@ faqs:
             hackers and makers can add and implement
             whatever new features they want. The
             possibilities are endless!
-    -   id: plus11
-        question: What does &apos;beta&apos; mean?
+    -   question: What does &apos;beta&apos; mean?
         answer: >
             Glow is still in development.  Although all
             the hardware and software is complete, fully
@@ -129,14 +120,12 @@ faqs:
             product launch.  If you like being on the
             cutting edge and getting your hands dirty
             with open-source products, Beta is perfect for you.
-    -   id: plus12
-        question: When do you ship?
+    -   question: When do you ship?
         answer: >
             Units will be shipped approximately three
             weeks after beta sells out.  The manufacturing
             process is currently in progress.
-    -   id: plus13
-        question: So you&apos;re open-source?
+    -   question: So you&apos;re open-source?
         answer: >
             Completely.  We&apos;re releasing all our code,
             all the hardware designs, and even the code
@@ -148,8 +137,7 @@ faqs:
             community will contribute.  Hardware will be
             released under Creative Commons Attribution
             Share-Alike Non-Commercial, and all software will be released under GPL.
-    -   id: plus14
-        question: What are your plans for the future?
+    -   question: What are your plans for the future?
         answer: >
             We&apos;ve had an overwhelming interest for a Glow
             implementation for TV&apos;s so we are looking into

@@ -362,12 +362,13 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #seeTheDifference {
-    background: rgba(156, 156, 156, 1);
     height: 100%;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
     align: center;
+    position: relative;
+    z-index: 0;
     margin-top: -1px;
     margin-bottom: -1px;
 }
@@ -742,14 +743,27 @@ h1,h2,h3,h4,h5,h6 {
 #difference-container {
     height: 100%;
     width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+#titleContainer {
+    color: rgb(52,52,52);
+    height: 0;
+    z-index: 101;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    pointer-events: none;
 }
 
 #diffTitle {
+    padding-top: 20%;
     margin: 0px;
     font-size: 52px;
-    color: rgba(21, 21, 21, 0.8);
     text-align: center;
-    z-index: 100;
+    position: relative;
+    z-index: 101;
 }
 
 #diffSubTitle {
@@ -850,26 +864,22 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
 }
 
-#fade-container {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    height: 95%;
-    overflow: hidden;
-}
-
 #fade {
     width: 100%;
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-image: url("//s3.amazonaws.com/antumbra-io/lit.png");
+    position: relative;
 }
 
 #fadeImg {
     width: 100%;
     left: 0;
     top: 0;
+    z-index: 1;
+    opacity: .99;
+    position: relative;
     &:hover {
         opacity: 0;
     }

@@ -48,14 +48,6 @@ html {
     height: fit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-a, p, i {
-    font-family: 'Open Sans', sans-serif;
-}
-
 a, h1, h2, h3, h4, h5, h6, p {
     @include transition(all, 1.2s, ease-in-out);
 }

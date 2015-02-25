@@ -297,7 +297,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #interested {
-    background: rgba(183, 59, 76, 1);
+    background: rgba(252, 70, 75, 1);
     width: 100%;
     height: 120%;
     padding-top: 150px;
@@ -308,14 +308,15 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #interestedBtn {
     &:hover, &:active {
-        background: rgba(183, 59, 76, 0.7);
+        background: rgba(252, 70, 75, 0.7);
     }
 }
 
 #contact {
-    background: rgba(98, 174, 77, 1);
+    background: rgba(39, 37, 38, 1);
     height: 120%;
     width: 100%;
+    padding-bottom: 5%;
     margin-top: -1px;
     margin-bottom: -1px;
     margin-top: -1px;
@@ -324,7 +325,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 
 #contactBtn {
     &:hover, &:active {
-        background: rgba(98, 174, 77, 0.7);
+        background: rgba(39, 37, 38, 0.7);
     }
 }
 
@@ -438,6 +439,12 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 .facebook {
     &:hover, &:focus {
         color: rgba(59, 89, 152, 1);
+    }
+}
+
+.github, .angellist {
+    &:hover, &:focus {
+        color: rgb(106,106,106);
     }
 }
 

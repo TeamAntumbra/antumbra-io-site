@@ -48,7 +48,7 @@ html {
     height: fit;
 }
 
-a, h1, h2, h3, h4, h5, h6, p {
+a, h1, h2, h3, h4, h5, h6, p, input {
     @include transition(all, 1.2s, ease-in-out);
 }
 
@@ -136,7 +136,10 @@ a {
     color: rgba(0,0,0,.8);
 }
 
+.smooth {
+    @include transition(all, 1.2s, ease-in-out);
+}
+
 * {
-    @include transition(all, 1.2s, ease);
     outline: none;
 }

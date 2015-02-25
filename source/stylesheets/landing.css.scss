@@ -474,7 +474,6 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     width: 50%;
     box-shadow: 0;
     @include border-radius(4px);
-    @include transition(all, 2s);
     color: transparent;
     text-shadow: 0 0 0 #171717;
     &:hover, &:focus {
@@ -808,6 +807,7 @@ h1,h2,h3,h4,h5,h6 {
         margin: 5px;
         overflow: hidden;
         @include border-radius(50%);
+        @include transition(all, .8s);
     }
 
     #davisFace:hover {
@@ -855,6 +855,10 @@ h1,h2,h3,h4,h5,h6 {
         filter: none;
     }
 
+    #davisFaceImg, #nickFaceImg, #samFaceImg, #michelFaceImg, #adamFaceImg {
+        @include transition(all, .8s);
+    }
+
     .name {
         margin: 0;
     }
@@ -869,7 +873,6 @@ h1,h2,h3,h4,h5,h6 {
     float: left;
     margin-left: .125%;
     img {
-        //margin: auto;
         display: block;
     }
 }
@@ -915,7 +918,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 * {
-    @include transition(all, .9s);
     outline: none;
 }
 

@@ -585,9 +585,13 @@ a.redOnHover {
 .faq_question {
     display: inline-block;
     cursor: pointer;
+    text-decoration: none;
     font-weight: bold;
     font-size: 24px;
     font-size: 1.875vw;
+    a {
+        text-decoration: none;
+    }
 }
 
 .faq_answer_container {

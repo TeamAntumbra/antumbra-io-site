@@ -35,23 +35,12 @@
     background-size: $arg1, $arg2;
 }
 
-nav.navbar-custom {
-    height: 60px;
-    background-color: rgba(5,5,5,.9);
-    .container, .navbar-header, .navbar-brand {
-        height: 60px;
-        font-size: 22px;
-    }
+nav {
+    display: none;
 }
 
-header.intro {
-    position: relative;
-    height: 260px;
-    padding-top: 12%;
-    padding-bottom: 0%;
-    .intro-body {
-        vertical-align: bottom;
-    }
+#introVid {
+    display: none;
 }
 
 a#scrollBtn {
@@ -112,10 +101,6 @@ ul.list-inline li {
     height: 200%;
 }
 
-#davis, #adam, #sam, #michel, #nick {
-    display: none;
-}
-
 .aboutUsText {
     padding: 2%;
 }
@@ -124,10 +109,11 @@ footer, footer p {
     font-size: 12px;
 }
 
-div#navMenu {
-    background-color: rgba(10,10,10,.75);
+section#overview {
+    height: 200px;
 }
 
-button.navbar-toggle {
-    background-color: #1DACBF;
+#introSubTxt {
+    padding-top: 3%;
+    transform: none;
 }

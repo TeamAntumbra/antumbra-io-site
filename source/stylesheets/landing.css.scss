@@ -81,7 +81,11 @@ video#introVid {
 
 img#logotype {
     width: 15%;
-    padding-top: 1%;
+    @include transition(all, 1.2s);
+}
+
+.pad-top-half {
+    padding-top: .5%;
 }
 
 img#hiddenLogotype {

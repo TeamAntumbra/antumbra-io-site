@@ -1007,9 +1007,15 @@ a.dark-hover {
     font-weight: 200;
 }
 
-#roadmapLink {
-    text-decoration: none;
+.darkOnHover {
     &:hover, &:active, &:focus {
         color: rgb(5,5,5);
+    }
+}
+
+.noDecoration {
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+        text-decoration: none;
     }
 }

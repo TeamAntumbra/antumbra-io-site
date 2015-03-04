@@ -49,6 +49,7 @@ a#scrollBtn {
 
 section#overview {
     margin-top: 0%;
+    height: fit;
 }
 
 div.faq_container {
@@ -116,4 +117,12 @@ section#overview {
 #introSubTxt {
     padding-top: 3%;
     transform: none;
+}
+
+#diffTitle {
+    font-size: 30px;
+}
+
+#diffSubTitle {
+    display: none;
 }

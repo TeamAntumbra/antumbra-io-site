@@ -122,9 +122,9 @@ faqs:
             with open-source products, Beta is perfect for you.
     -   question: When do you ship?
         answer: >
-            Units will be shipped approximately three
-            weeks after beta sells out.  The manufacturing
-            process is currently in progress.
+            You can find the most up to date info about our upcoming / past
+            events on the <a class="redOnHover" href="/blog/">
+            dev blog / roadmap</a>.
     -   question: So you&apos;re open-source?
         answer: >
             Completely.  We&apos;re releasing all our code,

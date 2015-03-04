@@ -586,6 +586,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 a.redOnHover {
+    text-decoration: none;
     &:hover, &:focus {
         color: rgba(249,71,72, 1);
     }

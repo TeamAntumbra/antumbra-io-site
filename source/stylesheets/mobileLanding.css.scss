@@ -115,10 +115,15 @@ footer, footer p {
     transform: none;
 }
 
-div#diffTitle {
+#diffTitle {
     font-size: 20px;
 }
 
-p#diffSubTitle {
+#diffSubTitle {
     display: none;
+}
+
+#diffSubMobileTitle {
+    display: initial;
+    font-size: 15px;
 }

@@ -46,7 +46,8 @@ faqs:
             In doing so the light object you&apos;re looking at
             (your monitor) is extended into your peripherals.
             For a more in-depth explanation check out this
-            <a href="http://bit.ly/AntumbraGlowScience">scientific study</a>.
+            <a class="redOnHover"
+            href="http://bit.ly/AntumbraGlowScience">scientific study</a>.
     -   question: How does Glow connect to my monitor?
         answer: >
             Glow mounts behind your monitor (or to

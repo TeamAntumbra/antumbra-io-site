@@ -810,7 +810,7 @@ h1,h2,h3,h4,h5,h6 {
         width: 100%;
         height: 30%;
         margin-top: 3%;
-        margin-left: 1%;
+        margin-left: 3%;
     }
     .teamMemberImage {
         @include border-radius(50%);
@@ -876,6 +876,7 @@ h1,h2,h3,h4,h5,h6 {
 
     #davisFaceImg, #nickFaceImg, #samFaceImg, #michelFaceImg, #adamFaceImg {
         @include transition(all, .8s);
+        width: 100%;
     }
 
     .name {

@@ -87,12 +87,16 @@ video#introVid {
 }
 
 img#logotype {
-    width: 15%;
+    height: 50px;
     @include transition(all, 1.2s);
 }
 
-.pad-top-half {
-    padding-top: .5%;
+.margin-top-half {
+    margin-top: .5%;
+}
+
+.padTopMenuItem {
+    padding-top: .3%;
 }
 
 img#hiddenLogotype {

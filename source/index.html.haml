@@ -45,16 +45,15 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
     %section.intro
         .intro-body
             .container
-                .row
-                    .col-md-8.col-md-offset-2.text-center
-                        %h3.grey-text
-                            Don't let eyestrain limit how long
-                            %br
-                            you can work or play
+                .row.text-center
+                    %h3.grey-text.fadeOnLoad
+                        Don't let eyestrain limit how long
                         %br
-                        %h2.red-text
-                            Fight back with Glow.
-                        %a#scrollBtn.page-scroll.btn.fa.fa-angle-down.fa-5x{:href=>'#glowVid'}
+                        you can work or play
+                    %br
+                    %h2.red-text.fadeOnLoad
+                        Fight back with Glow.
+                    %a#scrollBtn.page-scroll.btn.fa.fa-angle-down.fa-5x.fadeOnLoad{:href=>'#glowVid'}
     %section#overview.container
         %video#introVid{:src=>'//s3.amazonaws.com/antumbra-io/background.webm',
         :controls=>'true'}

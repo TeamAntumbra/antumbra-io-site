@@ -66,6 +66,11 @@ section.intro {
     }
 }
 
+.fadeOnLoad {
+    opacity: 0.0;
+    @include transition(all, 1.2s);
+}
+
 #introSubTxt {
     transform: translateY(-75%);
     padding-left: 10%;

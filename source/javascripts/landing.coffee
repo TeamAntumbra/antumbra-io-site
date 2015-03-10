@@ -36,6 +36,7 @@ $(".navbar-collapse ul li a").click ->
   return
 
 $(document).ready ->
+  $(".fadeOnLoad").removeClass "fadeOnLoad"
   $(".faq_question").click ->
     if $(this).parent().is(".open")
       $(this).closest(".faq").find(".faq_answer_container").animate

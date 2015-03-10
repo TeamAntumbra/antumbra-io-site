@@ -92,6 +92,7 @@ a, h1, h2, h3, h4, h5, h6, p, input {
             background-color: rgba(255, 255, 255, 0.3);
         }
         a {
+            font-weight: 250;
             outline: none;
             &:hover, &.active {
                 outline: none;

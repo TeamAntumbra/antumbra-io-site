@@ -9,12 +9,10 @@ $(window).scroll ->
     $(".menu-item").removeClass "dark-text"
     $(".menu-item").addClass "bright-text"
     $("#logotype").attr("src", "//s3.amazonaws.com/antumbra-io/logotype.png")
-    $("#logotype").addClass "margin-top-half"
   else
     $(".navbar-fixed-top").removeClass "top-nav-collapse"
     $(".menu-item").addClass "dark-text"
     $(".menu-item").removeClass "bright-text"
-    $("#logotype").removeClass "margin-top-half"
     $("#logotype").attr("src", "//s3.amazonaws.com/antumbra-io/logotype_bw.png")
   return
 

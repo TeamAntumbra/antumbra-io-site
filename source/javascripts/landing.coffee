@@ -8,7 +8,7 @@ $(window).scroll ->
     $(".navbar-fixed-top").addClass "top-nav-collapse"
     $(".menu-item").removeClass "dark-text"
     $(".menu-item").addClass "bright-text"
-    $("#logotype").attr("src", "//s3.amazonaws.com/antumbra-io/logotype_trimmed.png")
+    $("#logotype").attr("src", "//s3.amazonaws.com/antumbra-io/logotype.png")
     $("#logotype").addClass "margin-top-half"
   else
     $(".navbar-fixed-top").removeClass "top-nav-collapse"

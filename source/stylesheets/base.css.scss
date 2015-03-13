@@ -42,21 +42,6 @@
     }
 }
 
-@font-face {
-    font-family: "Open-Sans";
-    src: url("http://fonts.googleapis.com/css?family=Open+Sans");
-}
-
-@font-face {
-    font-family: "Caviar Dreams";
-    src: url("/fonts/CaviarDreams.woff") format('woff');
-    src: url("/fonts/CaviarDreams.ttf") format('truetype');
-}
-
-.no-fontface {
-    font-family: "Helvetica", sans-serif;
-}
-
 html {
     width: 100%;
     min-height: 100%;

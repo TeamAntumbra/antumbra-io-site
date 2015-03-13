@@ -43,15 +43,17 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src: "//fonts.googleapis.com/css?family=Open+Sans";
+    font-family: "Open-Sans";
 }
 
 @font-face {
     font-family: "Caviar Dreams";
-    src: "/fonts/CaviarDreams.ttf";
-    src: "/fonts/CaviarDreams.otf";
-    src: "/fonts/CaviarDreams.woff";
+    src: url("/fonts/CaviarDreams.woff") format('woff');
+    src: url("/fonts/CaviarDreams.ttf") format('truetype');
+}
+
+.no-fontface {
+    font-family: "Helvetica", sans-serif;
 }
 
 html {
@@ -159,4 +161,5 @@ a {
 
 * {
     outline: none;
+    font-family: 'Open-Sans', sans-serif;
 }

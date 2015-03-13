@@ -7,4 +7,5 @@ push:
 update: push pull
 run:
 	bundle exec middleman
+test: run
 

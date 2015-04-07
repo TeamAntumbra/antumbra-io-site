@@ -3,7 +3,7 @@ title: Antumbra Development Blog
 ---
 %link{:href=>'/stylesheets/blogLanding.css', :rel=>'stylesheet'}
 %body.dark-gradient
-    %h1#heading.text-center
+    %h1#heading.text-center.light
         %a#headingLink{:href=>"//antumbra.io"}
             Antumbra
         Roadmap
@@ -29,7 +29,7 @@ title: Antumbra Development Blog
         <% blog.articles.each do |a| %>
             <li class="blogPost text-center">
                 <%= link_to a.title, a %>
-                </br>
+                <br />
                 <i><small><%= a.date.strftime('%b %e %Y') %></small></i>
             </li>
         <% end %>

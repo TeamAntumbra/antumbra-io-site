@@ -12,5 +12,5 @@ test: run
 build: clean
 	bundle exec middleman build
 verify: build
-	bundle exec htmlproof ./build/
+	bundle exec htmlproof ./build/ --check-html --check-favicon
 

@@ -68,6 +68,14 @@ a, h1, h2, h3, h4, h5, h6, p, input {
     text-decoration: underline;
 }
 
+.inline {
+    display: inline;
+}
+
+.parentColor {
+    color: inherit;
+}
+
 .super-light-text {
     font-weight: 300;
 }

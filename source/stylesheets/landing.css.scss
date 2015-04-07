@@ -588,6 +588,27 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
     }
 }
 
+.faq {
+    .faq_question {
+        i {
+            @include transition(all, 0.8s);
+        }
+        &:hover, &:active {
+            i {
+                color: rgb(240,70,70);
+                @include rotate(90deg);
+            }
+        }
+    }
+}
+
+.faq.open {
+    i {
+        color: rgb(240,70,70);
+        @include rotate(90deg);
+    }
+}
+
 .faq_container {
     padding: 15px;
     margin-left: 15%;
@@ -610,6 +631,9 @@ a.redOnHover {
     font-size: 1.875vw;
     a {
         text-decoration: none;
+    }
+    i {
+        @include rotate(45deg);
     }
 }
 

@@ -8,4 +8,6 @@ update: push pull
 run:
 	bundle exec middleman
 test: run
+verify: build
+	bundle exec htmlproof ./build/
 

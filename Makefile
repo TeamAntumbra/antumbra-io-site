@@ -3,7 +3,7 @@ clean:
 	rm -rf build/
 pull:
 	git pull origin master
-push:
+push: verify
 	git push origin master
 update: push pull
 run:

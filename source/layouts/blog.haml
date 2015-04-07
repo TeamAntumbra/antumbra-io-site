@@ -16,7 +16,8 @@
             =yield
         #author
             #pictureContainer
-                %img#authorPic{:src=>"//s3.amazonaws.com/antumbra-io/#{current_page.data.author.pic}.jpg"}
+                %img#authorPic{:src=>"//s3.amazonaws.com/antumbra-io/#{current_page.data.author.pic}.jpg",
+                    :alt=>"#{current_page.data.author.name}"}
             #authorInfo
                 %h4#authorName
                     =current_page.data.author.name

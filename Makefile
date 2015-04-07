@@ -1,3 +1,4 @@
+>PHONY: clean, pull, push, update, run, build, verify, test
 clean:
 	rm -rf build/
 pull:

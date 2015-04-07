@@ -1,6 +1,6 @@
 ---
 title: Development Blog and Roadmap Go Live
-date: 2015-01-05
+date: 2014-10-05
 author:
     name: Adam Walsh
     title: Windows Software Engineer & Web Developer

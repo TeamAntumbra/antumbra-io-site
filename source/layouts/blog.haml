@@ -2,16 +2,16 @@
     %link{:href=>"/stylesheets/blog.css", :rel=>'stylesheet'}
     %nav
         %h1.text-center
-            %a#brandHeading.glowOnHover{:href=>"//antumbra.io"}
+            %a#brandHeading.glowOnHover{:href=>"/"}
                 Antumbra
-            %a#subTitle.glowOnHover{:href=>"//antumbra.io/blog"}
+            %a#subTitle.glowOnHover{:href=>"/blog"}
                 Development Blog
     %body.blogBody
         %h3#postHeading
             = current_page.data.title
-            %br
-            %p#postDate
-                = current_page.data.date
+            %br/
+        %p#postDate
+            = current_page.data.date
         #container
             =yield
         #author

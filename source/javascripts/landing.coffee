@@ -20,15 +20,15 @@ $(window).scroll ->
 
 # jQuery for page scrolling feature - requires jQuery Easing plugin
 $ ->
-  $("a.page-scroll").bind "click", (event) ->
-    $anchor = $(this)
-    $("html, body").stop().animate
-      scrollTop: $($anchor.attr("href")).offset().top
-    , 1000, "easeInOutExpo"
-    event.preventDefault()
-    return
-
-  return
+  page = $('html, body')
+  $('a.page-scroll').click (e) ->
+    page.on 'scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove', ->
+      page.stop()
+      return
+    page.animate { scrollTop: $($(this).attr("href")).offset().top }, 1000, 'easeInOutExpo', ->
+      page.off 'scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove'
+      return
+    false
 
 # Closes the Responsive Menu on Menu Item Click
 $(".navbar-collapse ul li a").click ->

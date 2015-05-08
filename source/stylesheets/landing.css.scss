@@ -277,19 +277,19 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #blogBtn {
-    &:hover, &:focus {
+    &:hover {
         background: rgba(1,186,103,1);
     }
 }
 
 #aboutBtn {
-    &:hover, &:focus {
+    &:hover {
         background: rgba(61, 182, 228, 1);
     }
 }
 
 #buyNowBtn {
-    &:hover, &:focus {
+    &:hover {
         background: rgba(200,100,20,1);
     }
 }
@@ -314,7 +314,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #glowVidBtn {
-    &:hover, &:active {
+    &:hover {
         background: rgba(53, 112, 160, 0.7);
     }
 }
@@ -329,7 +329,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #interestedBtn {
-    &:hover, &:active {
+    &:hover {
         background: rgba(252, 70, 75, 0.7);
     }
 }
@@ -346,7 +346,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #contactBtn {
-    &:hover, &:active {
+    &:hover {
         background: rgba(39, 37, 38, 0.7);
     }
 }
@@ -363,7 +363,7 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #hardwareBtn {
-    &:hover, &:focus {
+    &:hover {
         background: rgba(97, 64, 191, 1);
     }
 }
@@ -412,13 +412,13 @@ section#hardware, section#FAQ, section#interested, section#contact, section#abou
 }
 
 #overviewBtn {
-    &:hover, &:active {
+    &:hover {
         background: rgba(255, 212, 44, 0.7);
     }
 }
 
 #FAQBtn {
-    &:hover, &:focus {
+    &:hover {
         background: rgba(39, 37, 38, 1);
     }
 }
@@ -1032,13 +1032,13 @@ h3#lightPurpTxt {
 }
 
 a.light-hover {
-    &:hover, &:active, &:focus {
+    &:hover, &.active {
         color: rgb(242,242,242);
     }
 }
 
 a.dark-hover {
-    &:hover, &:active, &:focus {
+    &:hover {
         color: rgb(2,2,2);
     }
 }
@@ -1052,9 +1052,17 @@ a.dark-hover {
 }
 
 .darkOnHover {
-    &:hover, &:active, &:focus {
+    &:hover {
         color: rgb(5,5,5);
     }
+}
+
+li a.bright-text {
+    color: rgb(252,252,252);
+}
+
+li a.dark-text {
+    color: rgb(4,4,4);
 }
 
 .noDecoration {

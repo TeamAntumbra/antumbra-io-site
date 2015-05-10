@@ -5,7 +5,7 @@ pull:
 	git pull origin master
 push: verify
 	git push origin master
-update: push pull
+update: pull push
 run:
 	bundle exec middleman
 test: run

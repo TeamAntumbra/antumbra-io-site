@@ -157,6 +157,13 @@ a {
     @include transition(all, 1.2s, ease-in-out);
 }
 
+.no-decoration {
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}
+
 * {
     outline: none;
     font-family: 'Open-Sans', sans-serif;

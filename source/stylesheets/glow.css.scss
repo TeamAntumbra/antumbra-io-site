@@ -1,0 +1,107 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'base/base';
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin transition($animations, $time, $style) {
+    -webkit-transition: $animations $time $style;
+       -moz-transition: $animations $time $style;
+         -o-transition: $animations $time $style;
+            transition: $animations $time $style;
+}
+
+@mixin background-linear-gradient($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background:    -moz-linear-gradient($deg, $color1, $color2);
+    background:     -ms-linear-gradient($deg, $color1, $color2);
+    background:      -o-linear-gradient($deg, $color1, $color2);
+    background:         linear-gradient($deg, $color1, $color2);
+}
+
+@mixin background-radial-gradient($type, $color1, $color2) {
+    background: -moz-radial-gradient($type, $color1, $color2);
+    background: -webkit-radial-gradient($type, $color1, $color2);
+    background: -ms-radial-gradient($type, $color1, $color2);
+    background: -o-radial-gradient($type, $color1, $color2);
+}
+
+@mixin background-size($arg) {
+    -webkit-background-size: $arg;
+       -moz-background-size: $arg;
+         -o-background-size: $arg;
+            background-size: $arg;
+}
+
+$background-color: #2B2B2B;
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1%;
+    background-color: $background-color;
+}
+
+#heading {
+    margin-left: 8%;
+    color: rgb(242,242,242);
+    font-size: 22px;
+}
+
+#glowTitle {
+    padding-top: 7%;
+}
+
+@include keyframes(pulseIn) {
+    from {
+        @include transform(scale(1));
+    }
+    50% {
+        @include transform(scale(2));
+    }
+    to {
+        @include transform(scale(1));
+    }
+}
+
+#topLeft {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -51%;
+    top: -51%;
+    animation: pulseIn 3s ease 1s;
+    @include background-radial-gradient(circle, #5DCBFE 0%, transparent 8%);;
+}
+
+#topRight {
+    @extend #topLeft;
+    left: auto;
+    right: -51%;
+    top: -51%;
+    @include background-radial-gradient(circle, #D19BF3 0%, transparent 8%);
+}
+
+#bottomLeft {
+    @extend #topLeft;
+    top: auto;
+    bottom: -51%;
+    left: -51%;
+    @include background-radial-gradient(circle, #ED647B 0%, transparent 8%);
+}
+
+#bottomRight {
+    @extend #topLeft;
+    top: auto;
+    left: auto;
+    bottom: -51%;
+    right: -51%;
+    @include background-radial-gradient(circle, #7FF0B9 0%, transparent 8%);
+}
+

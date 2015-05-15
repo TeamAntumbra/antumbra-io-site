@@ -57,7 +57,7 @@ html, body {
     @media (min-width: 800px) {
         margin-left: 25%;
         margin-right: 25%;
-        margin-top: 10%;
+        margin-top: 3%;
         width: 50%;
     }
 }
@@ -441,8 +441,8 @@ h5 {
     width: 30%;
     margin-right: 10%;
     margin-bottom: 5%;
-    margin-top: 8%;
-    @media (max-width: 800px) {
+    margin-top: 22vh;
+    @media (max-width: 1090px) {
         margin-bottom: 0;
         margin-top: 0;
         float: none;
@@ -457,7 +457,7 @@ h5 {
     margin-right: 0;
     background-image: url("//s3.amazonaws.com/antumbra-io/metroRed.png");
     margin-left: 5%;
-    @media (max-width: 800px) {
+    @media (max-width: 1090px) {
         margin-right: 5%;
         width: 90%;
         margin-top: 0;

@@ -1,13 +1,34 @@
 ---
 title: Antumbra|Glow
 ---
+%script{:src=>"//widgets.shopifyapps.com/assets/widgets/embed/client.js",   |
+    :id=>"ShopifyEmbedScript", :type=>"text/javascript", :async=>"true"}    |
 %link{:href=>'/stylesheets/glow.css', :rel=>'stylesheet'}
 %body
-    //%a#heading.no-decoration{:href=>"/"}
-    //    Home
-    #topLeft
-    #topRight
     %h1#glowTitle.text-center
         Glow
-    #bottomLeft
-    #bottomRight
+    #trimetric
+    #buy
+        %h2.text-center.light
+            Buy Yours Today
+            %br/
+            For $35
+        %h5.text-center.light
+            Shipping End of May / Early June
+        :plain
+            <div id="buyBtn" data-button_background_color="3584E3" data-button_text_color="010101" data-buy_button_text="Buy now" data-display_size="compact" data-embed_type="product" data-has_image="false" data-product_handle="glow-pre-order" data-product_name="Glow Pre-Order" data-redirect_to="checkout" data-shop="antumbra.myshopify.com"></div>
+        %noscript
+            %a{:href=>"//antumbra.myshopify.com/cart/889646951:1", :target=>"_blank"}
+                Buy Glow Pre-Order
+    #experience
+        %h3
+            Experience Content Like Never Before
+        %h5
+            Glow's ambient effect reduces eye strain while creating an unparalleled experience.
+    #content
+    -# #top
+    #usbLower
+    #more.text-center
+        You can find out more about Glow and Antumbra
+        %a{:href=>'/'}
+            on our home page.

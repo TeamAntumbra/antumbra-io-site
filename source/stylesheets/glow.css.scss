@@ -38,70 +38,457 @@
             background-size: $arg;
 }
 
-$background-color: #2B2B2B;
-
-body {
+html, body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
     margin-top: 1%;
-    background-color: $background-color;
+    background-color: rgb(12,12,12);
 }
 
-#heading {
-    margin-left: 8%;
-    color: rgb(242,242,242);
-    font-size: 22px;
+#trimetric {
+    background-image: url("//s3.amazonaws.com/antumbra-io/Trimetric.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    height: 50%;
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 76%;
+    @media (min-width: 800px) {
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+    }
+}
+
+@include keyframes(rainbowGlow) {
+    0% {
+        text-shadow: rgba(255.0, 0.0, 0.0, 1.0) 0 0 10px;
+    }
+    1% {
+        text-shadow: rgba(255.0, 15.3, 0.0, 1.0) 0 0 10px;
+    }
+    2% {
+        text-shadow: rgba(255.0, 30.6, 0.0, 1.0) 0 0 10px;
+    }
+    3% {
+        text-shadow: rgba(255.0, 45.9, 0.0, 1.0) 0 0 10px;
+    }
+    4% {
+        text-shadow: rgba(255.0, 61.2, 0.0, 1.0) 0 0 10px;
+    }
+    5% {
+        text-shadow: rgba(255.0, 76.5, 0.0, 1.0) 0 0 10px;
+    }
+    6% {
+        text-shadow: rgba(255.0, 91.8, 0.0, 1.0) 0 0 10px;
+    }
+    7% {
+        text-shadow: rgba(255.0, 107.1, 0.0, 1.0) 0 0 10px;
+    }
+    8% {
+        text-shadow: rgba(255.0, 122.4, 0.0, 1.0) 0 0 10px;
+    }
+    9% {
+        text-shadow: rgba(255.0, 137.7, 0.0, 1.0) 0 0 10px;
+    }
+    10% {
+        text-shadow: rgba(255.0, 153.0, 0.0, 1.0) 0 0 10px;
+    }
+    11% {
+        text-shadow: rgba(255.0, 168.3, 0.0, 1.0) 0 0 10px;
+    }
+    12% {
+        text-shadow: rgba(255.0, 183.6, 0.0, 1.0) 0 0 10px;
+    }
+    13% {
+        text-shadow: rgba(255.0, 198.9, 0.0, 1.0) 0 0 10px;
+    }
+    14% {
+        text-shadow: rgba(255.0, 214.2, 0.0, 1.0) 0 0 10px;
+    }
+    15% {
+        text-shadow: rgba(255.0, 229.5, 0.0, 1.0) 0 0 10px;
+    }
+    16% {
+        text-shadow: rgba(255.0, 244.8, 0.0, 1.0) 0 0 10px;
+    }
+    17% {
+        text-shadow: rgba(249.9, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    18% {
+        text-shadow: rgba(234.6, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    19% {
+        text-shadow: rgba(219.3, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    20% {
+        text-shadow: rgba(204.0, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    21% {
+        text-shadow: rgba(188.7, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    22% {
+        text-shadow: rgba(173.4, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    23% {
+        text-shadow: rgba(158.1, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    24% {
+        text-shadow: rgba(142.8, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    25% {
+        text-shadow: rgba(127.5, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    26% {
+        text-shadow: rgba(112.2, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    27% {
+        text-shadow: rgba(96.9, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    28% {
+        text-shadow: rgba(81.6, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    29% {
+        text-shadow: rgba(66.3, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    30% {
+        text-shadow: rgba(51.0, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    31% {
+        text-shadow: rgba(35.7, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    32% {
+        text-shadow: rgba(20.4, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    33% {
+        text-shadow: rgba(5.1, 255.0, 0.0, 1.0) 0 0 10px;
+    }
+    34% {
+        text-shadow: rgba(0.0, 255.0, 10.2, 1.0) 0 0 10px;
+    }
+    35% {
+        text-shadow: rgba(0.0, 255.0, 25.5, 1.0) 0 0 10px;
+    }
+    36% {
+        text-shadow: rgba(0.0, 255.0, 40.8, 1.0) 0 0 10px;
+    }
+    37% {
+        text-shadow: rgba(0.0, 255.0, 56.1, 1.0) 0 0 10px;
+    }
+    38% {
+        text-shadow: rgba(0.0, 255.0, 71.4, 1.0) 0 0 10px;
+    }
+    39% {
+        text-shadow: rgba(0.0, 255.0, 86.7, 1.0) 0 0 10px;
+    }
+    40% {
+        text-shadow: rgba(0.0, 255.0, 102.0, 1.0) 0 0 10px;
+    }
+    41% {
+        text-shadow: rgba(0.0, 255.0, 117.3, 1.0) 0 0 10px;
+    }
+    42% {
+        text-shadow: rgba(0.0, 255.0, 132.6, 1.0) 0 0 10px;
+    }
+    43% {
+        text-shadow: rgba(0.0, 255.0, 147.9, 1.0) 0 0 10px;
+    }
+    44% {
+        text-shadow: rgba(0.0, 255.0, 163.2, 1.0) 0 0 10px;
+    }
+    45% {
+        text-shadow: rgba(0.0, 255.0, 178.5, 1.0) 0 0 10px;
+    }
+    46% {
+        text-shadow: rgba(0.0, 255.0, 193.8, 1.0) 0 0 10px;
+    }
+    47% {
+        text-shadow: rgba(0.0, 255.0, 209.1, 1.0) 0 0 10px;
+    }
+    48% {
+        text-shadow: rgba(0.0, 255.0, 224.4, 1.0) 0 0 10px;
+    }
+    49% {
+        text-shadow: rgba(0.0, 255.0, 239.7, 1.0) 0 0 10px;
+    }
+    50% {
+        text-shadow: rgba(0.0, 255.0, 255.0, 1.0) 0 0 10px;
+    }
+    51% {
+        text-shadow: rgba(0.0, 239.7, 255.0, 1.0) 0 0 10px;
+    }
+    52% {
+        text-shadow: rgba(0.0, 224.4, 255.0, 1.0) 0 0 10px;
+    }
+    53% {
+        text-shadow: rgba(0.0, 209.1, 255.0, 1.0) 0 0 10px;
+    }
+    54% {
+        text-shadow: rgba(0.0, 193.8, 255.0, 1.0) 0 0 10px;
+    }
+    55% {
+        text-shadow: rgba(0.0, 178.5, 255.0, 1.0) 0 0 10px;
+    }
+    56% {
+        text-shadow: rgba(0.0, 163.2, 255.0, 1.0) 0 0 10px;
+    }
+    57% {
+        text-shadow: rgba(0.0, 147.9, 255.0, 1.0) 0 0 10px;
+    }
+    58% {
+        text-shadow: rgba(0.0, 132.6, 255.0, 1.0) 0 0 10px;
+    }
+    59% {
+        text-shadow: rgba(0.0, 117.3, 255.0, 1.0) 0 0 10px;
+    }
+    60% {
+        text-shadow: rgba(0.0, 102.0, 255.0, 1.0) 0 0 10px;
+    }
+    61% {
+        text-shadow: rgba(0.0, 86.7, 255.0, 1.0) 0 0 10px;
+    }
+    62% {
+        text-shadow: rgba(0.0, 71.4, 255.0, 1.0) 0 0 10px;
+    }
+    63% {
+        text-shadow: rgba(0.0, 56.1, 255.0, 1.0) 0 0 10px;
+    }
+    64% {
+        text-shadow: rgba(0.0, 40.8, 255.0, 1.0) 0 0 10px;
+    }
+    65% {
+        text-shadow: rgba(0.0, 25.5, 255.0, 1.0) 0 0 10px;
+    }
+    66% {
+        text-shadow: rgba(0.0, 10.2, 255.0, 1.0) 0 0 10px;
+    }
+    67% {
+        text-shadow: rgba(5.1, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    68% {
+        text-shadow: rgba(20.4, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    69% {
+        text-shadow: rgba(35.7, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    70% {
+        text-shadow: rgba(51.0, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    71% {
+        text-shadow: rgba(66.3, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    72% {
+        text-shadow: rgba(81.6, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    73% {
+        text-shadow: rgba(96.9, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    74% {
+        text-shadow: rgba(112.2, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    75% {
+        text-shadow: rgba(127.5, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    76% {
+        text-shadow: rgba(142.8, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    77% {
+        text-shadow: rgba(158.1, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    78% {
+        text-shadow: rgba(173.4, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    79% {
+        text-shadow: rgba(188.7, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    80% {
+        text-shadow: rgba(204.0, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    81% {
+        text-shadow: rgba(219.3, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    82% {
+        text-shadow: rgba(234.6, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    83% {
+        text-shadow: rgba(249.9, 0.0, 255.0, 1.0) 0 0 10px;
+    }
+    84% {
+        text-shadow: rgba(255.0, 0.0, 244.8, 1.0) 0 0 10px;
+    }
+    85% {
+        text-shadow: rgba(255.0, 0.0, 229.5, 1.0) 0 0 10px;
+    }
+    86% {
+        text-shadow: rgba(255.0, 0.0, 214.2, 1.0) 0 0 10px;
+    }
+    87% {
+        text-shadow: rgba(255.0, 0.0, 198.9, 1.0) 0 0 10px;
+    }
+    88% {
+        text-shadow: rgba(255.0, 0.0, 183.6, 1.0) 0 0 10px;
+    }
+    89% {
+        text-shadow: rgba(255.0, 0.0, 168.3, 1.0) 0 0 10px;
+    }
+    90% {
+        text-shadow: rgba(255.0, 0.0, 153.0, 1.0) 0 0 10px;
+    }
+    91% {
+        text-shadow: rgba(255.0, 0.0, 137.7, 1.0) 0 0 10px;
+    }
+    92% {
+        text-shadow: rgba(255.0, 0.0, 122.4, 1.0) 0 0 10px;
+    }
+    93% {
+        text-shadow: rgba(255.0, 0.0, 107.1, 1.0) 0 0 10px;
+    }
+    94% {
+        text-shadow: rgba(255.0, 0.0, 91.8, 1.0) 0 0 10px;
+    }
+    95% {
+        text-shadow: rgba(255.0, 0.0, 76.5, 1.0) 0 0 10px;
+    }
+    96% {
+        text-shadow: rgba(255.0, 0.0, 61.2, 1.0) 0 0 10px;
+    }
+    97% {
+        text-shadow: rgba(255.0, 0.0, 45.9, 1.0) 0 0 10px;
+    }
+    98% {
+        text-shadow: rgba(255.0, 0.0, 30.6, 1.0) 0 0 10px;
+    }
+    99% {
+        text-shadow: rgba(255.0, 0.0, 15.3, 1.0) 0 0 10px;
+    }
+    100% {
+        text-shadow: rgba(255.0, 0.0, 0.0, 1.0) 0 0 10px;
+    }
 }
 
 #glowTitle {
-    padding-top: 7%;
+    font-weight: 100;
+    padding-top: 1%;
+    font-size: 86px;
+    animation: rainbowGlow 10s linear 0s infinite;
+    text-shadow: rgba(255.0, 0.0, 0.0, 1.0) 0 0 108px;
 }
 
-@include keyframes(pulseIn) {
-    from {
-        @include transform(scale(1));
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+#buy {
+    h2 {
+        margin-bottom: 2%;
     }
-    50% {
-        @include transform(scale(2));
+    h5 {
+        margin-bottom: 5%;
     }
-    to {
-        @include transform(scale(1));
+    #buyBtn {
+        width: 74px;
+        margin-left: 5%;
+        margin-right: 5%;
+        * {
+            margin-left: 11vw;
+        }
+    }
+    @media (min-width: 696px) {
+        #buyBtn {
+            width: 74px;
+            margin-left: 8vw;
+            margin-right: 8vw;
+            * {
+                margin-left: 8vw;
+            }
+        }
+    }
+    @media (min-width: 1010px) {
+        #buyBtn {
+            margin-left: 40%;
+            margin-right: 40%;
+            display: inline-block;
+            height: 10%;
+            width: 20%;
+            min-width: 74px;
+            * {
+                margin-left: 2.2vw;
+            }
+        }
+    }
+    min-height: 40%;
+    height: contain;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#experience {
+    h3, h5 {
+        font-weight: 100;
+    }
+    float: right;
+    width: 30%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 8%;
+    @media (max-width: 800px) {
+        float: none;
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
-#topLeft {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: -51%;
-    top: -51%;
-    animation: pulseIn 3s ease 1s;
-    @include background-radial-gradient(circle, #5DCBFE 0%, transparent 8%);;
+#content {
+    @extend #trimetric;
+    margin-top: 5%;
+    margin-right: 0;
+    background-image: url("//s3.amazonaws.com/antumbra-io/metroRed.png");
+    margin-left: 5%;
+    @media (max-width: 800px) {
+        margin-right: 5%;
+        width: 90%;
+    }
 }
 
-#topRight {
-    @extend #topLeft;
-    left: auto;
-    right: -51%;
-    top: -51%;
-    @include background-radial-gradient(circle, #D19BF3 0%, transparent 8%);
+#top {
+    @extend #trimetric;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 0;
+    background-image: url("//s3.amazonaws.com/antumbra-io/Top.png");
 }
 
-#bottomLeft {
-    @extend #topLeft;
-    top: auto;
-    bottom: -51%;
-    left: -51%;
-    @include background-radial-gradient(circle, #ED647B 0%, transparent 8%);
+#usbLower {
+    @extend #trimetric;
+    margin-top: 12%;
+    background-image: url("//s3.amazonaws.com/antumbra-io/USB_low_angle_side.png");
 }
 
-#bottomRight {
-    @extend #topLeft;
-    top: auto;
-    left: auto;
-    bottom: -51%;
-    right: -51%;
-    @include background-radial-gradient(circle, #7FF0B9 0%, transparent 8%);
+#more {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    font-weight: 100;
+    margin-bottom: 4%;
+    font-size: 28px;
+    color: rgb(252,252,252);
+    a:link {
+        color: rgb(252,252,252);
+        text-decoration: none;
+        &:hover {
+            color: rgb(252,252,252);
+            text-decoration: none;
+        }
+    }
 }
-

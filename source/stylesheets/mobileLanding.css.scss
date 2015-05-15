@@ -35,6 +35,20 @@
     background-size: $arg1, $arg2;
 }
 
+#mobileBuyBtn {
+    display: block;
+    min-width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 8%;
+    margin-top: 3%;
+    background-color: #3381FF;
+    @include border-radius(15px);
+    &:hover, &:active, &:focus {
+        color: rgb(252,252,252);
+    }
+}
+
 nav {
     display: none;
 }

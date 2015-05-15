@@ -67,6 +67,10 @@ section.intro {
     }
 }
 
+#mobileBuyBtn {
+    display: none;
+}
+
 .fadeOnLoad {
     opacity: 0.0;
     @include transition(all, 1.2s);

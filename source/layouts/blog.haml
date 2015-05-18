@@ -1,16 +1,16 @@
 = wrap_layout :base do
     %link{:href=>"/stylesheets/blog.css", :rel=>'stylesheet'}
     %nav
-        %h1.text-center
+        %h1.text-center.light
             %a#brandHeading.glowOnHover{:href=>"/"}
                 Antumbra
             %a#subTitle.glowOnHover{:href=>"/blog"}
                 Development Blog
     .blogBody
-        %h3#postHeading
+        %h3#postHeading.light.text-center
             = current_page.data.title
             %br/
-        %p#postDate
+        %p#postDate.light
             = current_page.data.date
         #container
             =yield

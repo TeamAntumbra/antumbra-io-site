@@ -11,6 +11,7 @@ page "/blog.html", :layout => "base"
 page "/blog/*", :layout => "blog"
 page "/beta.html", :layout => "base"
 page "/glow.html", :layout => "base"
+page "/download.html", :layout => "base"
 
 # Development-specific configuration
 configure :development do

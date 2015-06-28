@@ -161,3 +161,6 @@ DEPENDENCIES
   middleman-minify-html (~> 3.4.0)
   tzinfo-data
   wdm (~> 0.1.0)
+
+BUNDLED WITH
+   1.10.2

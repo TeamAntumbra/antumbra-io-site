@@ -1,10 +1,17 @@
 ---
 title: Antumbra|Glow
 ---
-%script{:src=>"//widgets.shopifyapps.com/assets/widgets/embed/client.js",   |
-    :id=>"ShopifyEmbedScript", :type=>"text/javascript", :async=>"true"}    |
+%script{:src=>"https://widgets.shopifyapps.com/assets/widgets/embed/client.js",  |
+    :id=>"ShopifyEmbedScript", :type=>"text/javascript"}                         |
 %link{:href=>'/stylesheets/glow.css', :rel=>'stylesheet'}
 %body
+    :plain
+        <div id="cartBtn" data-embed_type="cart" data-shop="antumbra.myshopify.com"
+            data-start_toggled="false" data-checkout_button_text="Checkout"
+            data-cart_button_text="Cart" data-button_text_color="f1f1f1"
+            data-button_background_color="3381ff" data-background_color="ffffff"
+            data-text_color="000000" data-accent_color="899ca3"></div>
+
     %h1#glowTitle.text-center
         Glow
     #trimetric
@@ -17,13 +24,13 @@ title: Antumbra|Glow
             Ships Within Three Days
         :plain
             <div id="buyBtn" data-button_background_color="3381FF"
-                data-button_text_color="D1D1D1" data-buy_button_text="Buy now"
+                data-button_text_color="F1F1F1" data-buy_button_text="Buy now"
                 data-display_size="compact" data-embed_type="product"
                 data-has_image="false" data-product_handle="glow-pre-order"
-                data-product_name="Glow Pre-Order" data-redirect_to="checkout"
+                data-product_name="Glow Pre-Order" data-redirect_to="cart"
                 data-shop="antumbra.myshopify.com"></div>
         %noscript
-            %a{:href=>"//antumbra.myshopify.com/cart/889646951:1", :target=>"_blank"}
+            %a{:href=>"https://antumbra.myshopify.com/cart/889646951:1", :target=>"_blank"}
                 Buy Glow Now
     #experience
         %h3

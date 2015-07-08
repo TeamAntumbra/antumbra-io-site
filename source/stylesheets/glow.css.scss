@@ -403,16 +403,17 @@ h5 {
         margin-bottom: 5%;
     }
     #buyBtn {
-        width: 74px;
-        margin-left: 5%;
+        width: 140px;
+        margin-left: 0%;
         margin-right: 5%;
+        min-width: 140px;
         * {
             margin-left: 11vw;
         }
     }
     @media (min-width: 696px) {
         #buyBtn {
-            width: 74px;
+            width: 35%;
             margin-left: 8vw;
             margin-right: 8vw;
             * {
@@ -422,12 +423,11 @@ h5 {
     }
     @media (min-width: 1010px) {
         #buyBtn {
-            margin-left: 40%;
+            margin-left: 36%;
             margin-right: 40%;
             display: inline-block;
             height: 10%;
-            width: 20%;
-            min-width: 74px;
+            width: 38%;
             * {
                 margin-left: 2.2vw;
             }

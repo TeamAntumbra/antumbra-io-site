@@ -24,9 +24,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                         %a.page-scroll.dark-text.menu-item.dark-hover#overviewBtn{:href=>'#overview'}
                             Overview
                     %li
-                        %a.page-scroll.dark-text.menu-item.dark-hover#aboutBtn{:href=>'#about'}
-                            About
-                    %li
                         %a.page-scroll.dark-text.menu-item.light-hover#glowVidBtn{:href=>'#glow'}
                             Glow
                     %li
@@ -239,113 +236,6 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                     %li
                         %a.btn.angellist{:href=>"//angel.co/antumbra"}
                             %i.fa.fa-angellist.fa-5x
-    %section#aboutUs.container.content-section.text-center
-        #aboutUs-container.row
-            .col-lg-8.full
-                %h1
-                    About Us
-                %br/
-                %h5.aboutUsText
-                    Antumbra was created after winning the AngelHack Boston `14
-                    competition, earning us a spot in their &quot;Hackcelerator&quot;
-                    pre-accelerator program.
-                #team
-                    #davis.teamMember
-                        #davisFace.teamMemberImage
-                            %img#davisFaceImg{:src=>"//s3.amazonaws.com/antumbra-io/davis.jpg",
-                                    :alt=>"Davis Foster"}
-                        %p.name
-                            Davis Foster
-                        %p.title
-                            Hardware Engineer
-                        %ul.list-inline.banner-social-buttons
-                            %a.mini-social-item.btn.angellist{:href=>"//angel.co/davis-foster"}
-                                %i.fa.fa-angellist.fa-1x
-                            %a.mini-social-item.btn.email{:href=>"mailto:davis@antumbra.io"}
-                                %i.fa.fa-envelope-o.fa-1x
-                            %a.mini-social-item.btn.github{:href=>"//github.com/DavisFoster"}
-                                %i.fa.fa-github-alt.fa-1x
-                            %a.mini-social-item.btn.linkedin{:href=>"//www.linkedin.com/pub/davis-foster/83/75b/3b2"}
-                                %i.fa.fa-linkedin.fa-1x
-                    #adam.teamMember
-                        #adamFace.teamMemberImage
-                            %img#adamFaceImg{:src=>"//s3.amazonaws.com/antumbra-io/adam.jpg",
-                                    :alt=>"Adam Walsh"}
-                        %p.name
-                            Adam Walsh
-                        %p.title
-                            Windows Software Engineer
-                        %ul.list-inline.banner-social-buttons
-                            %a.mini-social-item.btn.angellist{:href=>"//angel.co/adamwalsh"}
-                                %i.fa.fa-angellist.fa-1x
-                            %a.mini-social-item.btn.email{:href=>"mailto:adam@antumbra.io"}
-                                %i.fa.fa-envelope-o.fa-1x
-                            %a.mini-social-item.btn.github{:href=>"//github.com/walshie4"}
-                                %i.fa.fa-github-alt.fa-1x
-                            %a.mini-social-item.btn.linkedin{:href=>"//www.linkedin.com/pub/adam-walsh/36/3a1/b8a/"}
-                                %i.fa.fa-linkedin.fa-1x
-                    #sam.teamMember
-                        #samFace.teamMemberImage
-                            %img#samFaceImg{:src=>"//s3.amazonaws.com/antumbra-io/sam.jpg",
-                                    :alt=>"Sam Harada"}
-                        %p.name
-                            Sam Harada
-                        %p.title
-                            Embedded Software Engineer
-                        %ul.list-inline.banner-social-buttons
-                            %a.mini-social-item.btn.angellist{:href=>"//angel.co/sam-harada"}
-                                %i.fa.fa-angellist.fa-1x
-                            %a.mini-social-item.btn.email{:href=>"mailto:sam@antumbra.io"}
-                                %i.fa.fa-envelope-o.fa-1x
-                            %a.mini-social-item.btn.github{:href=>"//github.com/pharada"}
-                                %i.fa.fa-github-alt.fa-1x
-                            %a.mini-social-item.btn.linkedin{:href=>"//www.linkedin.com/pub/samuel-harada/7b/62b/749"}
-                                %i.fa.fa-linkedin.fa-1x
-                    #nick.teamMember
-                        #nickFace.teamMemberImage
-                            %img#nickFaceImg{:src=>"//s3.amazonaws.com/antumbra-io/nick.jpg",
-                                    :alt=>"Nick Peretti"}
-                        %p.name
-                            Nick Peretti
-                        %p.title
-                            OS X Software Engineer
-                        %ul.list-inline.banner-social-buttons
-                            %a.mini-social-item.btn.angellist{:href=>"//angel.co/nick-peretti"}
-                                %i.fa.fa-angellist.fa-1x
-                            %a.mini-social-item.btn.email{:href=>"mailto:nick@antumbra.io"}
-                                %i.fa.fa-envelope-o.fa-1x
-                            %a.mini-social-item.btn.github{:href=>"//github.com/qwertyflagstop"}
-                                %i.fa.fa-github-alt.fa-1x
-                            %a.mini-social-item.btn.linkedin{:href=>"//www.linkedin.com/pub/nick-peretti/a6/608/b89"}
-                                %i.fa.fa-linkedin.fa-1x
-                    #michel.teamMember
-                        #michelFace.teamMemberImage
-                            %img#michelFaceImg{:src=>"//s3.amazonaws.com/antumbra-io/michel.jpg",
-                                    :alt=>"Michel Rodriguez"}
-                        %p.name
-                            Michel Rodriguez
-                        %p.title
-                            Business Development
-                        %ul.list-inline.banner-social-buttons
-                            %a.mini-social-item.btn.angellist{:href=>"//angel.co/michel-rodriguez-1"}
-                                %i.fa.fa-angellist.fa-1x
-                            %a.mini-social-item.btn.email{:href=>"mailto:michel@antumbra.io"}
-                                %i.fa.fa-envelope-o.fa-1x
-                            %a.mini-social-item.btn.linkedin{:href=>"//www.linkedin.com/pub/michel-rodriguez/5b/716/199"}
-                                %i.fa.fa-linkedin.fa-1x
-        %div#subAboutText.text-center
-            %p.aboutUsText
-                We won the hackathon with our ambient
-                backlight concept, dubbed Glow - a small device you mount
-                behind your screen, designed to illuminate the wall behind
-                a computer monitor or TV.
-                %br/
-                %br/
-                On October 24th, 2014 we competed in the
-                RIT Tiger Tank competition, and were awarded 1st place!
-                %br/
-                On October 30th, 2014 we pitched at the AngelHack Global Demo
-                Day 2014, hosted @ USF.
     %footer
         .container.text-center
             %p
